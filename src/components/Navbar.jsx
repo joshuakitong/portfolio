@@ -9,25 +9,25 @@ export default function Navbar() {
   const navLinks = [
     { path: '/music', label: 'Music' },
     { path: '/gaming', label: 'Gaming' },
-    { path: '/yarn', label: 'Yarn' },
     { path: '/webdev', label: 'Web Dev' },
+    { path: '/yarn', label: 'Yarn' },
     { path: '/others', label: 'Others' },
     { path: '/contact', label: 'Contact' },
   ];
 
   const getLinkClass = (path) =>
-    `block py-2 md:py-0 transition-transform duration-150 hover:scale-105 hover:text-white ${
-      location.pathname === path ? 'text-white font-bold scale-105' : ''
+    `block py-2 md:py-0 transition-transform duration-150 hover:scale-105 hover:text-blue-500 ${
+      location.pathname === path ? 'text-blue-500 scale-105' : ''
     }`;
 
   return (
     <nav className="bg-dark text-gray-400 border-b border-white px-4 py-3 flex items-center justify-between sticky top-0 z-50">
       <div
-        className={`text-xl font-semibold transition-transform duration-150 hover:scale-105 hover:text-white ${
-          location.pathname === '/' ? 'text-white font-bold scale-105' : 'text-gray-400'
+        className={`text-xl font-semibold transition-transform duration-150 hover:scale-105 hover:text-blue-500 ${
+          location.pathname === '/' ? 'text-blue-500 scale-105' : 'text-gray-400'
         }`}
       >
-        <Link to="/">Joshua Kitong Portfolio</Link>
+        <Link to="/">Joshua Kitong</Link>
       </div>
 
       <div className="md:hidden">
@@ -42,7 +42,7 @@ export default function Navbar() {
       <div
         className={`md:flex md:items-center md:space-x-4 ${
           menuOpen ? 'block' : 'hidden'
-        } md:block absolute md:static top-16 left-0 w-full md:w-auto bg-dark md:bg-transparent p-4 md:p-0 border-b border-white md:border-0 rounded-md z-40`}
+        } md:block absolute md:static top-12 left-0 w-full md:w-auto bg-dark md:bg-transparent p-4 md:p-0 border-b border-white md:border-0 rounded-md z-40`}
       >
         {navLinks.map((link) => (
           <Link
