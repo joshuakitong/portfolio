@@ -7,9 +7,9 @@ export default function Navbar() {
   const location = useLocation();
 
   const navLinks = [
+    { path: '/webdev', label: 'Web Development' },
     { path: '/music', label: 'Music Production' },
     { path: '/gaming', label: 'Gaming & Streaming' },
-    { path: '/webdev', label: 'Web Development' },
     { path: '/yarn', label: 'Yarn Mixes' },
     { path: '/others', label: 'Others' },
     { path: '/contact', label: 'Contact' },
