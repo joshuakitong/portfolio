@@ -1,0 +1,9 @@
+.bg-home {
+  background-image: url('./textures/inspiration-geometry.png');
+  background-repeat: repeat;
+}
+
+.bg-texture {
+  background-image: url('./textures/45-degree-fabric-dark.png');
+  background-repeat: repeat;
+}
