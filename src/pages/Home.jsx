@@ -9,7 +9,7 @@ const skills = [
     name: 'Web Development',
     id: 'web',
     icon: <Code size={48} />,
-    summary: 'I graduated with a Bachelor of Science in Information Technology, majoring in Software Development, in 2017.\n\nIn 2018, I worked as a Front-End Web Developer at Qualis Consulting Inc., developing web-based systems for U.S. utility cooperatives using ASP.NET, AngularJS, HTML, and CSS. I also trained in Angular and gained some back-end experience with PL/SQL.\n\nIn 2021, I shifted to pursuing creative projects full-time, but in mid-2025, I decided to return to development. I’ve been catching up on newer technologies—mainly React, Angular, and Flask—through hands-on projects.',
+    summary: 'I graduated with a Bachelor of Science in Information Technology, majoring in Software Development, in 2017.\n\nIn 2018, I worked as a Front-End Web Developer at Qualis Consulting Inc., developing web-based systems for U.S. utility cooperatives using ASP.NET, AngularJS, HTML, and CSS. I also trained in Angular and gained some back-end experience with PL/SQL.\n\nIn 2021, I shifted to pursuing creative projects full-time and paused my developer career. In mid-2025, I decided to return to development and have been catching up on newer technologies — mainly React, Angular, and Flask — through hands-on projects.',
     link: "/webdev",
   },
   {
@@ -37,7 +37,7 @@ const skills = [
     name: 'Others',
     id: 'others',
     icon: <Sparkles size={48} />,
-    summary: 'I also have work experience beyond what’s mentioned above. I worked as a sound technician for our family sound system business, as a graphic designer for small organizations like GDG Baguio, and as a transcriptionist for Insight Asia. I’ve taught and coached students in both gaming and music, and I have experience trading cryptocurrencies.\n\nYou can learn more about my various interests and hobbies in this section.',
+    summary: 'I also have work experience beyond what’s mentioned above. I worked as a sound technician for our family sound system business, as a graphic designer for small organizations like GDG Baguio, and as a transcriptionist for Insight Asia. I’ve taught and coached students in both gaming and music, and I have experience trading cryptocurrencies.\n\nYou can learn more about my various interests and hobbies — books I read, shows I watch, and games I play — in this section.',
     link: "/others",
   },
 ];
