@@ -9,35 +9,35 @@ const skills = [
     name: 'Web Development',
     id: 'web',
     icon: <Code size={48} />,
-    summary: 'Web Development summary goes here.',
+    summary: 'I graduated with a Bachelor of Science in Information Technology, majoring in Software Development, in 2017.\n\nIn 2018, I worked as a Front-End Web Developer at Qualis Consulting Inc., developing web-based systems for U.S. utility cooperatives using ASP.NET, AngularJS, HTML, and CSS. I also trained in Angular and gained some back-end experience with PL/SQL.\n\nIn 2021, I shifted to pursuing creative projects full-time, but in mid-2025, I decided to return to development. I’ve been catching up on newer technologies—mainly React, Angular, and Flask—through hands-on projects.',
     link: "/webdev",
   },
   {
     name: 'Music Production',
     id: 'music',
     icon: <AudioLines size={48} />,
-    summary: 'Music Production summary goes here.',
+    summary: 'I started playing guitar at the age of six and stayed active in musicals and talent shows through college. After graduating, I lost my passion for music but rediscovered it during the pandemic (2020). Around that time, my brother and his friends started a record label and collective, BOX84.\n\nSince then, I’ve been involved in the entire production process. I’ve learned to make beats, write and arrange songs, mix and master tracks, edit videos and graphics, release music on various platforms, and manage social media pages — all largely self-taught.\n\nI’ve since produced over a hundred tracks, generating hundreds of thousands of streams across platforms.',
     link: "/music",
   },
   {
     name: 'Gaming & Streaming',
     id: 'gaming',
     icon: <Gamepad2 size={48} />,
-    summary: 'Gaming and streaming summary goes here.',
+    summary: 'I’ve been a gamer for as long as I can remember. I started with board and console games before moving to PC. It was something I loved and always dreamed of turning into a career.\n\nWhen the opportunity came during the altcoin season in 2021 and NFT gaming took off, I didn’t hesitate. I pursued my creative career full-time, became a competitive Axie Infinity player, and managed a few scholars.\n\nA year later, as the NFT hype faded, I shifted to becoming a content creator and started streaming on Twitch, where I built a following of thousands, streamed to hundreds per session, and regularly hosted community events, giveaways, and marathon streams.',
     link: "/gaming",
   },
   {
     name: 'Yarn Mixes',
     id: 'yarn',
     icon: <Volleyball size={48} />,
-    summary: 'Yarn Mixes summary goes here.',
+    summary: 'I’ve always been fascinated by coloring, painting, and mixing colors, though I focused more on developing other talents growing up.\n\nWhen our family business, Crocheted by Carisse, began to boom, I knew my eye for combining colors would come in handy. Since 2022, I’ve been actively creating new color combinations and producing fine cotton yarns for our hundreds of beloved customers worldwide.',
     link: "/yarn",
   },
   {
     name: 'Others',
     id: 'others',
     icon: <Sparkles size={48} />,
-    summary: 'Other skills and interests summary goes here.',
+    summary: 'I also have work experience beyond what’s mentioned above. I worked as a sound technician for our family sound system business, as a graphic designer for small organizations like GDG Baguio, and as a transcriptionist for Insight Asia. I’ve taught and coached students in both gaming and music, and I have experience trading cryptocurrencies.\n\nYou can learn more about my various interests and hobbies in this section.',
     link: "/others",
   },
 ];
@@ -110,7 +110,7 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 2, duration: 0.6 }}
             >
-              This portfolio highlights my diverse technical and creative skills.
+              This portfolio showcases my diverse technical and creative skills.
             </motion.p>
             <motion.p
               className="max-w-xl text-gray-400"
@@ -152,14 +152,14 @@ export default function HomePage() {
                 <Link to={skill.link} className="text-sm text-blue-400 hover:text-blue-300 underline">
                   <h2 className="text-2xl font-bold mb-2 tracking-wide text-blue-500">{skill.name}</h2>
                 </Link>
-                <p className="text-gray-300">{skill.summary}</p>
+                <p className="text-gray-300 text-[12px] sm:text-[12px] md:text-[14px] lg:text-[16px]" style={{ whiteSpace: 'pre-line' }}>{skill.summary}</p>
               </div>
             </motion.div>
           </div>
         );
       })}
       {/* add a spacer at the end to give space for last board*/}
-      <div style={{ height: "210px" }}></div>
+      <div style={{ height: "420px" }}></div>
       
       {(
         <motion.div
