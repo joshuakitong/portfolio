@@ -48,7 +48,6 @@ export default function HomePage() {
   const introScale = useTransform(scrollY, [0, 500], [1, 0.8]);
   const introOpacity = useTransform(scrollY, [0, 500], [1, 0]);
   const iconOpacity = useTransform(scrollY, [0, 250], [1, 0]);
-  const boardHeight = 420;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -146,7 +145,7 @@ export default function HomePage() {
             <motion.div
               ref={ref}
               style={{ rotateX, scale, opacity, filter: blur }}
-              className={"relative bg-[#222] h-[" + boardHeight + "px] border border-white/10 p-6 rounded-2xl w-11/12 max-w-xl text-center flex flex-col justify-between overflow-hidden"}
+              className={"relative bg-[#222] h-[420px] border border-white/10 p-6 rounded-2xl w-11/12 max-w-xl text-center flex flex-col justify-between overflow-hidden"}
             >
               <div>
                 <div className="flex items-center justify-center">{skill.icon}</div>
@@ -160,7 +159,7 @@ export default function HomePage() {
         );
       })}
       {/* add a spacer at the end to give space for last board*/}
-      <div style={{ height: boardHeight / 2 + "px" }}></div>
+      <div style={{ height: "210px" }}></div>
       
       {(
         <motion.div
