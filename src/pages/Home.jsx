@@ -33,7 +33,7 @@ const skills = [
        launched a record label and collective called BOX84, and I’ve been involved in the full production process ever since.<br /><br />
 
       I’ve learned to <strong>make beats</strong>, <strong>write and arrange songs</strong>, <strong>mix and master tracks</strong>, <strong>edit videos and graphics</strong>
-       , <strong>release music across various platforms</strong>, and <strong>manage social media pages</strong>. I primarily use <strong>FL Studio</strong>
+       , <strong>release music across various platforms</strong>, and <strong>manage artists and social media pages</strong>. I primarily use <strong>FL Studio</strong>
        , <strong>Adobe Premiere Pro</strong>, and <strong>Photoshop</strong>.<br /><br />
 
       Since then, I’ve produced over a hundred tracks, generating hundreds of thousands of streams across platforms.
