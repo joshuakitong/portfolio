@@ -4,11 +4,11 @@ A responsive, single-page portfolio built with **React**, **Tailwind CSS**, and 
 
 This portfolio highlights Joshua's work in:
 
-- **Music Production**
-- **Gaming Content**
 - **Web Development**
-- **Yarn Creations**
-- **Other Experiences and Interests**
+- **Music Production**
+- **Gaming & Streaming**
+- **Yarn Mixes**
+- **Other Work Experiences, Interests and Hobbies**
 
 Live: [View Site](https://joshuakitong.github.io/portfolio)
 
