@@ -146,7 +146,7 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.6 }}
             >
-              As a self-taught, modern jack of all trades, I blend <strong>technical knowledge</strong> in web development, <strong>strategic thinking</strong> from competitive gaming,
+              As a self-taught, modern <strong>jack of all trades</strong>, I blend <strong>technical knowledge</strong> in web development, <strong>strategic thinking</strong> from competitive gaming,
               and <strong>creative talent</strong> in multimedia production — delivering <strong>versatile solutions</strong> across digital mediums.
             </motion.p>
             <motion.p
