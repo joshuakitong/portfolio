@@ -11,3 +11,16 @@ This portfolio highlights Joshua's work in:
 - **Other Experiences and Interests**
 
 Live: [View Site](https://joshuakitong.github.io/portfolio)
+
+<details>
+  <summary><strong>How to Run Locally</strong></summary>
+
+  1. Clone the repo  
+     `https://github.com/joshuakitong/portfolio`
+
+  2. Install dependencies  
+     `npm install`
+
+  3. Run the app  
+     `npm start`
+</details>
