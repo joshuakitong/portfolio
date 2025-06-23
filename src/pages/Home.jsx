@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { AudioLines, Gamepad2, Volleyball, Code, Sparkles, ChevronDown } from 'lucide-react';
+import { Code, AudioLines, Gamepad2, Sparkles, ChevronDown } from 'lucide-react';
 
 const skills = [
   {
@@ -60,30 +60,16 @@ const skills = [
     link: "/gaming",
   },
   {
-    name: 'Yarn Mixes',
-    id: 'yarn',
-    icon: <Volleyball size={48} />,
-    summary: (
-    <>
-      I’ve always been fascinated by coloring, painting, and mixing colors, though I focused more on developing other talents growing up.<br /><br />
-
-      When our family business, Crocheted by Carisse, began to boom, I knew my eye for combining colors would come in handy. Since 2022, I’ve been actively <strong>creating 
-        new color combinations</strong> and <strong>producing fine cotton yarns</strong> for our hundreds of beloved customers worldwide.
-    </>
-    ),
-    link: "/yarn",
-  },
-  {
     name: 'Others',
     id: 'others',
     icon: <Sparkles size={48} />,
     summary: (
     <>
-      Other roles I’ve taken on include <strong>sound technician</strong> for our family’s sound system business, <strong>graphic designer</strong> for small organizations 
-       like GDG Baguio, <strong>transcriptionist</strong> for Insight Asia, <strong>teacher</strong> and <strong>coach</strong> in both gaming and music, 
-       and <strong>cryptocurrency trader</strong>.<br /><br />
+      Other roles I’ve taken on include <strong>yarn producer</strong> for our family's yarn business, <strong>sound technician</strong> for our family’s sound system 
+       business, <strong>graphic designer</strong> for small organizations like GDG Baguio, <strong>transcriptionist</strong> for 
+       Insight Asia, <strong>teacher</strong> and <strong>coach</strong> in both gaming and music, and a <strong>cryptocurrency trader</strong> too.<br/><br/>
 
-      You can also learn more about my various interests and hobbies — books I read, shows I watch, and games I play — in this section.
+      Outside of work, I enjoy a wide range of hobbies—from reading book and watching shows to playing games—continually fueling my creativity and curiosity.
     </>
     ),
     link: "/others",
@@ -129,7 +115,7 @@ export default function HomePage() {
             >
               <span className="text-blue-500">
                 <Typewriter
-                  words={['Web Developer', 'Music Producer', 'Video Editor', 'Content Creator', 'and more...']}
+                  words={['Web Developer', 'Music Producer', 'Content Creator', 'and more...']}
                   loop={0}
                   cursor
                   cursorStyle="|"
