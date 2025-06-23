@@ -46,8 +46,8 @@ const sections = [
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 mt-2">
           <div className="space-y-6">
-            <strong>Languages</strong>: HTML5 / CSS3, C#, JavaScript, TypeScript, Visual Basic, Python<br/>
-            <strong>Frameworks & Libraries</strong>: ASP.NET, AngularJS, React, Angular, Flask, Kendo UI, Tailwind CSS, Framer Motion<br/>
+            <strong>Languages</strong>: HTML5 / CSS3, JavaScript, TypeScript, C#, Java, VB, Python<br/>
+            <strong>Frameworks & Libraries</strong>: React, AngularJS, Angular, ASP.NET, Flask, Kendo UI, Tailwind CSS, Framer Motion<br/>
             <strong>Tools & Platforms</strong>: Git & Bitbucket, npm, Visual Studio Code
           </div>
           <div className="space-y-6">
@@ -67,7 +67,7 @@ const sections = [
       <>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Apps & Websites</h2>
         <p>
-          Here’s a list of projects I’ve worked on since June 2025 to catch up with modern technologies <i>(sorted from latest to oldest)</i>:<br/>
+          Here’s a list of projects I’ve worked on since June 2025 <i>(sorted from latest to oldest)</i>:<br/>
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 mt-2">
           <div>
@@ -75,19 +75,20 @@ const sections = [
               <strong>To-do App</strong>
             </a><br/>
             <p className="ml-4 mr-4">
-              A simple To-do App built with <strong>Angular</strong> and <strong>Material Design</strong>, showcasing CRUD functionalities.
+              A simple to-do app built with <strong>Angular</strong> and <strong>Material Design</strong>, showcasing CRUD functionalities.
             </p>
             <a href="https://joshuakitong.github.io/piano-app" target="_new" className="text-blue-400 hover:underline visited:text-purple-400">
               <strong>Piano App</strong>
             </a><br/>
             <p className="ml-4 mr-4">
-              A simple piano app built with <strong>React</strong> and <strong>Vite</strong>, featuring a virtual keyboard with clickable keys and sheet music for popular children's songs.
+              A simple piano app built with <strong>React</strong> and <strong>Vite</strong>, featuring a virtual keyboard with a simple control panel.
             </p>
             <a href="https://joshuakitong.github.io/portfolio" target="_new" className="text-blue-400 hover:underline visited:text-purple-400">
               <strong>My Portfolio</strong>
             </a><br/>
             <p className="ml-4 mr-4">
-              A responsive, single-page portfolio built with <strong>React</strong>, <strong>Tailwind CSS</strong>, and <strong>Framer Motion</strong>, showcasing my diverse background, skills and interests across multiple creative and technical fields.
+              A responsive, single-page portfolio built with <strong>React</strong>, <strong>Tailwind CSS</strong>, and <strong>Framer Motion</strong>, 
+               showcasing my diverse background and skills across technical and creative fields.
             </p>
           </div>
           <div>
@@ -102,18 +103,21 @@ const sections = [
               <strong>Tic-Tac-Toe</strong>
             </a><br/>
             <p className="ml-4 mr-4">
-              My first <strong>React</strong> project which is based on the official <a href="https://react.dev/learn/tutorial-tic-tac-toe" target="_new" className="text-blue-400 hover:underline visited:text-purple-400">React Tic-Tac-Toe tutorial</a> with additional features and styling.
+              My first <strong>React</strong> project which is based on the 
+               official <a href="https://react.dev/learn/tutorial-tic-tac-toe" target="_new" className="text-blue-400 hover:underline visited:text-purple-400">React 
+               Tic-Tac-Toe tutorial</a> with additional features and styling.
             </p>
             <a href="https://joshuakitong.github.io/crocheted-by-carisse" target="_new" className="text-blue-400 hover:underline visited:text-purple-400">
               <strong>Croched by Carisse</strong>
             </a><br/>
             <p className="ml-4 mr-4">
-              My first website since returning to development: a responsive, static portfolio and product landing page showcasing the handmade yarn mixes and crochet creations of Crocheted by Carisse.
+              My first website since returning to development: A responsive, static product landing page of Crocheted by Carisse.
             </p>
           </div>
         </div>
         <p className="mt-2">
-          You can also visit my <a href="https://github.com/joshuakitong" target="_new" className="text-blue-400 hover:underline visited:text-purple-400">GitHub</a> to view source code and stay updated on future projects.
+          You can also visit my <a href="https://github.com/joshuakitong" target="_new" className="text-blue-400 hover:underline visited:text-purple-400">GitHub</a> to 
+          view source code and stay updated on future projects.
         </p>
       </>
     )
