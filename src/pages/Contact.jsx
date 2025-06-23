@@ -7,6 +7,7 @@ const sections = [
     title: "Contact Details",
     content: (
       <>
+        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">How to Reach Me</h2>
         <p className="mb-6">
           (*work in progress: contact details goes here)
         </p>
