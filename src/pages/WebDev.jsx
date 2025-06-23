@@ -27,18 +27,18 @@ const sections = [
            documentation. We also used <strong>npm</strong> for package management. Additionally, I gained experience facilitating daily standups and presenting during 
            sprint reviews.<br/><br/>
            
-          Additionally, during my college internship, I developed a computer laboratory system for my university’s M.I.S. department 
+          Lastly, during my college internship, I developed a computer laboratory system for my university’s M.I.S. department 
            using <strong>Visual Basic</strong> and <strong>MySQL</strong>.</p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Creative Shift & Dev Comeback</h2>
         <p className="mb-6">
           In September 2021, I took the opportunity to pursue my creative projects full-time. While I stepped away from coding, I continued to sharpen related skills 
            like <strong>problem-solving</strong> and <strong>critical thinking</strong> through music production, streaming, content creation, and more recently, 
-           analyzing patterns in crypto trading.<br/><br/>
+           analyzing patterns in cryptoccurency trading.<br/><br/>
 
           In June 2025, I decided to shift my focus back to development. I’ve been rebuilding my coding foundation and catching up on modern technologies — 
            mainly <strong>React</strong>, <strong>Angular</strong>, and <strong>Python</strong> — through interactive platforms like freeCodeCamp, solving challenges on 
            LeetCode, leveraging AI tools, and building hands-on projects. This portfolio is one of those projects, built with <strong>React</strong>
-           , <strong>Tailwind CSS</strong>, and <strong>Framer Motion</strong>. Visit the Projects section to learn more.
+           , <strong>Tailwind CSS</strong>, and <strong>Framer Motion</strong>. Visit the Projects section below to learn more.
         </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Web Dev – Tech & Tools</h2>
         <p>
