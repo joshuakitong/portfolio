@@ -177,14 +177,14 @@ function AnimatedSection({ section }) {
       >
         {section.title}
       </motion.h2>
-      <motion.p
+      <motion.div
         className="text-gray-300 leading-relaxed"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 0.6 }}
       >
         {section.content}
-      </motion.p>
+      </motion.div>
     </motion.div>
   );
 }
