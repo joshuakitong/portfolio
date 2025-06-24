@@ -195,7 +195,7 @@ const sections = [
             </a>
           </div>
           <div className="space-y-6 flex justify-center">
-            <a href="https://www.instagram.com/box84official/" target="_blank" className="block w-fit px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition">
+            <a href="https://www.instagram.com/box84official/" target="_blank" className="block w-fit px-4 py-2 bg-pink-600 text-white rounded-md hover:bg-pink-700 transition">
               <strong>Instagram</strong>
             </a>
           </div>
