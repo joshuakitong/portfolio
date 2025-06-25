@@ -21,7 +21,7 @@ const sections = [
 
         </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Competitive Experience</h2>
-        <p className="mb-6">
+        <p>
           I’ve always had a competitive drive when it comes to gaming. Even though I wasn’t technically a pro in most of the games I played, I consistently ranked 
            high — often reaching leaderboards on most of the games I played.<br/><br/>
           
@@ -30,20 +30,14 @@ const sections = [
            the <strong>Top 500</strong> each season for about a year and joined tournaments whenever I could. During this time, I also formed a small team of scholars, 
            whom I <strong>coached</strong> and <strong>managed</strong> alongside other groups.<br/><br/>
           
+          (*work in progress: highest recorded rank screenshot goes here)<br/><br/>
+
           In addition, I had the opportunity to merge my passion for both music and gaming by collaborating with one of the top Axie players and coaches of all
            time, <a href="https://www.youtube.com/@ElijahMT8" target="_blank" className="text-blue-400 hover:underline visited:text-purple-400"><strong>Elijah MT8</strong> </a>
            (a.k.a. <a href="https://open.spotify.com/artist/6mvvyrOrdUglR4tX4Vl3lb" target="_blank" className="text-blue-400 hover:underline visited:text-purple-400"><strong>Elijah Flows</strong></a>
-           ). I produced and edited the music video 
-           for <a href="https://www.youtube.com/watch?v=Ey7eeE35gjU" target="_blank" className="text-blue-400 hover:underline visited:text-purple-400"><strong>Digital Nation</strong></a> as part of this collaboration.
-        </p>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">From Competitive Gamer to Content Creator</h2>
-        <p>
-          As the hype around NFT games began to fade, so did my competitive drive. Around the same time, Fortnite — a game I used to love — introduced a new mode called Zero Build. 
-           One of the main reasons I stopped playing previously was the building mechanics, so when this mode was released, I knew I’d enjoy jumping back in.<br/><br/>
-          
-          This marked the beginning of my transition from competitive gamer to <strong>content creator</strong>. I then became a <strong>Twitch streamer</strong> by 2022, primarily 
-           playing Fortnite and other shooter games. My focus shifted from competing to entertaining, having fun, and building genuine connections with my 
-           audience and fellow streamers.
+           ). I produced and edited the music video for Digital Nation as part of this collaboration:<br/><br/>
+           
+          (*work in progress: Digital Nation YouTube video goes here)
         </p>
       </>
     )
@@ -53,11 +47,20 @@ const sections = [
     title: "Twitch Streaming",
     content: (
       <>
+        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">From Competitive Gamer to Content Creator</h2>
+        <p className="mb-6">
+          As the hype around NFT games began to fade, so did my competitive drive. Around the same time, Fortnite — a game I used to love — introduced a new mode called Zero Build. 
+           One of the main reasons I stopped playing previously was the building mechanics, so when this mode was released, I knew I’d enjoy jumping back in.<br/><br/>
+          
+          This marked the beginning of my transition from competitive gamer to <strong>content creator</strong>. I then became a <strong>Twitch streamer</strong> by 2022, primarily 
+           playing Fortnite and other shooter games. My focus shifted from competing to entertaining, having fun, and building genuine connections with my 
+           audience and fellow streamers.
+        </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Streaming Journey</h2>
         <p className="mb-6">
           I knew from the start that becoming a Fortnite Twitch streamer for a Filipino audience would be a challenge — the game wasn’t as popular locally as 
            titles like Valorant or League of Legends. But I pursued it anyway, driven by my love for the game’s <strong>creative gameplay</strong>. Eventually, I managed 
-           to <strong>grow a healthy community</strong> and even <strong>influenced</strong> fellow streamers and gamers who hadn’t played it before to give it a try.<br/><br/>
+           to <strong>grow a healthy community</strong> and even <strong>influenced</strong> fellow gamers who hadn’t played it before to give it a try.<br/><br/>
 
           I built everything independently — from <strong>setting up OBS Studio</strong> and <strong>customizing stream assets</strong> to <strong>implementing bots </strong>
            and <strong>editing my own highlight reels</strong>. Over time, I grew a following of thousands, consistently streamed to hundreds of viewers per session, and hosted 
@@ -66,8 +69,8 @@ const sections = [
           Even after shifting from competitive gaming to content creation, I maintained top-tier performance — reaching the <strong>highest rank every season</strong> and becoming widely recognized in the Filipino 
            Fortnite community as the “<strong>Best Fortnite Player in the Philippines.</strong>”<br/><br/>
            
-          Throughout this journey, I strengthened essential skills like <strong>problem solving</strong>, <strong>critical thinking</strong>, <strong>adaptability</strong>
-           , <strong>creativity</strong>, and <strong>communication</strong> — all of which continue to serve me across different disciplines today.
+          Throughout this journey, I experienced significant personal growth and strengthened essential skills such as <strong>problem solving</strong>
+           , <strong>critical thinking</strong>, <strong>adaptability</strong>, <strong>creativity</strong>, and <strong>communication</strong> — all of which continue to serve me across different disciplines today.
         </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Stream Assets</h2>
         <p className="mb-6">
@@ -125,20 +128,20 @@ const sections = [
         <p>
           Feel free to follow and connect with me on social media:
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 mt-4 gap-1">
           <div className="space-y-6 flex justify-center">
             <a href="https://www.twitch.tv/kits2g" target="_blank" className="block w-fit px-4 py-2 bg-purple-700 text-white rounded-md hover:bg-purple-800 transition">
-              <strong>Twitch Channel</strong>
+              <strong>Twitch</strong>
             </a>
           </div>
           <div className="space-y-6 flex justify-center">
             <a href="https://www.tiktok.com/@kits2g_ttv" target="_blank" className="block w-fit px-4 py-2 bg-[#EE1D52] text-white rounded-md hover:bg-[#c91946] transition">
-              <strong>TikTok Page</strong>
+              <strong>TikTok</strong>
             </a>
           </div>
           <div className="space-y-6 flex justify-center">
-            <a href="https://discord.gg/J9td3cpeC9" target="_blank" className="block w-fit px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
-              <strong>Discord Server</strong>
+            <a href="https://discord.gg/J9td3cpeC9" target="_blank" className="block w-fit px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition">
+              <strong>Discord</strong>
             </a>
           </div>
           <div className="space-y-6 flex justify-center">

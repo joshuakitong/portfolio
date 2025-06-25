@@ -17,7 +17,7 @@ const sections = [
 
           Since then, I’ve taught myself to <strong>make beats</strong>, <strong>write and arrange songs</strong>, <strong>mix and master tracks</strong>
            , <strong>edit videos and graphics</strong> , <strong>release music on streaming platforms</strong>, <strong>manage artists and social media pages</strong>. 
-           To date, I’ve produced over a hundred tracks, generating hundreds of thousands of streams across platforms. I primarily use <strong>FL Studio</strong>
+           To date, I’ve produced over a hundred tracks, generating over a million total streams across various platforms. I primarily use <strong>FL Studio</strong>
            , <strong>Adobe Premiere Pro</strong>, and <strong>Photoshop</strong>—and you can find more about the tools I use for each part of the process in the sections below.
         </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Music Production Services</h2>
@@ -178,20 +178,20 @@ const sections = [
         <p>
           Feel free to check out and follow us on our social media pages:
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 mt-4 gap-1">
           <div className="space-y-6 flex justify-center">
             <a href="https://www.youtube.com/@BOX84" target="_blank" className="block w-fit px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition">
-              <strong>YouTube Channel</strong>
+              <strong>YouTube</strong>
             </a>
           </div>
           <div className="space-y-6 flex justify-center">
             <a href="https://open.spotify.com/playlist/2AAIvXFYyNZo12DHMJqMi5" target="_blank" className="block w-fit px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition">
-              <strong>Spotify Playlist</strong>
+              <strong>Spotify</strong>
             </a>
           </div>
           <div className="space-y-6 flex justify-center">
             <a href="https://www.facebook.com/box84official" target="_blank" className="block w-fit px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
-              <strong>Facebook Page</strong>
+              <strong>Facebook</strong>
             </a>
           </div>
           <div className="space-y-6 flex justify-center">

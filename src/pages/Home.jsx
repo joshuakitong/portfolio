@@ -36,7 +36,7 @@ const skills = [
        , <strong>release music across various platforms</strong>, and <strong>manage artists and social media pages</strong>. I primarily use <strong>FL Studio</strong>
        , <strong>Adobe Premiere Pro</strong>, and <strong>Photoshop</strong>.<br /><br />
 
-      Since then, I’ve produced over a hundred tracks, generating hundreds of thousands of streams across platforms.
+      Since then, I’ve produced over a hundred tracks, generating over a million total streams across various platforms.
     </>
     ),
     link: "/music",
@@ -69,7 +69,7 @@ const skills = [
        business, <strong>graphic designer</strong> for small organizations like GDG Baguio, <strong>transcriptionist</strong> for 
        Insight Asia, <strong>teacher</strong> and <strong>coach</strong> in both gaming and music, and a <strong>cryptocurrency trader</strong> too.<br/><br/>
 
-      Outside of work, I enjoy a wide range of hobbies—from reading book and watching shows to playing games—continually fueling my creativity and curiosity.
+      Outside of work, I enjoy a wide range of hobbies — from reading book and watching shows to playing games — continually fueling my creativity and curiosity.
     </>
     ),
     link: "/others",
