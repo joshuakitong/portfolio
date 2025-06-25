@@ -24,10 +24,10 @@ const sections = [
           The project I worked on involved collaboration with over 200 members across the U.S., India, and the Philippines. Our team followed 
            the <strong>Agile Scrum Methodology</strong> and used a full suite of Atlassian tools throughout the SDLC: <strong>Jira</strong> for task 
            management, <strong>Crucible</strong> for code reviews, <strong>Bitbucket (with Git)</strong> for version control, and <strong>Confluence</strong> for 
-           documentation. We also used <strong>npm</strong> for package management. Additionally, I gained experience facilitating daily standups and presenting during 
+           documentation. We also used <strong>npm</strong> for package management. I also gained experience facilitating daily standups and presenting during 
            sprint reviews.<br/><br/>
            
-          Lastly, during my college internship, I developed a computer laboratory system for my university’s M.I.S. department 
+          Additionally, during my college internship, I developed a computer laboratory system for my university’s M.I.S. department 
            using <strong>Visual Basic</strong> and <strong>MySQL</strong>.</p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Creative Shift & Dev Comeback</h2>
         <p className="mb-6">
