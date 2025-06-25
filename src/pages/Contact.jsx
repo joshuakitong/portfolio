@@ -9,7 +9,8 @@ const sections = [
       <>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">How to Reach Me</h2>
         <p className="mb-6">
-          (*work in progress: contact details goes here)
+          Email: joshuakitong@gmail.com<br/>
+          Phone: 0905-737-9500
         </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Resume</h2>
         <p>
@@ -23,22 +24,70 @@ const sections = [
     title: "Pages and Socials",
     content: (
       <>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Developer</h2>
-        <p className="mb-6">
-          (*work in progress: dev pages and socials goes here)
-        </p>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Music</h2>
-        <p className="mb-6">
-          (*work in progress: music pages and socials goes here)
-        </p>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Gaming</h2>
-        <p className="mb-6">
-          (*work in progress: gaming pages and socials goes here)
-        </p>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Yarn</h2>
-        <p>
-          (*work in progress: yarn pages and socials goes here)
-        </p>
+        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Web Dev</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 mt-4 gap-1 mb-6">
+          <div className="space-y-6 flex justify-center">
+            <a href="https://github.com/joshuakitong" target="_blank" className="block w-fit px-4 py-2 bg-gray-900 text-white rounded-md hover:bg-black transition">
+              <strong>GitHub</strong>
+            </a>
+          </div>
+          <div className="space-y-6 flex justify-center">
+            <a href="https://www.linkedin.com/in/joshua-christopher-kitong-65805a2a9" target="_blank" className="block w-fit px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
+              <strong>LinkedIn</strong>
+            </a>
+          </div>
+          <div className="space-y-6 flex justify-center">
+            <a href="/" className="block w-fit px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition">
+              <strong>Portfolio</strong>
+            </a>
+          </div>
+        </div>
+        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">BOX84</h2>
+        <div className="grid grid-cols-1 md:grid-cols-4 mt-4 gap-1 mb-6">
+          <div className="space-y-6 flex justify-center">
+            <a href="https://www.youtube.com/@BOX84" target="_blank" className="block w-fit px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition">
+              <strong>YouTube</strong>
+            </a>
+          </div>
+          <div className="space-y-6 flex justify-center">
+            <a href="https://open.spotify.com/playlist/2AAIvXFYyNZo12DHMJqMi5" target="_blank" className="block w-fit px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition">
+              <strong>Spotify</strong>
+            </a>
+          </div>
+          <div className="space-y-6 flex justify-center">
+            <a href="https://www.facebook.com/box84official" target="_blank" className="block w-fit px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
+              <strong>Facebook</strong>
+            </a>
+          </div>
+          <div className="space-y-6 flex justify-center">
+            <a href="https://www.instagram.com/box84official/" target="_blank" className="block w-fit px-4 py-2 bg-pink-600 text-white rounded-md hover:bg-pink-700 transition">
+              <strong>Instagram</strong>
+            </a>
+          </div>
+        </div>
+        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Kits2g</h2>
+        <div className="grid grid-cols-1 md:grid-cols-4 mt-4 gap-1">
+          <div className="space-y-6 flex justify-center">
+            <a href="https://www.twitch.tv/kits2g" target="_blank" className="block w-fit px-4 py-2 bg-purple-700 text-white rounded-md hover:bg-purple-800 transition">
+              <strong>Twitch</strong>
+            </a>
+          </div>
+          <div className="space-y-6 flex justify-center">
+            <a href="https://www.tiktok.com/@kits2g_ttv" target="_blank" className="block w-fit px-4 py-2 bg-[#EE1D52] text-white rounded-md hover:bg-[#c91946] transition">
+              <strong>TikTok</strong>
+            </a>
+          </div>
+          <div className="space-y-6 flex justify-center">
+            <a href="https://discord.gg/J9td3cpeC9" target="_blank" className="block w-fit px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition">
+              <strong>Discord</strong>
+            </a>
+          </div>
+          <div className="space-y-6 flex justify-center">
+            <a href="https://twitter.com/kits2g_ttv" target="_blank" className="block w-fit px-4 py-2 bg-gray-900 text-white rounded-md hover:bg-black transition">
+              <strong>X (Twitter)</strong>
+            </a>
+          </div>
+        </div>
       </>
     )
   },
@@ -86,7 +135,7 @@ function AnimatedSection({ section }) {
       initial={{ opacity: 0, y: 50 }}
       animate={controls}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="relative bg-[#222] border border-white/10 rounded-2xl p-8 w-11/12 max-w-lg mx-auto mb-8"
+      className="relative bg-[#222] border border-white/10 rounded-2xl p-8 w-11/12 max-w-xl mx-auto mb-8"
     >
       <motion.h2
         className="text-2xl font-bold mb-4 text-blue-400 text-center"
