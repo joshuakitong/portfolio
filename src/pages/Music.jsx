@@ -10,15 +10,18 @@ const sections = [
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Background</h2>
         <p className="mb-6">
           I started playing guitar at the age of six, with minimal formal lessons — most of what I learned was self-taught. Over time, I picked up other instruments too, 
-          including lead guitar, bass, drums, and keyboards. Throughout my school years, I stayed active in music, joining battle of the bands and talent shows.<br/><br/>
+           including lead guitar, bass, drums, and keyboards. Throughout my school years, I stayed active in music, joining battle of the bands and talent shows.<br/><br/>
 
           After graduating, however, I lost touch with music. It wasn’t until the pandemic in 2020 that I rediscovered my passion — around the time my brother and his friends 
-          started a record label and collective called BOX84. I joined the team and have been deeply involved as a music producer and manager ever since.<br/><br/>
+           started an independent record label and collective called BOX84. I joined the team and have been deeply involved as a <strong>music producer</strong> 
+           , <strong>manager</strong>, and <strong>co-owner</strong> ever since.<br/><br/>
 
           Since then, I’ve taught myself to <strong>make beats</strong>, <strong>write and arrange songs</strong>, <strong>mix and master tracks</strong>
            , <strong>edit videos and graphics</strong> , <strong>release music on streaming platforms</strong>, <strong>manage artists and social media pages</strong>. 
-           To date, I’ve produced over a hundred tracks, generating over a million total streams across various platforms. I primarily use <strong>FL Studio</strong>
-           , <strong>Adobe Premiere Pro</strong>, and <strong>Photoshop</strong>—and you can find more about the tools I use for each part of the process in the sections below.
+           To date, I’ve produced over a hundred tracks, generating over a million total streams across various platforms.<br/><br/>
+           
+          I primarily use <strong>FL Studio</strong>, <strong>Adobe Premiere Pro</strong>, and <strong>Photoshop</strong> — and you can find more about the tools I use for 
+           each part of the process in the sections below.
         </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Music Production Services</h2>
         <p>
@@ -54,7 +57,7 @@ const sections = [
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 mt-2">
           <div className="space-y-6">
-            <strong>DAWs/Recording Tools</strong>: FL Studio, Ableton Live, Adobe Audition, Audacity<br/>
+            <strong>DAWs</strong>: FL Studio, Ableton Live<br/>
             <strong>VSTs</strong>: Soundtoys, iZotope, Tokyo Dawn Records, MeldaProduction, Spectrasonics, Nexus, stock DAW VSTs and plugins
           </div>
           <div className="space-y-6">
@@ -72,11 +75,11 @@ const sections = [
       <>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Background</h2>
         <p className="mb-6">
-          My first experience with video editing was using Windows Movie Maker when I was younger, creating montages of family outings and skateboard clips my friends and I filmed. 
+          My first experience with video editing was using Windows Movie Maker when I was a kid, creating montages of family outings and skateboard clips my friends and I filmed. 
            Later in college, I learned how to use <strong>Adobe Premiere Pro</strong> and <strong>Sony Vegas Pro</strong>, editing school projects and gameplay videos.<br/><br/>
 
-          While video editing wasn't a passion on the same level as gaming or music, I discovered I had a natural knack for it. Over time, I honed my skills—especially as a 
-           video editor for our record label, where I <strong>created music videos</strong>, <strong>lyric videos</strong>, and <strong>visualizers</strong>.
+          While video editing wasn't a passion on the same level as gaming or music, I discovered I had a natural knack for it. Over time, I honed my skills as a 
+           video editor for our record label, where I <strong>edited music videos</strong>, <strong>lyric videos</strong>, and <strong>visualizers</strong>.
         </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Music Videos</h2>
         <p className="mb-6">
@@ -85,10 +88,6 @@ const sections = [
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Lyric Videos</h2>
         <p className="mb-6">
           (*work in progress: featured lyric videos goes here)
-        </p>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Visualizers</h2>
-        <p className="mb-6">
-          (*work in progress: featured visualizers goes here)
         </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
         <p>
@@ -106,9 +105,9 @@ const sections = [
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Background</h2>
         <p className="mb-6">
           I was first introduced to this field at a young age, watching my dad and cousin record vocals for jingles and song covers using Cool Edit Pro (now Adobe Audition). 
-           Later on, I got hands-on experience working as a sound technician for our family’s sound system business during summer campaign seasons.<br/><br/>
+           I then got hands-on experience working as a sound technician for our family’s sound system business during summer campaign seasons.<br/><br/>
            
-          It wasn’t something I focused on deeply at the time, but I eventually revisited and developed the skill as a sound engineer for BOX84—where I taught myself everything 
+          It wasn’t something I focused on deeply at the time, but I eventually revisited and developed the skill as a sound engineer for BOX84 — where I taught myself everything 
            from <strong>recording</strong> to <strong>mixing</strong> and <strong>mastering</strong>, primarily using <strong>FL Studio</strong> and <strong>eMastered</strong>.
         </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Before & After Mix & Master Samples</h2>
@@ -121,7 +120,7 @@ const sections = [
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 mt-2">
           <div className="space-y-6">
-            <strong>DAWs</strong>: FL Studio, Ableton Live, Reaper<br/>
+            <strong>DAWs/Recording Tools</strong>: FL Studio, Ableton Live, Adobe Audition, Audacity<br/>
             <strong>AI Tools & Web Apps</strong>: eMastered, ChatGPT, Loudness Penalty, Youlean
           </div>
           <div className="space-y-6">
@@ -220,7 +219,7 @@ export default function MusicPage() {
     <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -30 }} transition={{ duration: 0.5 }} style={{ paddingBottom: '1rem' }} className="bg-texture min-h-screen">
       <div className="py-12 text-center">
         <h1 className="text-4xl font-bold text-blue-500">Music Production</h1>
-        <p className="text-gray-400 mt-2">Explore my passion for music and my music production background.</p>
+        <p className="text-gray-400 mt-2">Explore my passion for music and my music production journey.</p>
       </div>
 
       {sections.map((section) => (

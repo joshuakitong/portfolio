@@ -27,13 +27,13 @@ const sections = [
            documentation. We also used <strong>npm</strong> for package management. I also gained experience facilitating daily standups and presenting during 
            sprint reviews.<br/><br/>
            
-          Additionally, during my college internship, I developed a computer laboratory system for my university’s M.I.S. department 
+          Additionally, during my college internship, I developed a Computer Laboratory System for my university’s M.I.S. department 
            using <strong>Visual Basic</strong> and <strong>MySQL</strong>.</p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Creative Shift & Dev Comeback</h2>
         <p className="mb-6">
-          In September 2021, I took the opportunity to pursue my creative projects full-time. While I stepped away from coding, I continued to sharpen related skills 
-           like <strong>problem-solving</strong> and <strong>critical thinking</strong> through music production, streaming, content creation, and more recently, 
-           analyzing patterns in cryptoccurency trading.<br/><br/>
+          In September 2021, I took the opportunity to pursue my creative careers full-time. While I stepped away from coding, I continued to sharpen related skills 
+           like <strong>problem-solving</strong>, <strong>critical thinking</strong>, and <strong>communication</strong> through music production, streaming, content 
+           creation, and more recently, <strong>pattern recognition</strong> in cryptoccurency trading.<br/><br/>
 
           In June 2025, I decided to shift my focus back to development. I’ve been rebuilding my coding foundation and catching up on modern technologies — 
            mainly <strong>React</strong>, <strong>Angular</strong>, and <strong>Python</strong> — through interactive platforms like freeCodeCamp, solving challenges on 
@@ -48,7 +48,7 @@ const sections = [
           <div className="space-y-6">
             <strong>Languages</strong>: HTML5 / CSS3, JavaScript, TypeScript, C#, Java, VB, Python<br/>
             <strong>Frameworks & Libraries</strong>: React, AngularJS, Angular, ASP.NET, Flask, Kendo UI, Tailwind CSS, Framer Motion<br/>
-            <strong>Tools & Platforms</strong>: Git & Bitbucket, npm, Visual Studio Code
+            <strong>Tools & Platforms</strong>: Git, Bitbucket, npm, Visual Studio Code
           </div>
           <div className="space-y-6">
             <strong>Project Management</strong>: Jira, Confluence, Crucible<br/>
@@ -67,7 +67,7 @@ const sections = [
       <>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Apps & Websites</h2>
         <p>
-          Here’s a list of projects I’ve worked on since June 2025 <i>(sorted from latest to oldest)</i>:<br/>
+          Here’s a list of personal projects I’ve worked on since June 2025 <i>(sorted from latest to oldest)</i>:<br/>
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 mt-2">
           <div>
@@ -112,12 +112,13 @@ const sections = [
               <strong>Croched by Carisse</strong>
             </a><br/>
             <p className="ml-4 mr-4">
-              My first website since returning to development: A responsive, static product landing page for Crocheted by Carisse, built with HTML, CSS, and minimal JavaScript.
+              My first website since returning to development: A responsive, static product landing page for Crocheted by Carisse, built with <strong>HTML</strong>
+               , <strong>CSS</strong>, and minimal <strong>JavaScript</strong>.
             </p>
           </div>
         </div>
         <p className="mt-2">
-          You can also visit my <a href="https://github.com/joshuakitong" target="_blank" className="text-blue-400 hover:underline visited:text-purple-400">GitHub</a> to 
+          You can also visit my <a href="https://github.com/joshuakitong" target="_blank" className="text-blue-400 hover:underline visited:text-purple-400"><strong>GitHub</strong></a> to 
           view source code and stay updated on future projects.
         </p>
       </>

@@ -17,7 +17,7 @@ const skills = [
        using <strong>ASP.NET (C#)</strong>, <strong>AngularJS</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>Kendo UI</strong>. I also trained 
        in <strong>Angular</strong> and gained some back-end experience with <strong>PL/SQL</strong>.<br /><br />
 
-      In 2021, I shifted to pursuing creative projects full-time and paused my developer career. In mid-2025, I decided to return to development and have been catching up 
+      In 2021, I shifted to pursuing my creative careers full-time and paused my developer career. In mid-2025, I decided to return to development and have been catching up 
        on newer technologies — mainly <strong>React</strong>, <strong>Angular</strong>, and <strong>Python</strong> — through hands-on projects.
     </>
     ),
@@ -50,11 +50,11 @@ const skills = [
       I’ve been a gamer for as long as I can remember — it’s something I’ve always loved and dreamt of turning into a career. It’s also where I first began developing 
        my <strong>problem-solving</strong> and <strong>critical thinking skills</strong>.<br /><br />
 
-      In 2021, when NFT gaming surged during the altcoin season, I didn’t hesitate. I pursued my creative career full-time, became 
+      In 2021, when NFT gaming surged during the altcoin season, I didn’t hesitate. I pursued my creative careers full-time, became 
        a <strong>competitive Axie Infinity player</strong>, and a <strong>coach</strong> and <strong>manager</strong> to a few scholars.<br /><br />
 
       A year later, as the NFT hype faded, I transitioned into being a <strong>Twitch streamer</strong> and <strong>content creator</strong> as Kits2g. I built a following 
-       of thousands, streamed to hundreds per session, and regularly hosted community events, giveaways, and marathon streams.
+       of thousands, consistently streamed to hundreds per session, and regularly hosted community events, marathon streams, and giveaways.
     </>
     ),
     link: "/gaming",

@@ -10,7 +10,7 @@ const sections = [
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Gaming Background</h2>
         <p className="mb-6">
           I’ve always loved playing games growing up — from board and card games to physical sports. But it’s in video games and esports where I’ve found the most excitement and 
-           developed the strongest skill. It’s also where my <strong>problem-solving</strong> and <strong>critical thinking</strong> were honed the most.<br/><br/>
+           honed the strongest skill. It’s also where my <strong>problem-solving</strong> and <strong>critical thinking</strong> were developed the most.<br/><br/>
 
           As a kid, I played a variety of RPGs, simulation, and puzzle games. During my elementary years, I started getting into PvP games, though back then it was 
            all just for fun. It wasn’t until early college that I realized how good I actually was — local indie esports teams started reaching out, and I began competing in 
@@ -25,7 +25,7 @@ const sections = [
           I’ve always had a competitive drive when it comes to gaming. Even though I wasn’t technically a pro in most of the games I played, I consistently ranked 
            high — often reaching leaderboards on most of the games I played.<br/><br/>
           
-          I began seriously considering a professional gaming career during my first month of playing Axie Infinity. Even with just an average team composition, I managed 
+          I began seriously considering a professional gaming career during my first weeks of playing Axie Infinity. Even with just an average team composition, I managed 
            to break into the Top 5000, which motivated me to invest in stronger assets and fully commit to the game. From that point on, I consistently placed within 
            the <strong>Top 500</strong> each season for about a year and joined tournaments whenever I could. During this time, I also formed a small team of scholars, 
            whom I <strong>coached</strong> and <strong>managed</strong> alongside other groups.<br/><br/>
@@ -67,10 +67,22 @@ const sections = [
            dozens of marathon streams, community events, and giveaways.<br/><br/>
            
           Even after shifting from competitive gaming to content creation, I maintained top-tier performance — reaching the <strong>highest rank every season</strong> and becoming widely recognized in the Filipino 
-           Fortnite community as the “<strong>Best Fortnite Player in the Philippines.</strong>”<br/><br/>
+           Fortnite community as the “<strong>Best Fortnite Player in the Philippines</strong>”.<br/><br/>
            
           Throughout this journey, I experienced significant personal growth and strengthened essential skills such as <strong>problem solving</strong>
            , <strong>critical thinking</strong>, <strong>adaptability</strong>, <strong>creativity</strong>, and <strong>communication</strong> — all of which continue to serve me across different disciplines today.
+        </p>
+        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured TikTok Edits</h2>
+        <p className="mb-6">
+          (*work in progress: featured tiktok edits goes here)
+        </p>
+        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Twitch Clips</h2>
+        <p className="mb-6">
+          (*work in progress: featured twitch clips goes here)
+        </p>
+        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Twitch Trailer</h2>
+        <p className="mb-6">
+          (*work in progress: twitch trailer goes here)
         </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Stream Assets</h2>
         <p className="mb-6">
@@ -90,26 +102,6 @@ const sections = [
             <strong>Content Creation & Editing</strong>: Adobe Premiere Pro, Adobe Photoshop<br/>
           </div>
         </div>
-      </>
-    )
-  },
-  {
-    id: "clips-and-highlights",
-    title: "Clips & Highlights",
-    content: (
-      <>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured TikTok Edits</h2>
-        <p className="mb-6">
-          (*work in progress: featured tiktok edits goes here)
-        </p>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Twitch Clips</h2>
-        <p className="mb-6">
-          (*work in progress: featured twitch clips goes here)
-        </p>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Twitch Trailer</h2>
-        <p>
-          (*work in progress: twitch trailer goes here)
-        </p>
       </>
     )
   },
