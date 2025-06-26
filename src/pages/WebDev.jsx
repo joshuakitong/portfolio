@@ -24,8 +24,8 @@ const sections = [
           The project I worked on involved collaboration with over 200 members across the U.S., India, and the Philippines. Our team followed 
            the <strong>Agile Scrum Methodology</strong> and used a full suite of Atlassian tools throughout the SDLC: <strong>Jira</strong> for task 
            management, <strong>Crucible</strong> for code reviews, <strong>Bitbucket (with Git)</strong> for version control, and <strong>Confluence</strong> for 
-           documentation. We also used <strong>npm</strong> for package management. I also gained experience facilitating daily standups and presenting during 
-           sprint reviews.<br/><br/>
+           documentation. We also used <strong>npm</strong> for package management. I also trained newly hired front-end developers, led code reviews for the Philippine team, 
+           and gained experience facilitating daily standups and presenting during sprint reviews.<br/><br/>
            
           Additionally, during my college internship, I developed a Computer Laboratory System for my university’s M.I.S. department 
            using <strong>Visual Basic</strong> and <strong>MySQL</strong>.</p>
