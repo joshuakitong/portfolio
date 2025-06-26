@@ -35,10 +35,10 @@ const sections = [
            like <strong>problem-solving</strong>, <strong>critical thinking</strong>, and <strong>communication</strong> through music production, streaming, content 
            creation, and more recently, <strong>pattern recognition</strong> in cryptoccurency trading.<br/><br/>
 
-          In June 2025, I decided to shift my focus back to development. I’ve been rebuilding my coding foundation and catching up on modern technologies — 
-           mainly <strong>React</strong>, <strong>Angular</strong>, and <strong>Python</strong> — through interactive platforms like freeCodeCamp, solving challenges on 
-           LeetCode, leveraging AI tools, and building hands-on projects. This portfolio is one of those projects, built with <strong>React</strong>
-           , <strong>Tailwind CSS</strong>, and <strong>Framer Motion</strong>. Scroll down to the Projects section below to learn more.
+          In June 2025, I decided to take a hiatus from my gaming career and step down from my managerial role in music to shift my focus back to development. I’ve been rebuilding 
+           my coding foundation and catching up on modern technologies — mainly <strong>React</strong>, <strong>Angular</strong>, and <strong>Python</strong> — through interactive 
+           platforms like freeCodeCamp, solving challenges on LeetCode, leveraging AI tools, and building hands-on projects. This portfolio is one of those projects, built 
+           with <strong>React</strong>, <strong>Tailwind CSS</strong>, and <strong>Framer Motion</strong>. Scroll down to the Projects section below to learn more.
         </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
         <p>
