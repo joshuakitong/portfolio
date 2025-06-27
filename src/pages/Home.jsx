@@ -81,7 +81,7 @@ export default function HomePage() {
   const { scrollY } = useScroll();
   const introScale = useTransform(scrollY, [0, 500], [1, 0.8]);
   const introOpacity = useTransform(scrollY, [0, 500], [1, 0]);
-  const iconOpacity = useTransform(scrollY, [0, 250], [1, 0]);
+  const iconOpacity = useTransform(scrollY, [0, 150], [1, 0]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
