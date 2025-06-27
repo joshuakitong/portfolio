@@ -1,5 +1,9 @@
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useRef, useEffect } from "react";
+import YoutubeCarousel from '../components/YoutubeCarousel'
+
+const musicVideoIds = ['G0okBMMk4jU', 'vF6hub6jKl8', 'h7dbqvFbySA', 'yl9oyMt218g', 'QlkDan679Nc', '7cw69wj9SCo'];
+const lyricVideoIds = ['d47RWJJgcc4?start=10&', '54Wx18U38Rg?start=10&', 'zJvjXfVxSBc?start=10&', '1yLmYB3b_1E', 'FGUbe-jqxRo', 'OMTKFErpn5c'];
 
 const sections = [
   {
@@ -82,13 +86,9 @@ const sections = [
            video editor for our record label, where I <strong>edited music videos</strong>, <strong>lyric videos</strong>, and <strong>visualizers</strong>.
         </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Music Videos</h2>
-        <p className="mb-6">
-          (*work in progress: featured music videos goes here)
-        </p>
+        <YoutubeCarousel ids={musicVideoIds} />
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Lyric Videos</h2>
-        <p className="mb-6">
-          (*work in progress: featured lyric videos goes here)
-        </p>
+        <YoutubeCarousel ids={lyricVideoIds} />
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
         <p>
           These are the apps I have experience with in video editing:<br/>
