@@ -72,8 +72,8 @@ const sections = [
         <div className="grid grid-cols-1 md:grid-cols-2 mt-2">
           <div>
             <a href="https://joshuakitong.github.io/habit-tracker-app" target="_blank" className="text-blue-400 hover:underline visited:text-purple-400">
-              <strong>Habit Tracker App</strong> <i className="text-xs text-gray-400">(work in progress)</i>
-            </a><br/>
+              <strong>Habit Tracker App</strong>
+            </a><i className="text-xs text-gray-400"> (work in progress)</i><br/>
             <p className="ml-4 mr-4">
               A habit tracker app built with <strong>React</strong>, <strong>Vite</strong>, <strong>Tailwind CSS</strong>, and <strong>Firebase</strong>. It features 
                complete CRUD functionality, allowing users to track their habit progress with data stored and synced in real time via Firebase.
