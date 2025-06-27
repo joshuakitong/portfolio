@@ -1,9 +1,11 @@
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useRef, useEffect } from "react";
 import YoutubeCarousel from '../components/YoutubeCarousel'
+import SpotifyCarousel from '../components/SpotifyCarousel'
 
+const spotifyTrackIds = ['2KzsoukDO8x0ysUWpMbRjA', '2lupzTKwSvsAFNlMfcgw7F', '7tkzOTQVundq3UpgQJie19', '2rlaH2B1gWeNwJo7CrygXp', '27r8BrTAgTjq9J2Mr4kxkv', '4VdmtcT6DVJZxAkx3rk0Aa']
 const musicVideoIds = ['G0okBMMk4jU', 'vF6hub6jKl8', 'h7dbqvFbySA', 'yl9oyMt218g', 'QlkDan679Nc', '7cw69wj9SCo'];
-const lyricVideoIds = ['d47RWJJgcc4?start=10&', '54Wx18U38Rg?start=10&', 'zJvjXfVxSBc?start=10&', '1yLmYB3b_1E', 'FGUbe-jqxRo', 'OMTKFErpn5c'];
+const lyricVideoIds = ['d47RWJJgcc4?start=10&', '54Wx18U38Rg?start=10&', 'zJvjXfVxSBc?start=10&', 'FGUbe-jqxRo', 'OMTKFErpn5c', '1yLmYB3b_1E'];
 
 const sections = [
   {
@@ -48,9 +50,7 @@ const sections = [
           </div>
         </div>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Songs</h2>
-        <p className="mb-6">
-          (*work in progress: featured songs goes here)
-        </p>
+        <SpotifyCarousel ids={spotifyTrackIds} />
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Sample Beats</h2>
         <p className="mb-6">
           (*work in progress: sample beats goes here)
