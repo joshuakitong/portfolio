@@ -71,6 +71,13 @@ const sections = [
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 mt-2">
           <div>
+            <a href="https://joshuakitong.github.io/habit-tracker-app" target="_blank" className="text-blue-400 hover:underline visited:text-purple-400">
+              <strong>Habit Tracker App</strong> <i className="text-xs text-gray-400">(work in progress)</i>
+            </a><br/>
+            <p className="ml-4 mr-4">
+              A habit tracker app built with <strong>React</strong>, <strong>Vite</strong>, <strong>Tailwind CSS</strong>, and <strong>Firebase</strong>. It features 
+               complete CRUD functionality, allowing users to track their habit progress with data stored and synced in real time via Firebase.
+            </p>
             <a href="https://joshuakitong.github.io/angular-to-do-app" target="_blank" className="text-blue-400 hover:underline visited:text-purple-400">
               <strong>To-do App</strong>
             </a><br/>
@@ -84,6 +91,8 @@ const sections = [
             <p className="ml-4 mr-4">
               A piano app built with <strong>React</strong> and <strong>Vite</strong>, featuring a virtual keyboard with computer keyboard input and a simple control panel.
             </p>
+          </div>
+          <div>
             <a href="https://joshuakitong.github.io/portfolio" target="_blank" className="text-blue-400 hover:underline visited:text-purple-400">
               <strong>My Portfolio</strong>
             </a><br/>
@@ -91,8 +100,6 @@ const sections = [
               A responsive, single-page portfolio built with <strong>React</strong>, <strong>Tailwind CSS</strong>, and <strong>Framer Motion</strong>, 
                showcasing my diverse background and skills across technical and creative fields.
             </p>
-          </div>
-          <div>
             <a href="https://flask-weather-app-k7b3.onrender.com" target="_blank" className="text-blue-400 hover:underline visited:text-purple-400">
               <strong>Weather App</strong>
             </a><br/>
