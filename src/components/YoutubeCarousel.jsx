@@ -20,12 +20,12 @@ export default function YoutubeCarousel({ ids = [] }) {
         <button
           onClick={handlePrev}
           aria-label="Previous"
-          className="text-blue-500 hover:text-blue-600 transition"
+          className="text-red-600 hover:text-red-700 transition"
         >
           <ChevronLeft size={30} />
         </button>
 
-        <div className="relative w-[48rem] aspect-video overflow-hidden">
+        <div className="relative w-[42rem] aspect-video overflow-hidden">
           <iframe
             className="w-full h-full"
             src={`https://www.youtube.com/embed/${ids[currentIndex]}?enablejsapi=1`}
@@ -39,7 +39,7 @@ export default function YoutubeCarousel({ ids = [] }) {
         <button
           onClick={handleNext}
           aria-label="Next"
-          className="text-blue-500 hover:text-blue-600 transition"
+          className="text-red-600 hover:text-red-700 transition"
         >
           <ChevronRight size={30} />
         </button>
@@ -53,7 +53,7 @@ export default function YoutubeCarousel({ ids = [] }) {
             aria-label={`Go to slide ${i + 1}`}
             className={`w-2 h-2 rounded-full transition duration-200 ${
               i === currentIndex
-                ? 'bg-blue-500 scale-125'
+                ? 'bg-red-600 scale-125'
                 : 'bg-white/30 hover:bg-white/50'
             }`}
           />
