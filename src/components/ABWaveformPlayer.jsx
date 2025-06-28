@@ -129,8 +129,8 @@ export default function ABWaveformPlayer({ title, beforeUrl, afterUrl }) {
         <div ref={afterWaveformRef} className={`${mode === 'after' ? 'block' : 'hidden'} cursor-pointer`} />
       </div>
 
-      <div className="flex sm:items-center sm:justify-center sm:gap-4 gap-2 flex-wrap">
-        <div className="flex justify-center gap-2 sm:gap-4 flex-grow sm:flex-grow-0">
+      <div className="flex sm:items-center sm:justify-center sm:gap-4 gap-2">
+        <div className="flex justify-center gap-2 sm:gap-4">
           <button
             onClick={togglePlay}
             className="bg-blue-500 text-white text-sm sm:text-base px-3 sm:px-4 sm:py-2 rounded hover:bg-blue-600 h-10 transition flex items-center justify-center"
@@ -145,7 +145,7 @@ export default function ABWaveformPlayer({ title, beforeUrl, afterUrl }) {
             Swap A/B
           </button>
         </div>
-        <div className="flex justify-center items-center gap-3 bg-gray-700 px-3 py-2 rounded h-10 flex-grow sm:flex-grow-0">
+        <div className="flex justify-center items-center gap-3 bg-gray-700 px-3 py-2 rounded h-10 sm:flex-grow-0">
           <button
             onClick={() => setIsMuted((prev) => !prev)}
             className="text-gray-300 hover:text-white transition"
@@ -157,7 +157,7 @@ export default function ABWaveformPlayer({ title, beforeUrl, afterUrl }) {
             )}
           </button>
 
-          <div className="relative w-24 group">
+          <div className="relative w-20 group">
             <Slider.Root
               className="relative flex items-center select-none touch-none w-full h-5 cursor-pointer transition"
               defaultValue={[volume]}
