@@ -1,11 +1,43 @@
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useRef, useEffect } from "react";
-import YoutubeCarousel from '../components/YoutubeCarousel'
-import SpotifyCarousel from '../components/SpotifyCarousel'
+import Carousel from '../components/Carousel'
+import MotionImageCarousel from '../components/MotionImageCarousel'
 
-const spotifyTrackIds = ['2KzsoukDO8x0ysUWpMbRjA', '2lupzTKwSvsAFNlMfcgw7F', '7tkzOTQVundq3UpgQJie19', '2rlaH2B1gWeNwJo7CrygXp', '27r8BrTAgTjq9J2Mr4kxkv', '4VdmtcT6DVJZxAkx3rk0Aa']
+const spotifyTrackIds = ['2KzsoukDO8x0ysUWpMbRjA', '2lupzTKwSvsAFNlMfcgw7F', '7tkzOTQVundq3UpgQJie19', '2rlaH2B1gWeNwJo7CrygXp', '27r8BrTAgTjq9J2Mr4kxkv', '4VdmtcT6DVJZxAkx3rk0Aa'];
 const musicVideoIds = ['G0okBMMk4jU', 'vF6hub6jKl8', 'h7dbqvFbySA', 'yl9oyMt218g', 'QlkDan679Nc', '7cw69wj9SCo'];
 const lyricVideoIds = ['d47RWJJgcc4?start=10&', '54Wx18U38Rg?start=10&', 'zJvjXfVxSBc?start=10&', 'FGUbe-jqxRo', 'OMTKFErpn5c', '1yLmYB3b_1E'];
+const abTracks = [
+  ['Past 3', `${process.env.PUBLIC_URL}/mix-and-master/Track2A.mp3`, `${process.env.PUBLIC_URL}/mix-and-master/Track2B.mp3`],
+  ['Closed Quarters', `${process.env.PUBLIC_URL}/mix-and-master/Track1A.mp3`, `${process.env.PUBLIC_URL}/mix-and-master/Track1B.mp3`],
+  ['Got U', `${process.env.PUBLIC_URL}/mix-and-master/Track6A.mp3`, `${process.env.PUBLIC_URL}/mix-and-master/Track6B.mp3`],
+  ['Outlook Drive', `${process.env.PUBLIC_URL}/mix-and-master/Track5A.mp3`, `${process.env.PUBLIC_URL}/mix-and-master/Track5B.mp3`],
+  ['Goat', `${process.env.PUBLIC_URL}/mix-and-master/Track4A.mp3`, `${process.env.PUBLIC_URL}/mix-and-master/Track4B.mp3`],
+  ['Greater Heights', `${process.env.PUBLIC_URL}/mix-and-master/Track3A.mp3`, `${process.env.PUBLIC_URL}/mix-and-master/Track3B.mp3`],
+];
+const sampleBeats = [
+  ['Sample Beat 1 (Sa***.mp3)', `${process.env.PUBLIC_URL}/sample-beats/Beat1.mp3`],
+  ['Sample Beat 2 (Ma***.mp3)', `${process.env.PUBLIC_URL}/sample-beats/Beat2.mp3`],
+  ['Sample Beat 3 (Bo***.mp3)', `${process.env.PUBLIC_URL}/sample-beats/Beat3.mp3`],
+  ['Sample Beat 4 (Na***.mp3)', `${process.env.PUBLIC_URL}/sample-beats/Beat4.mp3`],
+  ['Sample Beat 5 (Ch***.mp3)', `${process.env.PUBLIC_URL}/sample-beats/Beat5.mp3`],
+  ['Sample Beat 6 (7 ***.mp3)', `${process.env.PUBLIC_URL}/sample-beats/Beat6.mp3`],
+  ['Sample Beat 7 (Tr***.mp3)', `${process.env.PUBLIC_URL}/sample-beats/Beat7.mp3`],
+  ['Sample Beat 8 (Ni***.mp3)', `${process.env.PUBLIC_URL}/sample-beats/Beat8.mp3`],
+  ['Sample Beat 9 (To***.mp3)', `${process.env.PUBLIC_URL}/sample-beats/Beat9.mp3`],
+  ['Sample Beat 10 (Sa***.mp3)', `${process.env.PUBLIC_URL}/sample-beats/Beat10.mp3`],
+];
+const coverArts = [
+  `${process.env.PUBLIC_URL}/cover-arts/CA1.jpg`,
+  `${process.env.PUBLIC_URL}/cover-arts/CA2.jpg`,
+  `${process.env.PUBLIC_URL}/cover-arts/CA3.jpg`,
+  `${process.env.PUBLIC_URL}/cover-arts/CA4.jpg`,
+  `${process.env.PUBLIC_URL}/cover-arts/CA5.jpg`,
+  `${process.env.PUBLIC_URL}/cover-arts/CA6.jpg`,
+  `${process.env.PUBLIC_URL}/cover-arts/CA7.jpg`,
+  `${process.env.PUBLIC_URL}/cover-arts/CA8.jpg`,
+  `${process.env.PUBLIC_URL}/cover-arts/CA9.jpg`,
+  `${process.env.PUBLIC_URL}/cover-arts/CA10.jpg`,
+];
 
 const sections = [
   {
@@ -50,11 +82,15 @@ const sections = [
           </div>
         </div>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Songs</h2>
-        <SpotifyCarousel ids={spotifyTrackIds} />
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Sample Beats</h2>
-        <p className="mb-6">
-          (*work in progress: sample beats goes here)
-        </p>
+        <Carousel
+          type="spotify"
+          items={spotifyTrackIds}
+        />
+        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Sample Beats</h2>
+        <Carousel
+          type="waveform"
+          items={sampleBeats}
+        />
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
         <p>
           These are the apps and tools I have experience with in music production:<br/>
@@ -86,9 +122,15 @@ const sections = [
            video editor for our record label, where I <strong>edited music videos</strong>, <strong>lyric videos</strong>, and <strong>visualizers</strong>.
         </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Music Videos</h2>
-        <YoutubeCarousel ids={musicVideoIds} />
+        <Carousel
+          type="youtube"
+          items={musicVideoIds}
+        />
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Lyric Videos</h2>
-        <YoutubeCarousel ids={lyricVideoIds} />
+        <Carousel
+          type="youtube"
+          items={lyricVideoIds}
+        />
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
         <p>
           These are the apps I have experience with in video editing:<br/>
@@ -110,10 +152,11 @@ const sections = [
           It wasn’t something I focused on deeply at the time, but I eventually revisited and developed the skill as a sound engineer for BOX84 — where I taught myself everything 
            from <strong>recording</strong> to <strong>mixing</strong> and <strong>mastering</strong>, primarily using <strong>FL Studio</strong> and <strong>eMastered</strong>.
         </p>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Before & After Mix & Master Samples</h2>
-        <p className="mb-6">
-          (*work in progress: before and after mix and master samples goes here)
-        </p>
+        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Before & After Mix/Master</h2>
+        <Carousel
+          type="abwaveform"
+          items={abTracks}
+        />
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
         <p>
           These are the apps and tools I have experience with in sound engineering:<br/>
@@ -141,12 +184,14 @@ const sections = [
            high school. I then continued learning more advanced techniques in college.<br/><br/>
           
           Although graphic design wasn’t my primary focus, I enjoyed it and knew it would be a useful skill down the line. I eventually got back into it as a graphic designer 
-          for our record label, where I <strong>created cover art</strong>, <strong>logos</strong>, and <strong>social media assets</strong>.
+          for our record label, where I <strong>created cover arts</strong>, <strong>logos</strong>, and <strong>social media assets</strong>.
         </p>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Cover Art</h2>
-        <p className="mb-6">
-          (*work in progress: featured cover art goes here)
-        </p>
+        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Cover Arts</h2>
+        <MotionImageCarousel
+          images={coverArts}
+          height="h-48"
+          gap="gap-6"
+        />
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
         <p>
           These are the apps I have experience with in graphic design:<br/>
@@ -246,7 +291,7 @@ function AnimatedSection({ section }) {
       initial={{ opacity: 0, y: 50 }}
       animate={controls}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="relative bg-[#222] border border-white/10 rounded-2xl p-8 w-11/12 max-w-6xl mx-auto mb-8"
+      className="relative bg-[#222] border border-white/10 rounded-2xl p-4 lg:p-8 w-11/12 max-w-6xl mx-auto mb-8"
     >
       <motion.h2
         className="text-2xl font-bold mb-4 text-blue-400 text-center"
