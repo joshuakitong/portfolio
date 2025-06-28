@@ -99,7 +99,7 @@ export default function WaveformPlayer({ title, url }) {
             )}
           </button>
 
-          <div className="relative w-24 group">
+          <div className="relative w-20 group">
             <Slider.Root
               className="relative flex items-center select-none touch-none w-full h-5 cursor-pointer transition"
               defaultValue={[volume]}
