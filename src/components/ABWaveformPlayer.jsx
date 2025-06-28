@@ -125,8 +125,8 @@ export default function ABWaveformPlayer({ title, beforeUrl, afterUrl }) {
       </div>
 
       <div className="mb-4">
-        <div ref={beforeWaveformRef} className={mode === 'before' ? 'block' : 'hidden'} />
-        <div ref={afterWaveformRef} className={mode === 'after' ? 'block' : 'hidden'} />
+        <div ref={beforeWaveformRef} className={`${mode === 'before' ? 'block' : 'hidden'} cursor-pointer`} />
+        <div ref={afterWaveformRef} className={`${mode === 'after' ? 'block' : 'hidden'} cursor-pointer`} />
       </div>
 
       <div className="flex sm:items-center sm:justify-center sm:gap-4 gap-2 flex-wrap">
