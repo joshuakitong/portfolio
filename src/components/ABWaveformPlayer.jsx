@@ -3,7 +3,7 @@ import WaveSurfer from 'wavesurfer.js'
 import * as Slider from '@radix-ui/react-slider';
 import { Play, Pause, VolumeX, Volume2 } from 'lucide-react'
 
-export default function ABWaveformPlayer({ beforeUrl, afterUrl }) {
+export default function ABWaveformPlayer({ title, beforeUrl, afterUrl }) {
   const [mode, setMode] = useState('before')
   const [isPlaying, setIsPlaying] = useState(false)
   const [volume, setVolume] = useState(1)
@@ -113,7 +113,7 @@ export default function ABWaveformPlayer({ beforeUrl, afterUrl }) {
   return (
     <div className="w-full max-w-2xl mx-auto p-4 bg-[#222] rounded-lg text-white">
       <div className="text-center mb-2">
-        <strong>{mode === 'before' ? 'Before Mix/Master' : 'After Mix/Master'}</strong>
+        <strong>{mode === 'before' ? 'Before Mix/Master' : 'After Mix/Master'} ({title})</strong>
       </div>
 
       <div className="mb-4">

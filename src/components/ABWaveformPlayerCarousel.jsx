@@ -21,22 +21,23 @@ export default function ABWaveformPlayerCarousel({ pairs = [] }) {
         <button
           onClick={handlePrev}
           aria-label="Previous"
-          className="text-blue-500 hover:text-blue-600 transition mb-12"
+          className="text-blue-500 hover:text-blue-600 transition mb-6"
         >
           <ChevronLeft size={30} />
         </button>
 
         <div className="w-full max-w-2xl">
           <ABWaveformPlayer
-            beforeUrl={pairs[currentIndex][0]}
-            afterUrl={pairs[currentIndex][1]}
+            title={pairs[currentIndex][0]}
+            beforeUrl={pairs[currentIndex][1]}
+            afterUrl={pairs[currentIndex][2]}
           />
         </div>
 
         <button
           onClick={handleNext}
           aria-label="Next"
-          className="text-blue-500 hover:text-blue-600 transition mb-12"
+          className="text-blue-500 hover:text-blue-600 transition mb-6"
         >
           <ChevronRight size={30} />
         </button>
