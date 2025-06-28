@@ -26,15 +26,20 @@ export default function Carousel({ type, items = [] }) {
 
       case 'spotify':
         return (
-          <div className="relative w-full max-w-[42rem] h-[152px] overflow-hidden rounded-lg shadow">
-            <iframe
-              className="w-full h-full rounded-lg shadow"
-              src={`https://open.spotify.com/embed/track/${item}?utm_source=generator`}
-              title={`Spotify track ${currentIndex + 1}`}
-              frameBorder="0"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-            />
+          <div className="w-[42rem] flex flex-col items-center">
+            <div className="relative w-full h-[152px] overflow-hidden rounded-lg shadow">
+              <iframe
+                className="w-full h-full rounded-lg shadow"
+                src={`https://open.spotify.com/embed/track/${item}?utm_source=generator`}
+                title={`Spotify track ${currentIndex + 1}`}
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-sm text-gray-400 text-center mt-2">
+              Volume can be adjusted using your device or Spotify’s controls.
+            </p>
           </div>
         );
 
