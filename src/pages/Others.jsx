@@ -106,7 +106,7 @@ function AnimatedSection({ section }) {
       initial={{ opacity: 0, y: 50 }}
       animate={controls}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="relative bg-[#222] border border-white/10 rounded-2xl p-8 w-11/12 max-w-2xl mx-auto mb-8"
+      className="relative bg-[#222] border border-white/10 rounded-2xl p-4 lg:p-8 w-11/12 max-w-2xl mx-auto mb-8"
     >
       <motion.h2
         className="text-2xl font-bold mb-4 text-blue-400 text-center"
