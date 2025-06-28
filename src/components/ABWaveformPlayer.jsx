@@ -1,83 +1,91 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, useCallback } from 'react'
 import WaveSurfer from 'wavesurfer.js'
-import * as Slider from '@radix-ui/react-slider';
+import * as Slider from '@radix-ui/react-slider'
 import { Play, Pause, VolumeX, Volume2 } from 'lucide-react'
 
 export default function ABWaveformPlayer({ title, beforeUrl, afterUrl }) {
   const [mode, setMode] = useState('before')
   const [isPlaying, setIsPlaying] = useState(false)
   const [volume, setVolume] = useState(1)
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(false)
 
   const beforeWaveformRef = useRef(null)
   const afterWaveformRef = useRef(null)
 
-  const beforeWS = useRef(null)
-  const afterWS = useRef(null)
+  const beforeWsInstance = useRef(null)
+  const afterWsInstance = useRef(null)
+
+  const initializeWaveSurfer = useCallback((containerRef, progressColor) => {
+    if (!containerRef.current) return null
+
+    return WaveSurfer.create({
+      container: containerRef.current,
+      waveColor: '#94a3b8',
+      progressColor: progressColor,
+      responsive: true,
+      height: 100,
+      normalize: false,
+      barWidth: 2,
+      barGap: 2,
+      barRadius: 1,
+      barHeight: 1,
+      backend: 'WebAudio'
+    })
+  }, [])
 
   useEffect(() => {
     if (!beforeWaveformRef.current || !afterWaveformRef.current) return
 
-    beforeWS.current = WaveSurfer.create({
-      container: beforeWaveformRef.current,
-      waveColor: '#94a3b8',
-      progressColor: '#93c5fd',
-      responsive: true,
-      height: 100,
-      normalize: false,
-      barWidth: 2,
-      barGap: 2,
-      barRadius: 1,
-      barHeight: 1,
-      backend: 'WebAudio'
-    })
+    const currentBeforeWS = initializeWaveSurfer(beforeWaveformRef, '#93c5fd')
+    const currentAfterWS = initializeWaveSurfer(afterWaveformRef, '#3b82f6')
 
-    afterWS.current = WaveSurfer.create({
-      container: afterWaveformRef.current,
-      waveColor: '#94a3b8',
-      progressColor: '#3b82f6',
-      responsive: true,
-      height: 100,
-      normalize: false,
-      barWidth: 2,
-      barGap: 2,
-      barRadius: 1,
-      barHeight: 1,
-      backend: 'WebAudio'
-    })
+    beforeWsInstance.current = currentBeforeWS
+    afterWsInstance.current = currentAfterWS
 
-    beforeWS.current.load(beforeUrl)
-    afterWS.current.load(afterUrl)
+    if (currentBeforeWS && beforeUrl) {
+      currentBeforeWS.load(beforeUrl).catch(() => {})
+    }
+    if (currentAfterWS && afterUrl) {
+      currentAfterWS.load(afterUrl).catch(() => {})
+    }
 
-    beforeWS.current.on('finish', () => setIsPlaying(false))
-    afterWS.current.on('finish', () => setIsPlaying(false))
+    if (currentBeforeWS) {
+      currentBeforeWS.on('finish', () => setIsPlaying(false))
+    }
+    if (currentAfterWS) {
+      currentAfterWS.on('finish', () => setIsPlaying(false))
+    }
 
-    beforeWS.current.setVolume(volume)
-    afterWS.current.setVolume(volume)
+    currentBeforeWS.setVolume(volume)
+    currentAfterWS.setVolume(volume)
 
     setIsPlaying(false)
-    setMode('before');
+    setMode('before')
 
     return () => {
-      beforeWS.current?.stop()
-      beforeWS.current?.destroy()
-      afterWS.current?.stop()
-      afterWS.current?.destroy()
+      if (currentBeforeWS) {
+        currentBeforeWS.stop()
+        currentBeforeWS.destroy()
+      }
+      if (currentAfterWS) {
+        currentAfterWS.stop()
+        currentAfterWS.destroy()
+      }
+      beforeWsInstance.current = null
+      afterWsInstance.current = null
     }
-  }, [beforeUrl, afterUrl])
+  }, [beforeUrl, afterUrl, initializeWaveSurfer])
 
   useEffect(() => {
-    beforeWS.current?.setVolume(volume)
-    afterWS.current?.setVolume(volume)
+    beforeWsInstance.current?.setVolume(volume)
+    afterWsInstance.current?.setVolume(volume)
   }, [volume])
 
-  const getActiveWS = () => (mode === 'before' ? beforeWS.current : afterWS.current)
-  const getInactiveWS = () => (mode === 'before' ? afterWS.current : beforeWS.current)
+  const getActiveWS = () => (mode === 'before' ? beforeWsInstance.current : afterWsInstance.current)
+  const getInactiveWS = () => (mode === 'before' ? afterWsInstance.current : beforeWsInstance.current)
 
   const togglePlay = () => {
     const active = getActiveWS()
-    const inactive = getInactiveWS()
-
     if (!active) return
 
     if (isPlaying) {
@@ -89,22 +97,20 @@ export default function ABWaveformPlayer({ title, beforeUrl, afterUrl }) {
     }
   }
 
-  useEffect(() => {
-    const actualVolume = isMuted ? 0 : volume;
-    beforeWS.current?.setVolume(actualVolume);
-    afterWS.current?.setVolume(actualVolume);
-  }, [volume, isMuted]);
-
   const swapMode = () => {
     const current = getActiveWS()
     const other = getInactiveWS()
+
+    if (!current || !other) return
+
     const time = current.getCurrentTime()
 
     current.pause()
-    other.seekTo(time / other.getDuration())
-
     if (isPlaying) {
-      other.play()
+        other.seekTo(time / other.getDuration())
+        other.play()
+    } else {
+        other.seekTo(time / other.getDuration())
     }
 
     setMode(mode === 'before' ? 'after' : 'before')
@@ -121,23 +127,23 @@ export default function ABWaveformPlayer({ title, beforeUrl, afterUrl }) {
         <div ref={afterWaveformRef} className={mode === 'after' ? 'block' : 'hidden'} />
       </div>
 
-      <div className="flex sm:items-center sm:justify-center sm:gap-4 gap-2">
-        <div className="flex justify-center gap-2 sm:gap-4">
+      <div className="flex sm:items-center sm:justify-center sm:gap-4 gap-2 flex-wrap">
+        <div className="flex justify-center gap-2 sm:gap-4 flex-grow sm:flex-grow-0">
           <button
             onClick={togglePlay}
-            className="bg-blue-500 text-white text-sm sm:text-base px-3 sm:px-4 sm:py-2 rounded hover:bg-blue-600 h-10 transition"
+            className="bg-blue-500 text-white text-sm sm:text-base px-3 sm:px-4 sm:py-2 rounded hover:bg-blue-600 h-10 transition flex items-center justify-center"
           >
             {isPlaying ? <Pause size={18} /> : <Play size={18} />}
           </button>
 
           <button
             onClick={swapMode}
-            className="bg-gray-700 text-white text-sm sm:text-base px-3 sm:px-4 sm:py-2 rounded hover:bg-gray-600 h-10 transition"
+            className="bg-gray-700 text-white text-sm sm:text-base px-3 sm:px-4 sm:py-2 rounded hover:bg-gray-600 h-10 transition flex items-center justify-center"
           >
             Swap A/B
           </button>
         </div>
-        <div className="flex justify-center items-center gap-3 sm:mt-0 bg-gray-700 px-3 py-2 rounded h-10">
+        <div className="flex justify-center items-center gap-3 bg-gray-700 px-3 py-2 rounded h-10 flex-grow sm:flex-grow-0">
           <button
               onClick={() => setIsMuted((prev) => !prev)}
               className="text-gray-300 hover:text-white transition"
