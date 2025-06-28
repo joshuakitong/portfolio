@@ -11,7 +11,7 @@ export default function MotionImageCarousel({
   const x = useRef(0);
   const [isHovered, setIsHovered] = useState(false);
 
-  const duplicatedImages = [...images, ...images, ...images, ...images];
+  const duplicatedImages = [...images, ...images];
 
   
   useAnimationFrame(() => {
@@ -29,7 +29,7 @@ export default function MotionImageCarousel({
 
   return (
     <div
-      className={`relative overflow-hidden -mx-8 my-4 ${height}`}
+      className={`relative overflow-hidden -mx-4 lg:-mx-8 my-4 ${height}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
