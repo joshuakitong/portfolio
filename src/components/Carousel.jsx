@@ -56,21 +56,29 @@ export default function Carousel({ type, items = [] }) {
   };
 
   const colorMap = {
-    youtube: 'red-600',
-    spotify: 'green-500',
-    abwaveform: 'blue-500',
-    waveform: 'blue-500',
+    youtube: 'text-red-600',
+    spotify: 'text-green-500',
+    abwaveform: 'text-blue-500',
+    waveform: 'text-blue-500',
   };
 
   const colorMap2 = {
-    youtube: 'red-700',
-    spotify: 'green-600',
-    abwaveform: 'blue-600',
-    waveform: 'blue-600',
+    youtube: 'text-red-700',
+    spotify: 'text-green-600',
+    abwaveform: 'text-blue-600',
+    waveform: 'text-blue-600',
   };
 
-  const activeColor = colorMap[type];
+  const colorMap3 = {
+    youtube: 'bg-red-600',
+    spotify: 'bg-green-500',
+    abwaveform: 'bg-blue-500',
+    waveform: 'bg-blue-500',
+  };
+
+  const prevNextColor = colorMap[type];
   const hoverColor = colorMap2[type];
+  const paginationColor = colorMap3[type];
 
   return (
     <section className="my-6 max-w-6xl mx-auto">
@@ -78,7 +86,7 @@ export default function Carousel({ type, items = [] }) {
         <button
           onClick={handlePrev}
           aria-label="Previous"
-          className={`text-${activeColor} hover:text-${hoverColor} transition`}
+          className={`${prevNextColor} hover:${hoverColor} transition`}
         >
           <ChevronLeft size={30} />
         </button>
@@ -88,7 +96,7 @@ export default function Carousel({ type, items = [] }) {
         <button
           onClick={handleNext}
           aria-label="Next"
-          className={`text-${activeColor} hover:text-${hoverColor} transition`}
+          className={`${prevNextColor} hover:${hoverColor} transition`}
         >
           <ChevronRight size={30} />
         </button>
@@ -102,7 +110,7 @@ export default function Carousel({ type, items = [] }) {
             aria-label={`Go to slide ${i + 1}`}
             className={`w-2 h-2 rounded-full transition duration-200 ${
               i === currentIndex
-                ? `bg-${activeColor} scale-125`
+                ? `${paginationColor} scale-125`
                 : 'bg-white/30 hover:bg-white/50'
             }`}
           />
