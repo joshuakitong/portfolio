@@ -119,7 +119,7 @@ export default function ABWaveformPlayer({ title, beforeUrl, afterUrl }) {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto p-4 bg-[#222] rounded-lg text-white">
+    <div className="w-full max-w-2xl p-4 bg-[#222] rounded-lg text-white">
       <div className="text-center mb-2">
         <strong>{mode === 'before' ? 'Before Mix/Master' : 'After Mix/Master'} ({title})</strong>
       </div>
