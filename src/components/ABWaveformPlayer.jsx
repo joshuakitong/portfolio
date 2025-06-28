@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import WaveSurfer from 'wavesurfer.js'
 import * as Slider from '@radix-ui/react-slider';
-import { Play, Pause, VolumeX, Volume2, SlidersHorizontal } from 'lucide-react'
+import { Play, Pause, VolumeX, Volume2 } from 'lucide-react'
 
 export default function ABWaveformPlayer({ beforeUrl, afterUrl }) {
   const [mode, setMode] = useState('before')
