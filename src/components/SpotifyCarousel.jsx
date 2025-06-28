@@ -1,18 +1,18 @@
-import { useState } from 'react'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { useState } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function SpotifyCarousel({ ids = [] }) {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % ids.length)
-  }
+    setCurrentIndex((prev) => (prev + 1) % ids.length);
+  };
 
   const handlePrev = () => {
     setCurrentIndex((prev) =>
       prev === 0 ? ids.length - 1 : prev - 1
-    )
-  }
+    );
+  };
 
   return (
     <section className="my-6 max-w-6xl mx-auto">
@@ -62,5 +62,5 @@ export default function SpotifyCarousel({ ids = [] }) {
         ))}
       </div>
     </section>
-  )
+  );
 }

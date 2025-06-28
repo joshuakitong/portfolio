@@ -1,19 +1,19 @@
-import { useState } from 'react'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
-import ABWaveformPlayer from './ABWaveformPlayer'
+import { useState } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import ABWaveformPlayer from './ABWaveformPlayer';
 
 export default function ABWaveformPlayerCarousel({ pairs = [] }) {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % pairs.length)
-  }
+    setCurrentIndex((prev) => (prev + 1) % pairs.length);
+  };
 
   const handlePrev = () => {
     setCurrentIndex((prev) =>
       prev === 0 ? pairs.length - 1 : prev - 1
-    )
-  }
+    );
+  };
 
   return (
     <section className="my-6 max-w-6xl mx-auto">
@@ -58,5 +58,5 @@ export default function ABWaveformPlayerCarousel({ pairs = [] }) {
         ))}
       </div>
     </section>
-  )
+  );
 }
