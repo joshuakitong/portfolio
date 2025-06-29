@@ -93,10 +93,8 @@ const scenes = [
   `${process.env.PUBLIC_URL}/gaming/streaming-assets/scenes/BRB.gif`,
   `${process.env.PUBLIC_URL}/gaming/streaming-assets/scenes/SE.gif`,
   `${process.env.PUBLIC_URL}/gaming/streaming-assets/scenes/T.gif`,
-  `${process.env.PUBLIC_URL}/gaming/streaming-assets/scenes/SS.gif`,
-  `${process.env.PUBLIC_URL}/gaming/streaming-assets/scenes/BRB.gif`,
-  `${process.env.PUBLIC_URL}/gaming/streaming-assets/scenes/SE.gif`,
-  `${process.env.PUBLIC_URL}/gaming/streaming-assets/scenes/T.gif`,
+  `${process.env.PUBLIC_URL}/gaming/streaming-assets/alerts/A1.gif`,
+  `${process.env.PUBLIC_URL}/gaming/streaming-assets/alerts/A2.gif`,
 ];
 
 const sections = [
@@ -235,6 +233,9 @@ const sections = [
           height="h-24"
           reversed={true}
         />
+        <p className="text-sm text-gray-400 text-center mt-2 mb-4">
+            Some of the Stream Assets I Created (emotes, posters, scenes, alerts).
+          </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
         <p>
           These are the apps and tools I have experience with as a streamer:<br/>
