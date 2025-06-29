@@ -81,7 +81,7 @@ export default function Carousel({ type, items = [] }) {
 
       case 'twitch':
         return (
-          <div className="relative w-full max-w-[42rem] aspect-video overflow-hidden">
+          <div className="relative w-full max-w-[36rem] aspect-video overflow-hidden">
             <iframe
               src={`https://clips.twitch.tv/embed?clip=${item}&parent=localhost`}
               title={`Twitch clip ${currentIndex + 1}`}

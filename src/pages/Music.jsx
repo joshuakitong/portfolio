@@ -190,7 +190,6 @@ const sections = [
         <MotionImageCarousel
           images={coverArts}
           height="h-48"
-          gap="gap-6"
         />
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
         <p>

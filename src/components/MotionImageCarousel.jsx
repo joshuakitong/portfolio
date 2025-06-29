@@ -4,7 +4,6 @@ import { motion, useAnimationFrame } from 'framer-motion';
 export default function MotionImageCarousel({
   images = [],
   height = 'h-40',
-  gap = 'gap-4',
   reversed = false
 }) {
   const containerRef = useRef(null);
@@ -43,7 +42,7 @@ export default function MotionImageCarousel({
     >
       <motion.div
         ref={containerRef}
-        className={`flex ${gap} w-max`}
+        className={`flex gap-6 w-max`}
         style={{ willChange: 'transform' }}
       >
         {duplicatedImages.map((img, i) => (
