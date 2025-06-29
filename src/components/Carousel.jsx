@@ -52,8 +52,44 @@ export default function Carousel({ type, items = [] }) {
               src={`https://www.youtube.com/embed/${item}?enablejsapi=1`}
               title={`YouTube video ${currentIndex + 1}`}
               frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+            />
+          </div>
+        );
+
+      case 'tiktok':
+        return (
+          <div className="w-[20rem] flex flex-col items-center">
+            <div className="relative w-full aspect-[9/16] mx-auto rounded-lg overflow-hidden">
+              <iframe
+                src={`https://www.tiktok.com/embed/${item}`}
+                title={`TikTok video ${currentIndex + 1}`}
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full overflow-hidden"
+                frameBorder="0"
+                scrolling="no"
+                style={{ overflow: 'hidden' }}
+              />
+            </div>
+            <p className="text-sm text-gray-400 text-center mt-2">
+              Volume can be adjusted using your device or TikTok's controls.
+            </p>
+          </div>
+        );
+
+      case 'twitch':
+        return (
+          <div className="relative w-full max-w-[42rem] aspect-video overflow-hidden">
+            <iframe
+              src={`https://clips.twitch.tv/embed?clip=${item}&parent=localhost`}
+              title={`Twitch clip ${currentIndex + 1}`}
+              frameBorder="0"
+              allowFullScreen
+              scrolling="no"
+              allow="autoplay; fullscreen"
+              className="w-full h-full"
             />
           </div>
         );
@@ -63,6 +99,8 @@ export default function Carousel({ type, items = [] }) {
   const colorMap = {
     youtube: 'text-red-600',
     spotify: 'text-green-500',
+    tiktok: 'text-[#EE1D52]',
+    twitch: 'text-purple-700',
     abwaveform: 'text-blue-500',
     waveform: 'text-blue-500',
   };
@@ -70,6 +108,8 @@ export default function Carousel({ type, items = [] }) {
   const colorMap2 = {
     youtube: 'text-red-700',
     spotify: 'text-green-600',
+    tiktok: 'text-[#c91946]',
+    twitch: 'text-purple-800',
     abwaveform: 'text-blue-600',
     waveform: 'text-blue-600',
   };
@@ -77,6 +117,8 @@ export default function Carousel({ type, items = [] }) {
   const colorMap3 = {
     youtube: 'bg-red-600',
     spotify: 'bg-green-500',
+    tiktok: 'bg-[#EE1D52]',
+    twitch: 'bg-purple-700',
     abwaveform: 'bg-blue-500',
     waveform: 'bg-blue-500',
   };
