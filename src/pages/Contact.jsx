@@ -1,5 +1,6 @@
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useRef, useEffect } from "react";
+import { Download } from 'lucide-react';
 
 const sections = [
   {
@@ -13,9 +14,14 @@ const sections = [
           Phone: 0905-737-9500
         </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Resume</h2>
-        <p>
-          (*work in progress: resume goes here)
-        </p>
+        <a
+          href={`${process.env.PUBLIC_URL}/resume/Joshua_Kitong_Resume_2025.pdf`}
+          download
+          className="flex items-center justify-center gap-2 w-[14rem] text-center px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600 transition shadow-lg"
+        >
+          <Download size={18} />
+          <strong>Download Resume</strong>
+        </a>
       </>
     )
   },
