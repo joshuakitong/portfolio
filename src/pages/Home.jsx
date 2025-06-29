@@ -162,10 +162,10 @@ export default function HomePage() {
           offset: ["start end", "end start"],
         });
 
-        const rotateX = useTransform(scrollYProgress, [0, 0.33], [90, 0]);
-        const scale = useTransform(scrollYProgress, [0, 0.33], [1.1, 1]);
+        const rotateX = useTransform(scrollYProgress, [0, 0.3], [90, 0]);
+        const scale = useTransform(scrollYProgress, [0, 0.3], [1.1, 1]);
         const opacity = useTransform(scrollYProgress, [0, 0.25], [0, 1]);
-        const blur = useTransform(scrollYProgress, [0, 0.33], ['blur(4px)', 'blur(0px)']);
+        const blur = useTransform(scrollYProgress, [0, 0.3], ['blur(4px)', 'blur(0px)']);
 
         return (
           <div
