@@ -1,13 +1,23 @@
 # Joshua Kitong Portfolio
 
-This is a responsive, single-page portfolio built with **React**, **Tailwind CSS**, and **Framer Motion**, showcasing Joshua Kitong’s diverse background and skills across multiple technical and creative fields.
+This is a responsive, single-page portfolio built with **React**, **Tailwind CSS**, and **Framer Motion**, showcasing Joshua Kitong’s diverse background and skills across technical and creative fields.
 
-This portfolio highlights my work in:
+## Highlights:
 
-- **Web Development**
-- **Music Production**
-- **Gaming & Streaming**
-- **Other Work Experiences**
+- Web Development
+- Music Production
+- Gaming & Streaming
+- Other Work Experiences
+
+## Features
+
+ - Responsive design
+ - Scroll stacking
+ - Scroll Reveal Animations
+ - Interactive Transitions
+ - Reusable Media Carousel
+ - Horizontal Image Carousel
+ - AB Waveform Comparison
 
 Live: [View Site](https://joshuakitong.github.io/portfolio)
 
