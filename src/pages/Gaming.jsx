@@ -30,7 +30,7 @@ const animatedEmotes = [
   `${process.env.PUBLIC_URL}/gaming/streaming-assets/emotes/animated/Kits2gLaugh.png`,
   `${process.env.PUBLIC_URL}/gaming/streaming-assets/emotes/animated/Kits2gDab.png`,
   `${process.env.PUBLIC_URL}/gaming/streaming-assets/emotes/animated/Kits2gHype.png`,
-  `${process.env.PUBLIC_URL}/gaming/streaming-assets/emotes/animated/kits2gSad.png`,
+  `${process.env.PUBLIC_URL}/gaming/streaming-assets/emotes/animated/Kits2gSad.png`,
   `${process.env.PUBLIC_URL}/gaming/streaming-assets/emotes/animated/Kits2gSheesh.png`,
   `${process.env.PUBLIC_URL}/gaming/streaming-assets/emotes/animated/Kits2gPepe.png`,
   `${process.env.PUBLIC_URL}/gaming/streaming-assets/emotes/animated/Kits2gHandsome.png`,
