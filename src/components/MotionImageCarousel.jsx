@@ -5,25 +5,33 @@ export default function MotionImageCarousel({
   images = [],
   height = 'h-40',
   gap = 'gap-4',
-  speed = 1
+  reversed = false
 }) {
   const containerRef = useRef(null);
   const x = useRef(0);
   const [isHovered, setIsHovered] = useState(false);
 
   const duplicatedImages = [...images, ...images];
-
   
   useAnimationFrame(() => {
     if (!isHovered && containerRef.current) {
-      x.current -= speed;
-      const totalWidth = containerRef.current.scrollWidth / 2;
+      const container = containerRef.current;
+      const scrollWidth = container.scrollWidth;
+      const singleLoopWidth = scrollWidth / 2;
 
-      if (x.current <= -totalWidth) {
-        x.current = 0;
+      if (reversed) {
+        x.current += 0.5;
+        if (x.current >= 0) {
+          x.current = -singleLoopWidth;
+        }
+      } else {
+        x.current -= 0.5;
+        if (Math.abs(x.current) >= singleLoopWidth) {
+          x.current = 0;
+        }
       }
 
-      containerRef.current.style.transform = `translateX(${x.current}px)`;
+      container.style.transform = `translateX(${x.current}px)`;
     }
   });
 
