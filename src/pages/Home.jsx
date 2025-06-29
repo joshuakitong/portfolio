@@ -20,7 +20,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -30 }} transition={{ duration: 0.5 }} style={{ marginTop: '-16rem' }}>
+    <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -30 }} transition={{ duration: 0.5 }} className="-mt-[16rem]">
       <div className="sticky top-0 h-screen flex flex-col items-center justify-center text-center space-y-4 z-0 bg-home">
         <div className="w-11/12 max-w-2xl">
           <motion.div

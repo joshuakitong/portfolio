@@ -1,9 +1,19 @@
 .bg-home {
-  background-image: url('./textures/inspiration-geometry.png');
+  background-image: url('./textures/bgHome.png');
   background-repeat: repeat;
 }
 
-.bg-texture {
-  background-image: url('./textures/45-degree-fabric-dark.png');
+.bg-webdev {
+  background-image: url('./textures/bgWebDev.png');
+  background-repeat: repeat;
+}
+
+.bg-music {
+  background-image: url('./textures/bgMusic.png');
+  background-repeat: repeat;
+}
+
+.bg-gaming {
+  background-image: url('./textures/bgGaming.png');
   background-repeat: repeat;
 }

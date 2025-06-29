@@ -1,10 +1,10 @@
-import { Code, AudioLines, Gamepad2, Sparkles } from 'lucide-react';
+import { CodeXml, AudioLines, Gamepad2, Sparkles } from 'lucide-react';
 
 export const summaries = [
   {
     name: 'Web Development',
     id: 'web',
-    icon: <Code size={48} />,
+    icon: <CodeXml size={48} />,
     summary: (
     <>
       I graduated with a Bachelor of Science in <strong>Information Technology</strong>, majoring in <strong>Software Development</strong>, in 2017.<br /><br />
