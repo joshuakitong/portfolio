@@ -68,6 +68,13 @@ export const sections = [
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 mt-2">
           <div>
+            <a href="https://joshuakitong.github.io/vue-calculator-app" target="_blank" className="text-blue-400 hover:underline visited:text-purple-400">
+              <strong>Calculator App</strong>
+            </a><br/>
+            <p className="ml-4 mr-4">
+              A calculator app built with <strong>Vue.js</strong>, <strong>Vite</strong>, and <strong>Tailwind CSS</strong>, featuring basic 
+               math operations (PEMDAS) and full keyboard support.
+            </p>
             <a href="https://joshuakitong.github.io/habit-tracker-app" target="_blank" className="text-blue-400 hover:underline visited:text-purple-400">
               <strong>Habit Tracker App</strong>
             </a><i className="text-xs text-gray-400"> (work in progress)</i><br/>
