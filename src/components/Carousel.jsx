@@ -83,7 +83,7 @@ export default function Carousel({ type, items = [] }) {
         return (
           <div className="relative w-full max-w-[36rem] aspect-video overflow-hidden">
             <iframe
-              src={`https://clips.twitch.tv/embed?clip=${item}&parent=localhost`}
+              src={`https://clips.twitch.tv/embed?clip=${item}&parent=${window.location.hostname}`}
               title={`Twitch clip ${currentIndex + 1}`}
               frameBorder="0"
               allowFullScreen
