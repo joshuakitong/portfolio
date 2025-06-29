@@ -171,7 +171,7 @@ export default function HomePage() {
           <div
             key={skill.id}
             className="sticky top-1/2 -translate-y-1/2 flex justify-center z-10"
-            style={{ zIndex: 100 + index, marginTop: index === 0 ? '16rem' : '0rem' }}
+            style={{ zIndex: 10 + index, marginTop: index === 0 ? '16rem' : '0rem' }}
           >
             <motion.div
               ref={ref}
