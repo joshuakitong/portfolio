@@ -41,8 +41,8 @@ const coverArts = [
 
 const sections = [
   {
-    id: "music-production",
-    title: "Music Production",
+    id: "music-creation",
+    title: "Music Creation",
     content: (
       <>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Background</h2>
