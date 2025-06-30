@@ -52,6 +52,7 @@ export default function MotionImageCarousel({
             className={`object-cover ${height} rounded`}
             draggable={false}
             alt=""
+            loading="lazy"
           />
         ))}
       </motion.div>

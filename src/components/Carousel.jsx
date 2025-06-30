@@ -54,6 +54,7 @@ export default function Carousel({ type, items = [] }) {
               frameBorder="0"
               allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              loading="lazy"
             />
           </div>
         );
@@ -71,6 +72,7 @@ export default function Carousel({ type, items = [] }) {
                 frameBorder="0"
                 scrolling="no"
                 style={{ overflow: 'hidden' }}
+                loading="lazy"
               />
             </div>
             <p className="text-sm text-gray-400 text-center mt-2">
@@ -90,6 +92,7 @@ export default function Carousel({ type, items = [] }) {
               scrolling="no"
               allow="autoplay; fullscreen"
               className="w-full h-full"
+              loading="lazy"
             />
           </div>
         );

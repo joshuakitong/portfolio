@@ -148,6 +148,7 @@ export const sections = [
               frameBorder="0"
               allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              loading="lazy"
             />
           </div>
         </div>
@@ -206,6 +207,7 @@ export const sections = [
               scrolling="no"
               allow="fullscreen"
               className="w-full h-full"
+              loading="lazy"
             />
           </div>
         </div>
