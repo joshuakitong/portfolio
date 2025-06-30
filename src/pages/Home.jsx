@@ -11,6 +11,7 @@ export default function HomePage() {
   const introScale = useTransform(scrollY, [0, 500], [1, 0.8]);
   const introOpacity = useTransform(scrollY, [0, 500], [1, 0]);
   const iconOpacity = useTransform(scrollY, [0, 150], [1, 0]);
+  const blobOpacity = useTransform(scrollY, [0, 800], [-1, 1]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -22,6 +23,18 @@ export default function HomePage() {
   return (
     <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -30 }} transition={{ duration: 0.5 }} className="-mt-[16rem]">
       <div className="sticky top-0 h-screen flex flex-col items-center justify-center text-center space-y-4 z-0 bg-home">
+        <motion.div
+          style={{ opacity: blobOpacity }}
+          className="absolute w-[12rem] h-[18rem] sm:w-[28rem] sm:h-[18rem] rounded-[6rem] bg-gradient-to-r from-blue-500 via-black to-blue-500 blur-3xl z-[-1] pointer-events-none"
+          initial={{ scale: 1 }}
+          animate={{ scale: [0.9, 1, 0.9] }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            repeatType: "loop",
+            ease: "easeInOut"
+          }}
+        />
         <div className="w-11/12 max-w-2xl">
           <motion.div
             ref={introRef}
