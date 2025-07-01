@@ -10,6 +10,7 @@ export default function Navbar() {
     { path: '/webdev', label: 'Web Development' },
     { path: '/music', label: 'Music Production' },
     { path: '/gaming', label: 'Gaming & Streaming' },
+    
     { path: '/others', label: 'Others' },
     { path: '/contact', label: 'Contact' },
   ];
@@ -29,7 +30,7 @@ export default function Navbar() {
         <Link to="/">Joshua Kitong</Link>
       </div>
 
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="text-white focus:outline-none"
@@ -39,9 +40,9 @@ export default function Navbar() {
       </div>
 
       <div
-        className={`md:flex md:items-center md:space-x-4 ${
+        className={`lg:flex lg:items-center lg:space-x-4 ${
           menuOpen ? 'block' : 'hidden'
-        } md:block absolute md:static top-12 left-0 w-full md:w-auto bg-dark md:bg-transparent p-4 md:p-0 border-b border-white md:border-0 z-40`}
+        } lg:block absolute lg:static top-12 left-0 w-full lg:w-auto bg-dark lg:bg-transparent p-4 lg:p-0 border-b border-white lg:border-0 z-40`}
       >
         {navLinks.map((link) => (
           <Link
