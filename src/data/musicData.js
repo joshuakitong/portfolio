@@ -1,42 +1,14 @@
-import Carousel from '../components/Carousel';
-import MotionImageCarousel from '../components/MotionImageCarousel';
 import Box84Links from '../components/shared/links/Box84Links';
-
-export const spotifyTrackIds = ['2KzsoukDO8x0ysUWpMbRjA', '2lupzTKwSvsAFNlMfcgw7F', '7tkzOTQVundq3UpgQJie19', '2rlaH2B1gWeNwJo7CrygXp', '27r8BrTAgTjq9J2Mr4kxkv', '4VdmtcT6DVJZxAkx3rk0Aa'];
-export const musicVideoIds = ['G0okBMMk4jU', 'vF6hub6jKl8', 'h7dbqvFbySA', 'yl9oyMt218g', 'QlkDan679Nc', '7cw69wj9SCo'];
-export const lyricVideoIds = ['d47RWJJgcc4?start=10&', '54Wx18U38Rg?start=10&', 'zJvjXfVxSBc?start=10&', 'FGUbe-jqxRo', 'OMTKFErpn5c', '1yLmYB3b_1E'];
-export const abTracks = [
-  ['Past 3', `${process.env.PUBLIC_URL}/music/mix-and-master/Track2A.mp3`, `${process.env.PUBLIC_URL}/music/mix-and-master/Track2B.mp3`],
-  ['Closed Quarters', `${process.env.PUBLIC_URL}/music/mix-and-master/Track1A.mp3`, `${process.env.PUBLIC_URL}/music/mix-and-master/Track1B.mp3`],
-  ['Got U', `${process.env.PUBLIC_URL}/music/mix-and-master/Track6A.mp3`, `${process.env.PUBLIC_URL}/music/mix-and-master/Track6B.mp3`],
-  ['Outlook Drive', `${process.env.PUBLIC_URL}/music/mix-and-master/Track5A.mp3`, `${process.env.PUBLIC_URL}/music/mix-and-master/Track5B.mp3`],
-  ['Goat', `${process.env.PUBLIC_URL}/music/mix-and-master/Track4A.mp3`, `${process.env.PUBLIC_URL}/music/mix-and-master/Track4B.mp3`],
-  ['Greater Heights', `${process.env.PUBLIC_URL}/music/mix-and-master/Track3A.mp3`, `${process.env.PUBLIC_URL}/music/mix-and-master/Track3B.mp3`],
-];
-export const sampleBeats = [
-  ['Sample Beat 1 (Sa***.mp3)', `${process.env.PUBLIC_URL}/music/sample-beats/Beat1.mp3`],
-  ['Sample Beat 2 (Ma***.mp3)', `${process.env.PUBLIC_URL}/music/sample-beats/Beat2.mp3`],
-  ['Sample Beat 3 (Bo***.mp3)', `${process.env.PUBLIC_URL}/music/sample-beats/Beat3.mp3`],
-  ['Sample Beat 4 (Na***.mp3)', `${process.env.PUBLIC_URL}/music/sample-beats/Beat4.mp3`],
-  ['Sample Beat 5 (Ch***.mp3)', `${process.env.PUBLIC_URL}/music/sample-beats/Beat5.mp3`],
-  ['Sample Beat 6 (7 ***.mp3)', `${process.env.PUBLIC_URL}/music/sample-beats/Beat6.mp3`],
-  ['Sample Beat 7 (Tr***.mp3)', `${process.env.PUBLIC_URL}/music/sample-beats/Beat7.mp3`],
-  ['Sample Beat 8 (Ni***.mp3)', `${process.env.PUBLIC_URL}/music/sample-beats/Beat8.mp3`],
-  ['Sample Beat 9 (To***.mp3)', `${process.env.PUBLIC_URL}/music/sample-beats/Beat9.mp3`],
-  ['Sample Beat 10 (Sa***.mp3)', `${process.env.PUBLIC_URL}/music/sample-beats/Beat10.mp3`],
-];
-export const coverArts = [
-  `${process.env.PUBLIC_URL}/music/cover-arts/CA1.jpg`,
-  `${process.env.PUBLIC_URL}/music/cover-arts/CA2.jpg`,
-  `${process.env.PUBLIC_URL}/music/cover-arts/CA3.jpg`,
-  `${process.env.PUBLIC_URL}/music/cover-arts/CA4.jpg`,
-  `${process.env.PUBLIC_URL}/music/cover-arts/CA5.jpg`,
-  `${process.env.PUBLIC_URL}/music/cover-arts/CA6.jpg`,
-  `${process.env.PUBLIC_URL}/music/cover-arts/CA7.jpg`,
-  `${process.env.PUBLIC_URL}/music/cover-arts/CA8.jpg`,
-  `${process.env.PUBLIC_URL}/music/cover-arts/CA9.jpg`,
-  `${process.env.PUBLIC_URL}/music/cover-arts/CA10.jpg`,
-];
+import MusicProdTech from '../components/shared/tech/MusicProdTech';
+import VideoEditTech from '../components/shared/tech/VideoEditTech';
+import SoundEngrTech from '../components/shared/tech/SoundEngrTech';
+import GraphicDesTech from '../components/shared/tech/GraphicDesTech';
+import MusicFeatSongs from '../components/shared/project/MusicFeatSongs';
+import MusicFeatSampleBeats from '../components/shared/project/MusicFeatSampleBeats';
+import MusicFeatMV from '../components/shared/project/MusicFeatMV';
+import MusicFeatLV from '../components/shared/project/MusicFeatLV';
+import MusicFeatABMM from '../components/shared/project/MusicFeatABMM';
+import MusicFeatCoverArt from '../components/shared/project/MusicFeatCoverArt';
 
 export const sections = [
   {
@@ -81,29 +53,11 @@ export const sections = [
           </div>
         </div>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Songs</h2>
-        <Carousel
-          type="spotify"
-          items={spotifyTrackIds}
-        />
+        <MusicFeatSongs />
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Sample Beats</h2>
-        <Carousel
-          type="waveform"
-          items={sampleBeats}
-        />
+        <MusicFeatSampleBeats />
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
-        <p>
-          These are the apps and tools I have experience with in music production:<br/>
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 mt-2">
-          <div className="space-y-6">
-            <strong>DAWs</strong>: FL Studio, Ableton Live<br/>
-            <strong>VSTs</strong>: Soundtoys, iZotope, Tokyo Dawn Records, MeldaProduction, Spectrasonics, Nexus, stock DAW VSTs and plugins
-          </div>
-          <div className="space-y-6">
-            <strong>Sample Libraries</strong>: Splice, Cymatics, LANDR, Loopmasters<br/>
-            <strong>AI Tools</strong>: eMastered, Splice AI, ChatGPT
-          </div>
-        </div>
+        <MusicProdTech />
       </>
     )
   },
@@ -121,20 +75,11 @@ export const sections = [
            video editor for our record label, where I <strong>edited music videos</strong>, <strong>lyric videos</strong>, and <strong>visualizers</strong>.
         </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Music Videos</h2>
-        <Carousel
-          type="youtube"
-          items={musicVideoIds}
-        />
+        <MusicFeatMV />
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Lyric Videos</h2>
-        <Carousel
-          type="youtube"
-          items={lyricVideoIds}
-        />
+        <MusicFeatLV />
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
-        <p>
-          These are the apps I have experience with in video editing:<br/>
-        </p>
-        <strong>Editing Software</strong>: Adobe Premiere Pro, Sony Vegas Pro, Adobe After Effects, CapCut, Canva<br/>
+        <VideoEditTech />
       </>
     )
   },
@@ -152,23 +97,9 @@ export const sections = [
            from <strong>recording</strong> to <strong>mixing</strong> and <strong>mastering</strong>, primarily using <strong>FL Studio</strong> and <strong>eMastered</strong>.
         </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Before & After Mix/Master</h2>
-        <Carousel
-          type="abwaveform"
-          items={abTracks}
-        />
+        <MusicFeatABMM />
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
-        <p>
-          These are the apps and tools I have experience with in sound engineering:<br/>
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 mt-2">
-          <div className="space-y-6">
-            <strong>DAWs/Recording Tools</strong>: FL Studio, Ableton Live, Adobe Audition, Audacity<br/>
-            <strong>AI Tools & Web Apps</strong>: eMastered, ChatGPT, Loudness Penalty, Youlean
-          </div>
-          <div className="space-y-6">
-            <strong>VSTs</strong>: Youlean, Soundtoys, iZotope, Tokyo Dawn Records, MeldaProduction, stock DAW VSTs and plugins
-          </div>
-        </div>
+        <SoundEngrTech />
       </>
     )
   },
@@ -186,15 +117,9 @@ export const sections = [
           for our record label, where I <strong>created cover arts</strong>, <strong>logos</strong>, and <strong>social media assets</strong>.
         </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured Cover Arts</h2>
-        <MotionImageCarousel
-          images={coverArts}
-          height="h-48"
-        />
+        <MusicFeatCoverArt />
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
-        <p>
-          These are the apps I have experience with in graphic design:<br/>
-        </p>
-        <strong>Design Software</strong>: Adobe Photoshop, Canva<br/>
+        <GraphicDesTech />
       </>
     )
   },
