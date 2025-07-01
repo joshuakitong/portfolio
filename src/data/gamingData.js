@@ -91,9 +91,6 @@ export const sections = [
         </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Stream Assets</h2>
         <GamingFeatStreamAssets />
-        <p className="text-sm text-gray-400 text-center mt-2 mb-4">
-            Some of the Stream Assets I Created (emotes, posters, scenes, alerts).
-          </p>
         <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
         <StreamingTech />
       </>

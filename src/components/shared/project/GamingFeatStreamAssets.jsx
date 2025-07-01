@@ -100,6 +100,9 @@ const GamingFeatStreamAssets = () => {
           height="h-24"
           reversed={true}
         />
+        <p className="text-sm text-gray-400 text-center mt-2 mb-4">
+          Some of the Stream Assets I Created (emotes, posters, scenes, alerts).
+        </p>
         </>
     )
 };
