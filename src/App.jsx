@@ -7,6 +7,7 @@ import Gaming from './pages/Gaming';
 import WebDev from './pages/WebDev';
 import Others from './pages/Others';
 import Contact from './pages/Contact';
+import ProjectsAndTech from './pages/ProjectsAndTech';
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
       <AnimatePresence mode="wait">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/webdev" element={<WebDev />} />
           <Route path="/music" element={<Music />} />
           <Route path="/gaming" element={<Gaming />} />
-          <Route path="/webdev" element={<WebDev />} />
+          <Route path="/projectsAndTech" element={<ProjectsAndTech />} />
           <Route path="/others" element={<Others />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
