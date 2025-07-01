@@ -47,7 +47,7 @@ export function AnimatedSection({ section, wMultiplier }) {
     if (inView && wMultiplier > 3) {
       controlsBg.start({
         opacity: 1,
-        scale: [0.8, 0.85, 0.8],
+        scale: window.innerWidth < 640 ? [0.65, 0.7, 0.65] : [0.85, 0.9, 0.85],
         transition: {
           opacity: { duration: 5, delay: 0.5 },
           duration: 10,
@@ -84,10 +84,11 @@ export function AnimatedSection({ section, wMultiplier }) {
       <div className={`relative w-11/12 max-w-${wMultiplier}xl mx-auto mb-8`}>
         <motion.div
           style={{
-            height: `calc(${dimensions.height}px)`,
+            height: `calc(${dimensions.height}px*0.9)`,
             width: `${dimensions.width}px`,
+            top: `calc(${dimensions.height}px*0.05)`
           }}
-          className="absolute rounded-[6rem] bg-gradient-to-r from-blue-500 via-black to-blue-500 blur-3xl z-0 pointer-events-none"
+          className="absolute rounded-[1rem] bg-gradient-to-r from-blue-500 via-black to-blue-500 blur-3xl z-0 pointer-events-none"
           initial={{ opacity: 0 }}
           animate={controlsBg}
         />
