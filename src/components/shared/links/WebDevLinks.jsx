@@ -17,7 +17,7 @@ const WebDevLinks = () => {
             </a>
           </div>
           <div className="space-y-6 flex justify-center">
-            <a href="/" className="block w-full text-center px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition">
+            <a href="/portfolio" className="block w-full text-center px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition">
               <strong>Portfolio</strong>
             </a>
           </div>
