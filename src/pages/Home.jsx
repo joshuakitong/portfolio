@@ -22,7 +22,7 @@ export default function HomePage() {
 
   return (
     <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -30 }} transition={{ duration: 0.5 }} className="-mt-[16rem]">
-      <div className="sticky top-0 h-screen flex flex-col items-center justify-center text-center space-y-4 z-0 bg-home">
+      <div className="sticky top-0 h-screen flex flex-col items-center justify-center text-center space-y-4 z-0 bg-mix">
         <motion.div
           style={{ opacity: blobOpacity }}
           className="absolute w-[12rem] h-[18rem] sm:w-[28rem] sm:h-[18rem] rounded-[6rem] bg-gradient-to-r from-blue-500 via-black to-blue-500 blur-3xl z-[-1] pointer-events-none"
