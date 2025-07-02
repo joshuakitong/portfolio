@@ -118,7 +118,7 @@ export default function HomePage() {
             <motion.div
               ref={ref}
               style={{ rotateX, scale, opacity, filter: blur }}
-              className="relative bg-[#dfdfdf] dark:bg-[#222] h-[420px] border border-black/10 dark:border-white/10 p-6 rounded-2xl w-11/12 max-w-xl text-center flex flex-col justify-between overflow-hidden"
+              className="relative bg-[#f2f3f4] dark:bg-[#222] h-[420px] border border-black/10 dark:border-white/10 p-6 rounded-2xl w-11/12 max-w-xl text-center flex flex-col justify-between overflow-hidden"
             >
               <div>
                 <div className="flex items-center justify-center text-gray-800 dark:text-gray-200">{summary.icon}</div>

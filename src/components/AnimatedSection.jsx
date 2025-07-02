@@ -98,7 +98,7 @@ export function AnimatedSection({ section, wMultiplier }) {
           initial={{ opacity: 0, y: scrollDir === "down" ? -75 : 75 }}
           animate={controls}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="relative bg-[#dfdfdf] dark:bg-[#222] border border-black/10 dark:border-white/10 rounded-2xl p-4 lg:p-8  z-10"
+          className="relative bg-[#f2f3f4] dark:bg-[#222] border border-black/10 dark:border-white/10 rounded-2xl p-4 lg:p-8  z-10"
         >
         <motion.h2
           className="text-2xl font-bold mb-4 text-blue-500 dark:text-blue-400 text-center"
