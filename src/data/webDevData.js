@@ -7,14 +7,14 @@ export const sections = [
     title: "Background & Experience",
     content: (
       <>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Background</h2>
+        <h2 className="header">Background</h2>
         <p className="mb-6">
           Ever since I was a kid, I’ve been fascinated by computers — from playing video games and browsing the internet to learning all sorts of things online. 
            I knew early on that I wanted a career involving technology, which led me to pursue a degree in Information Technology.<br /><br />
 
           In 2017, I graduated with a Bachelor of Science in <strong>Information Technology</strong>, majoring in <strong>Software Development</strong>, 
            from the University of Baguio.</p>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Developer Work Experience</h2>
+        <h2 className="header">Developer Work Experience</h2>
         <p className="mb-6">
           I worked as a <strong>Front-End Web Developer</strong> at Qualis Consulting Inc., a startup based in Ortigas, from June 2018 to September 2021. 
            I was responsible for developing web-based systems for U.S. utility cooperatives using <strong>ASP.NET (C#)</strong>, <strong>AngularJS</strong>
@@ -29,7 +29,7 @@ export const sections = [
            
           Additionally, during my college internship, I developed a Computer Laboratory System for my university’s M.I.S. department 
            using <strong>Visual Basic</strong> and <strong>MySQL</strong>.</p>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Creative Shift & Dev Comeback</h2>
+        <h2 className="header">Creative Shift & Dev Comeback</h2>
         <p className="mb-6">
           In September 2021, I took the opportunity to pursue my creative careers full-time. While I stepped away from coding, I continued to sharpen related skills 
            like <strong>problem-solving</strong>, <strong>critical thinking</strong>, and <strong>communication</strong> through music production, streaming, content 
@@ -40,7 +40,7 @@ export const sections = [
            platforms like freeCodeCamp, solving challenges on LeetCode, leveraging AI tools, and building hands-on projects. This portfolio is one of those projects, built 
            with <strong>React</strong>, <strong>Tailwind CSS</strong>, and <strong>Framer Motion</strong>. Scroll down to the Projects section below to learn more.
         </p>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
+        <h2 className="header">Tech & Tools</h2>
         <WebDevTech />
       </>
     )
@@ -50,7 +50,7 @@ export const sections = [
     title: "Projects",
     content: (
       <>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Apps & Websites</h2>
+        <h2 className="header">Apps & Websites</h2>
         <WebDevProj />
       </>
     )

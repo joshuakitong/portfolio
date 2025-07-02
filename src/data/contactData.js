@@ -9,12 +9,12 @@ export const sections = [
     title: "Contact Details",
     content: (
       <>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">How to Reach Me</h2>
+        <h2 className="header">How to Reach Me</h2>
         <p className="mb-6">
           Email: joshuakitong@gmail.com<br/>
           Phone: 0905-737-9500
         </p>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Resume</h2>
+        <h2 className="header">Resume</h2>
         <a
           href={`${process.env.PUBLIC_URL}/resume/Joshua_Kitong_Resume_2025.pdf`}
           download
@@ -31,15 +31,15 @@ export const sections = [
     title: "Pages and Socials",
     content: (
       <>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Web Dev</h2>
+        <h2 className="header">Web Dev</h2>
         <div className="mb-6">
           <WebDevLinks />
         </div>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">BOX84</h2>
+        <h2 className="header">BOX84</h2>
         <div className="mb-6">
           <Box84Links />
         </div>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Kits2g</h2>
+        <h2 className="header">Kits2g</h2>
         <div className="mb-6">
           <Kits2gLinks />
         </div>

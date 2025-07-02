@@ -21,10 +21,10 @@ export default function Navbar() {
     }`;
 
   return (
-    <nav className="bg-dark text-gray-300 border-b border-white px-4 py-3 flex items-center justify-between sticky top-0 z-50">
+    <nav className="bg-light dark:bg-dark text-gray-700 dark:text-gray-300 border-b border-black dark:border-white px-4 py-3 flex items-center justify-between sticky top-0 z-50">
       <div
         className={`text-xl font-semibold transition-transform duration-150 hover:scale-105 hover:text-blue-500 ${
-          location.pathname === '/' ? 'text-blue-500 scale-105' : 'text-gray-300'
+          location.pathname === '/' ? 'text-blue-500 scale-105' : 'text-gray-700 dark:text-gray-300'
         }`}
       >
         <Link to="/">Joshua Kitong</Link>

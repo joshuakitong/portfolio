@@ -18,7 +18,7 @@ export default function OthersPage() {
     <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -30 }} transition={{ duration: 0.5 }} className="min-h-screen pb-[1rem]">
       <div className="py-12 text-center">
         <h1 className="text-4xl font-bold text-blue-500">Other Experiences and Interests</h1>
-        <p className="text-gray-400 mt-2 mx-2">Know more about me and my other work experiences.</p>
+        <p className="text-gray-600 dark:text-gray-400 mt-2 mx-2">Know more about me and my other work experiences.</p>
       </div>
 
       {sections.map((section) => (

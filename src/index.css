@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 @import './assets/textures.css';
+
+.header {
+    @apply text-xl font-bold mb-2 tracking-wide text-gray-800 dark:text-gray-200;
+}
+
+.link {
+    @apply text-blue-500 dark:text-blue-400 hover:underline visited:text-purple-400;
+}
+
+.note {
+    @apply text-xs text-gray-600 dark:text-gray-400;
+}

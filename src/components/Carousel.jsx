@@ -37,7 +37,7 @@ export default function Carousel({ type, items = [] }) {
                 loading="lazy"
               />
             </div>
-            <p className="text-sm text-gray-400 text-center mt-2">
+            <p className="note text-center mt-2">
               Volume can be adjusted using your device or Spotify’s controls.
             </p>
           </div>
@@ -75,7 +75,7 @@ export default function Carousel({ type, items = [] }) {
                 loading="lazy"
               />
             </div>
-            <p className="text-sm text-gray-400 text-center mt-2">
+            <p className="note text-center mt-2">
               Volume can be adjusted using your device or TikTok's controls.
             </p>
           </div>
@@ -161,7 +161,7 @@ export default function Carousel({ type, items = [] }) {
             className={`w-2 h-2 rounded-full transition duration-200 ${
               i === currentIndex
                 ? `${paginationColor} scale-125`
-                : 'bg-white/30 hover:bg-white/50'
+                : 'bg-black/30 hover:bg-black/50 dark:bg-white/30  dark:hover:bg-white/50'
             }`}
           />
         ))}

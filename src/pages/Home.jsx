@@ -41,7 +41,7 @@ export default function HomePage() {
             style={{ scale: introScale, opacity: introOpacity }}
           >
             <motion.h1
-              className="text-4xl text-gray-200 font-bold pb-3"
+              className="text-4xl text-gray-800 dark:text-gray-200 font-bold pb-3"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6 }}
@@ -69,7 +69,7 @@ export default function HomePage() {
             </motion.h2>
 
             <motion.p
-              className="max-w-2xl text-gray-200 pb-6"
+              className="max-w-2xl text-gray-800 dark:text-gray-200 pb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.6 }}
@@ -78,7 +78,7 @@ export default function HomePage() {
               and <strong>creative talent</strong> in multimedia production — delivering <strong>versatile solutions</strong> across modern web platforms.
             </motion.p>
             <motion.p
-              className="max-w-2xl text-gray-300 pb-6"
+              className="max-w-2xl text-gray-700 dark:text-gray-300 pb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 2, duration: 0.6 }}
@@ -86,7 +86,7 @@ export default function HomePage() {
               This portfolio showcases my <strong>diverse technical</strong> and <strong>creative skills</strong>.
             </motion.p>
             <motion.p
-              className="max-w-2xl text-gray-400"
+              className="max-w-2xl text-gray-500 dark:text-gray-400"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 3, duration: 0.6 }}
@@ -118,14 +118,14 @@ export default function HomePage() {
             <motion.div
               ref={ref}
               style={{ rotateX, scale, opacity, filter: blur }}
-              className="relative bg-[#222] h-[420px] border border-white/10 p-6 rounded-2xl w-11/12 max-w-xl text-center flex flex-col justify-between overflow-hidden"
+              className="relative bg-[#dfdfdf] dark:bg-[#222] h-[420px] border border-black/10 dark:border-white/10 p-6 rounded-2xl w-11/12 max-w-xl text-center flex flex-col justify-between overflow-hidden"
             >
               <div>
-                <div className="flex items-center justify-center text-gray-200">{summary.icon}</div>
+                <div className="flex items-center justify-center text-gray-800 dark:text-gray-200">{summary.icon}</div>
                 <Link to={summary.link} className="text-sm text-blue-500 hover:text-blue-400 underline">
                   <h2 className="text-2xl font-bold mb-2 tracking-wide text-blue-500 hover:text-blue-400">{summary.name}</h2>
                 </Link>
-                <p className="text-gray-300 text-[12px] sm:text-[12px] md:text-[14px] lg:text-[16px]" style={{ whiteSpace: 'pre-line' }}>{summary.summary}</p>
+                <p className="text-gray-700 dark:text-gray-300 text-[12px] sm:text-[12px] md:text-[14px] lg:text-[16px]" style={{ whiteSpace: 'pre-line' }}>{summary.summary}</p>
               </div>
             </motion.div>
           </div>
@@ -141,7 +141,7 @@ export default function HomePage() {
         animate={{ opacity: 1 }}
         transition={{ delay: 3, duration: 0.6 }}
       >
-        <ChevronDown size={36} className="text-gray-400" />
+        <ChevronDown size={36} className="text-gray-500 dark:text-gray-400" />
       </motion.div>
     </motion.div>
   );

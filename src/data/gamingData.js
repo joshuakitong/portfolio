@@ -12,7 +12,7 @@ export const sections = [
     title: "Competitive Gaming",
     content: (
       <>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Gaming Background</h2>
+        <h2 className="header">Gaming Background</h2>
         <p className="mb-6">
           I’ve always loved playing games growing up — from board and card games to physical sports. But it’s in video games and esports where I’ve found the most excitement and 
            honed the strongest skill. It’s also where my <strong>problem-solving</strong> and <strong>critical thinking</strong> were developed the most.<br/><br/>
@@ -25,7 +25,7 @@ export const sections = [
            become a <strong>professional Axie Infinity player</strong>, competing in high-ranking ladders and various tournaments.
 
         </p>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Competitive Experience</h2>
+        <h2 className="header">Competitive Experience</h2>
         <div>
           I’ve always had a competitive drive when it comes to gaming. Even though I wasn’t technically a pro in most of the games I played, I consistently ranked 
            high — often reaching leaderboards on most of the games I played.<br/><br/>
@@ -42,7 +42,7 @@ export const sections = [
               className="w-[24rem] h-auto rounded mt-6"
             />
           </div>
-          <p className="text-sm text-gray-400 text-center mt-2 mb-4">
+          <p className="note text-center mt-2 mb-4">
             My Highest Recorded Leaderboard Rank.
           </p>
           <GamingDigitalNation />
@@ -55,7 +55,7 @@ export const sections = [
     title: "Twitch Streaming",
     content: (
       <>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">From Competitive Gamer to Content Creator</h2>
+        <h2 className="header">From Competitive Gamer to Content Creator</h2>
         <p className="mb-6">
           As the hype around NFT games began to fade, so did my competitive drive. Around the same time, Fortnite — a game I used to love — introduced a new mode called Zero Build. 
            One of the main reasons I stopped playing previously was the building mechanics, so when this mode was released, I knew I’d enjoy jumping back in.<br/><br/>
@@ -64,7 +64,7 @@ export const sections = [
            playing Fortnite and other shooter games. My focus shifted from competing to entertaining, having fun, and building genuine connections with my 
            audience and fellow streamers.
         </p>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Streaming Journey</h2>
+        <h2 className="header">Streaming Journey</h2>
         <p className="mb-6">
           I knew from the start that becoming a Fortnite Twitch streamer for a Filipino audience would be a challenge — the game wasn’t as popular locally as 
            titles like Valorant or League of Legends. But I pursued it anyway, driven by my love for the game’s <strong>creative gameplay</strong>. Eventually, I managed 
@@ -80,18 +80,18 @@ export const sections = [
           Throughout this journey, I experienced significant personal growth and strengthened essential skills such as <strong>problem solving</strong>
            , <strong>critical thinking</strong>, <strong>adaptability</strong>, <strong>creativity</strong>, and <strong>communication</strong> — all of which continue to serve me across different disciplines today.
         </p>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Featured TikTok Edits</h2>
+        <h2 className="header">Featured TikTok Edits</h2>
         <GamingFeatEdits />
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Random Funny Twitch Clips</h2>
+        <h2 className="header">Random Funny Twitch Clips</h2>
         <GamingFeatClips />
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Twitch Trailer</h2>
+        <h2 className="header">Twitch Trailer</h2>
         <GamingTrailer />
-        <p className="text-sm text-gray-400 text-center mb-4">
+        <p className="note text-center mb-4">
           My Twitch Trailer (Created in 2023).
         </p>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Stream Assets</h2>
+        <h2 className="header">Stream Assets</h2>
         <GamingFeatStreamAssets />
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
+        <h2 className="header">Tech & Tools</h2>
         <StreamingTech />
       </>
     )
@@ -101,13 +101,13 @@ export const sections = [
     title: "More",
     content: (
       <>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Gaming Coach</h2>
+        <h2 className="header">Gaming Coach</h2>
         <p className="mb-6">
           Over the years, I’ve naturally taken on the role of <strong>In-Game Leader</strong> in competitive MOBA and FPS/shooter games while playing with friends and viewers. 
            I’ve also had the opportunity to <strong>coach</strong> and <strong>mentor</strong> aspiring gamers — especially during my time as an Axie Infinity scholarship 
            manager, where I helped others improve their gameplay and strategy.
         </p>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Kits2g Pages and Socials</h2>
+        <h2 className="header">Kits2g Pages and Socials</h2>
         <p>
           Feel free to follow and connect with me on social media:
         </p>

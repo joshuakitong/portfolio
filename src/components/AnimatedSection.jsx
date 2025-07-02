@@ -98,10 +98,10 @@ export function AnimatedSection({ section, wMultiplier }) {
           initial={{ opacity: 0, y: scrollDir === "down" ? -75 : 75 }}
           animate={controls}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="relative bg-[#222] border border-white/10 rounded-2xl p-4 lg:p-8  z-10"
+          className="relative bg-[#dfdfdf] dark:bg-[#222] border border-black/10 dark:border-white/10 rounded-2xl p-4 lg:p-8  z-10"
         >
         <motion.h2
-          className="text-2xl font-bold mb-4 text-blue-400 text-center"
+          className="text-2xl font-bold mb-4 text-blue-500 dark:text-blue-400 text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}
@@ -109,7 +109,7 @@ export function AnimatedSection({ section, wMultiplier }) {
         {section.title}
         </motion.h2>
         <motion.div
-          className="text-gray-300 leading-relaxed"
+          className="text-gray-700 dark:text-gray-300 leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.6 }}

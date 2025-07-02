@@ -23,11 +23,11 @@ export const sections = [
     title: "Web Dev",
     content: (
       <>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Projects</h2>
+        <h2 className="header">Projects</h2>
         <div className="mb-6">
             <WebDevProj />
         </div>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
+        <h2 className="header">Tech & Tools</h2>
         <WebDevTech />
       </>
     )
@@ -37,19 +37,19 @@ export const sections = [
     title: "Music Production",
     content: (
       <>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Songs</h2>
+        <h2 className="header">Songs</h2>
         <MusicFeatSongs />
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Sample Beats</h2>
+        <h2 className="header">Sample Beats</h2>
         <MusicFeatSampleBeats />
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Music Videos</h2>
+        <h2 className="header">Music Videos</h2>
         <MusicFeatMV />
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Lyric Videos</h2>
+        <h2 className="header">Lyric Videos</h2>
         <MusicFeatLV />
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Before & After Mix/Master</h2>
+        <h2 className="header">Before & After Mix/Master</h2>
         <MusicFeatABMM />
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Cover Arts</h2>
+        <h2 className="header">Cover Arts</h2>
         <MusicFeatCoverArt />
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
+        <h2 className="header">Tech & Tools</h2>
         <MusicProdTech />
         <VideoEditTech />
         <SoundEngrTech />
@@ -62,17 +62,17 @@ export const sections = [
     title: "Gaming & Streaming",
     content: (
       <>
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">TikTok Edits</h2>
+        <h2 className="header">TikTok Edits</h2>
         <GamingFeatEdits />
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Random Funny Twitch Clips</h2>
+        <h2 className="header">Random Funny Twitch Clips</h2>
         <GamingFeatClips />
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Twitch Trailer</h2>
+        <h2 className="header">Twitch Trailer</h2>
         <GamingTrailer />
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Stream Assets</h2>
+        <h2 className="header">Stream Assets</h2>
         <GamingFeatStreamAssets />
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Competitive Gaming + Music Production</h2>
+        <h2 className="header">Competitive Gaming + Music Production</h2>
         <GamingDigitalNation />
-        <h2 className="text-xl font-bold mb-2 tracking-wide text-gray-200">Tech & Tools</h2>
+        <h2 className="header">Tech & Tools</h2>
         <StreamingTech />
       </>
     )

@@ -8,10 +8,11 @@ import WebDev from './pages/WebDev';
 import Others from './pages/Others';
 import Contact from './pages/Contact';
 import ProjectsAndTech from './pages/ProjectsAndTech';
+import DarkModeToggle from './components/DarkModeToggle'
 
 function App() {
   return (
-    <div className="min-h-screen bg-dark text-gray-200">
+    <div className="min-h-screen bg-light text-gray-800 dark:bg-dark dark:text-gray-200 transition">
       <Navbar />
       <AnimatePresence mode="wait">
         <Routes>
@@ -24,6 +25,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
+      <DarkModeToggle />
     </div>
   );
 }
