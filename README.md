@@ -18,6 +18,7 @@ This is a responsive, single-page portfolio built with **React**, **Tailwind CSS
  - Reusable Media Carousel
  - Horizontal Image Carousel
  - AB Waveform Comparison
+ - Toggle Dark Mode
 
 Live: [View Site](https://joshuakitong.github.io/portfolio)
 
