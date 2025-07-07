@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { sections } from "../data/webDevData.js";
 import { AnimatedSection } from "../components/AnimatedSection.jsx";
+import { summaries } from "../data/homeData.js";
+import  TLDR  from "../components/TLDR.jsx";
 
 export default function WebDevPage() {
   useEffect(() => {
@@ -19,6 +21,7 @@ export default function WebDevPage() {
       <div className="py-12 text-center">
         <h1 className="text-4xl font-bold text-blue-500">Web Development</h1>
         <p className="text-gray-600 dark:text-gray-400 mt-2 mx-2">Learn about my interest in computers and my experience as a web developer.</p>
+        <TLDR summary={summaries.find((s) => s.id === "dev").summary} />
       </div>
 
       {sections.map((section) => (

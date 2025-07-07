@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { sections } from "../data/othersData.js";
 import { AnimatedSection } from "../components/AnimatedSection.jsx";
+import { summaries } from "../data/homeData.js";
+import  TLDR  from "../components/TLDR.jsx";
 
 export default function OthersPage() {
   useEffect(() => {
@@ -19,6 +21,7 @@ export default function OthersPage() {
       <div className="py-12 text-center">
         <h1 className="text-4xl font-bold text-blue-500">Other Experiences and Interests</h1>
         <p className="text-gray-600 dark:text-gray-400 mt-2 mx-2">Know more about me and my other work experiences.</p>
+        <TLDR summary={summaries.find((s) => s.id === "others").summary} />
       </div>
 
       {sections.map((section) => (

@@ -132,7 +132,7 @@ export default function HomePage() {
         );
       })}
       {/* add a spacer at the end to give space for last board*/}
-      <div style={{ height: "420px" }}></div>
+      <div className="h-[100px] lg:h-[400px] md:h-[200px] sm:h-[100px]"></div>
 
       <motion.div
         style={{ opacity: iconOpacity, left: 'calc(50% - 18px)' }}
