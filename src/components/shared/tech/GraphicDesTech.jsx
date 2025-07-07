@@ -4,7 +4,9 @@ const GraphicDesTech = () => {
         <p>
           These are the apps I have experience with in graphic design:<br/>
         </p>
-        <strong>Design Software</strong>: Adobe Photoshop, Canva<br/>
+        <div className="mt-2">
+          <strong>Design Software</strong>: Adobe Photoshop, Canva<br/>
+        </div>
         </>
     )
 };

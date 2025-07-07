@@ -16,8 +16,8 @@ export default function Navbar() {
   ];
 
   const getLinkClass = (path) =>
-    `block py-2 md:py-0 transition-transform duration-150 hover:scale-105 hover:text-blue-500 ${
-      location.pathname === path ? 'text-blue-500 scale-105' : ''
+    `block py-2 md:py-0 transition-transform duration-150 lg:hover:scale-105 md:hover:scale-100 hover:text-blue-500 ${
+      location.pathname === path ? 'text-blue-500 lg:scale-105 md:scale-100' : ''
     }`;
 
   return (

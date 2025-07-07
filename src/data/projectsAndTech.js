@@ -51,8 +51,11 @@ export const sections = [
         <MusicFeatCoverArt />
         <h2 className="header">Tech & Tools</h2>
         <MusicProdTech />
+        <div className="mt-6" />
         <VideoEditTech />
+        <div className="mt-6" />
         <SoundEngrTech />
+        <div className="mt-6" />
         <GraphicDesTech />
       </>
     )

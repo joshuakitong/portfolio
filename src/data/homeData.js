@@ -3,7 +3,7 @@ import { CodeXml, AudioLines, Gamepad2, Sparkles } from 'lucide-react';
 export const summaries = [
   {
     name: 'Web Development',
-    id: 'web',
+    id: 'dev',
     icon: <CodeXml size={48} />,
     summary: (
     <>
@@ -61,6 +61,8 @@ export const summaries = [
     icon: <Sparkles size={48} />,
     summary: (
     <>
+      This part may seem trivial, but it offers a glimpse into the things that keep me curious, creative and active.<br /><br />
+      
       Other roles I’ve taken on include <strong>yarn producer</strong> for our family's yarn business, <strong>sound technician</strong> for our family’s sound system 
        business, <strong>graphic designer</strong> for small organizations like GDG Baguio, <strong>transcriptionist</strong> for 
        Insight Asia, <strong>teacher</strong> and <strong>coach</strong> in both gaming and music, and a <strong>cryptocurrency trader</strong> too.<br/><br/>
