@@ -12,7 +12,8 @@ const WebDevTech = () => {
             <strong>Project Management</strong>: Jira, Confluence, Crucible
           </div>
           <div className="space-y-6">
-            <strong>Database & Backend</strong>: PL/SQL, LINQ, MySQL, Firebase (Auth, Firestore, Hosting), Render<br/>
+            <strong>Database & Backend</strong>: PL/SQL, LINQ, MySQL, Firebase (Auth, Firestore)<br/>
+            <strong>Hosting & Deployment</strong>: GitHub Pages, Render, Firebase Hosting, Vercel<br/>
             <strong>AI Tools</strong>: ChatGPT, GitHub Copilot, Gemini<br/>
             <strong>Communication</strong>: Slack, Zoom, Skype
           </div>
