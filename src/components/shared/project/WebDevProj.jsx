@@ -2,7 +2,7 @@ const WebDevProj = () => {
     return (
         <>
         <p>
-          Here’s a list of personal projects I’ve worked on since June 2025 <i>(sorted from latest to oldest)</i>:<br/>
+          Here’s a list of personal projects I’ve worked on since June 2025 <i>(sorted from latest to earliest start date)</i>:<br/>
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 mt-2">
           <div>
@@ -13,9 +13,9 @@ const WebDevProj = () => {
               A calculator app built with <strong>Vue.js</strong>, <strong>Vite</strong>, and <strong>Tailwind CSS</strong>, featuring basic 
                math operations (PEMDAS) and full keyboard support.
             </p>
-            <a href="https://joshuakitong.github.io/habit-tracker-app" target="_blank" className="link">
+            <a href="https://habit-tracker-app-8b422.web.app" target="_blank" className="link">
               <strong>Habit Tracker App</strong>
-            </a><i className="note"> (work in progress)</i><br/>
+            </a><br/>
             <p className="ml-4 mr-4">
               A habit tracker app built with <strong>React</strong>, <strong>Vite</strong>, <strong>Tailwind CSS</strong>, and <strong>Firebase</strong>. It features 
                complete CRUD functionality, allowing users to track their habit progress with data stored and synced in real time via Firebase.
