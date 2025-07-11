@@ -13,12 +13,12 @@ const WebDevProj = () => {
               A calculator app built with <strong>Vue.js</strong>, <strong>Vite</strong>, and <strong>Tailwind CSS</strong>, featuring basic 
                math operations (PEMDAS) and full keyboard support.
             </p>
-            <a href="https://habit-tracker-app-8b422.web.app" target="_blank" className="link">
-              <strong>Habit Tracker App</strong>
+            <a href="https://habitrack-afeb2.web.app" target="_blank" className="link">
+              <strong>HabitTrack</strong>
             </a><br/>
             <p className="ml-4 mr-4">
               A habit tracker app built with <strong>React</strong>, <strong>Vite</strong>, <strong>Tailwind CSS</strong>, and <strong>Firebase</strong>. It features 
-               complete CRUD functionality, allowing users to track their habit progress with data stored and synced in real time via Firebase.
+               complete CRUD functionality, allowing users to track their habit progress with data stored and synced via Firebase Firestore.
             </p>
             <a href="https://joshuakitong.github.io/angular-to-do-app" target="_blank" className="link">
               <strong>To-do App</strong>
