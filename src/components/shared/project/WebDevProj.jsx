@@ -14,7 +14,7 @@ const WebDevProj = () => {
                math operations (PEMDAS) and full keyboard support.
             </p>
             <a href="https://habitrack-afeb2.web.app" target="_blank" className="link">
-              <strong>HabitTrack</strong>
+              <strong>HabiTrack</strong>
             </a><br/>
             <p className="ml-4 mr-4">
               A habit tracker app built with <strong>React</strong>, <strong>Vite</strong>, <strong>Tailwind CSS</strong>, and <strong>Firebase</strong>. It features 
