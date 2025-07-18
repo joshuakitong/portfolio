@@ -20,10 +20,10 @@ import StreamingTech from '../components/shared/tech/StreamingTech';
 export const sections = [
   {
     id: "web-dev",
-    title: "Web Dev",
+    title: "Web Development",
     content: (
       <>
-        <h2 className="header">Projects</h2>
+        <h2 className="header">Websites & Apps</h2>
         <div className="mb-6">
             <WebDevProj />
         </div>

@@ -50,7 +50,7 @@ export const sections = [
     title: "Projects",
     content: (
       <>
-        <h2 className="header">Apps & Websites</h2>
+        <h2 className="header">Websites & Apps</h2>
         <WebDevProj />
       </>
     )

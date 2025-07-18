@@ -2,7 +2,36 @@ const WebDevProj = () => {
     return (
         <>
         <p>
-          Here’s a list of personal projects I’ve worked on since June 2025 <i>(sorted from latest to earliest start date)</i>:<br/>
+          Featured Projects:<br/>
+        </p>
+        <div className="my-2">
+          <a href="cryptoguessr-amber.vercel.app" target="_blank" className="link">
+            <strong>CryptoGuessr</strong>
+          </a> <i className="note">(Work in progress...)</i><br/>
+          <p className="ml-4 mr-4">
+            A cryptocurrency-themed game built with <strong>Next.js</strong>, <strong>Tailwind CSS</strong>, <strong>Node.js</strong>, 
+              the <strong>CoinGecko API</strong>, <strong>Vercel</strong>, and <strong>AWS</strong>. It features three interactive mini-games that challenge
+              users on their crypto knowledge through trivia, guessing games, and market data. Scores are stored via AWS DynamoDB, with user
+              authentication handled by AWS Cognito, and deployment managed through Vercel.
+          </p>
+          <a href="https://habitrack-afeb2.web.app" target="_blank" className="link">
+            <strong>HabiTrack</strong>
+          </a><br/>
+          <p className="ml-4 mr-4">
+            A habit tracker app built with <strong>React</strong>, <strong>Vite</strong>, <strong>Tailwind CSS</strong>, and <strong>Firebase</strong>. It offers
+              full CRUD functionality, enabling users to track their habit progress with data stored and synced in real time via Firestore, with user authentication 
+              handled by Firebase Authentication.
+          </p>
+          <a href="https://joshuakitong.github.io/portfolio" target="_blank" className="link">
+            <strong>My Portfolio</strong>
+          </a><br/>
+          <p className="ml-4 mr-4">
+            A responsive, single-page portfolio built with <strong>React</strong>, <strong>CRA</strong>, <strong>Tailwind CSS</strong>, and <strong>Framer Motion</strong>. 
+              It showcases my diverse background and skills across technical and creative fields.
+          </p>
+        </div>
+        <p>
+          Here’s a list of other projects I’ve worked on to learn new technologies <i>(sorted from latest to earliest)</i>:<br/>
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 mt-2">
           <div>
@@ -13,19 +42,11 @@ const WebDevProj = () => {
               A calculator app built with <strong>Vue.js</strong>, <strong>Vite</strong>, and <strong>Tailwind CSS</strong>, featuring basic 
                math operations (PEMDAS) and full keyboard support.
             </p>
-            <a href="https://habitrack-afeb2.web.app" target="_blank" className="link">
-              <strong>HabiTrack</strong>
-            </a><br/>
-            <p className="ml-4 mr-4">
-              A habit tracker app built with <strong>React</strong>, <strong>Vite</strong>, <strong>Tailwind CSS</strong>, and <strong>Firebase</strong>. It features 
-               complete CRUD functionality, allowing users to track their habit progress with data stored and synced via Firebase Firestore.
-            </p>
             <a href="https://joshuakitong.github.io/angular-to-do-app" target="_blank" className="link">
               <strong>To-do App</strong>
             </a><br/>
             <p className="ml-4 mr-4">
-              A to-do app built with <strong>Angular</strong> and <strong>Material Design</strong>, featuring CRUD operations, drag-and-drop functionality, 
-               confirmation modals, and toast notifications.
+              A to-do app built with <strong>Angular</strong> and <strong>Material Design</strong>, featuring full CRUD operations.
             </p>
             <a href="https://joshuakitong.github.io/piano-app" target="_blank" className="link">
               <strong>Piano App</strong>
@@ -35,18 +56,11 @@ const WebDevProj = () => {
             </p>
           </div>
           <div>
-            <a href="https://joshuakitong.github.io/portfolio" target="_blank" className="link">
-              <strong>My Portfolio</strong>
-            </a><br/>
-            <p className="ml-4 mr-4">
-              A responsive, single-page portfolio built with <strong>React</strong>, <strong>Tailwind CSS</strong>, and <strong>Framer Motion</strong>, 
-               showcasing my diverse background and skills across technical and creative fields.
-            </p>
             <a href="https://flask-weather-app-k7b3.onrender.com" target="_blank" className="link">
               <strong>Weather App</strong>
             </a><br/>
             <p className="ml-4 mr-4">
-              A weather app built with <strong>Python</strong> and <strong>Flask</strong>, where users are able to search for the weather by city.<br/>
+              A weather app built with <strong>Python</strong>, <strong>Flask</strong>, and the <strong>OpenWeatherMap API</strong>, where users are able to search for the weather by city.<br/>
               <i className="note">Note: The app may take a few seconds to load as it’s hosted on Render.com’s free tier.</i>
             </p>
             <a href="https://joshuakitong.github.io/react-tic-tac-toe" target="_blank" className="link">
