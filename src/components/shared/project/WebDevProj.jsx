@@ -5,7 +5,7 @@ const WebDevProj = () => {
           Featured Projects:<br/>
         </p>
         <div className="my-2">
-          <a href="cryptoguessr-amber.vercel.app" target="_blank" className="link">
+          <a href="https://cryptoguessr-amber.vercel.app" target="_blank" className="link">
             <strong>CryptoGuessr</strong>
           </a> <i className="note">(Work in progress...)</i><br/>
           <p className="ml-4 mr-4">
