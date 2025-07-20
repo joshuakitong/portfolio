@@ -10,16 +10,16 @@ const WebDevProj = () => {
           </a> <i className="note">(Work in progress...)</i><br/>
           <p className="ml-4 mr-4">
             A cryptocurrency-themed game built with <strong>Next.js</strong>, <strong>Tailwind CSS</strong>, <strong>Node.js</strong>, 
-              the <strong>CoinGecko API</strong>, <strong>Vercel</strong>, and <strong>AWS</strong>. It features three interactive mini-games that challenge
-              users on their crypto knowledge through trivia, guessing games, and market data. Scores are stored via AWS DynamoDB, with user
-              authentication handled by AWS Cognito, and deployment managed through Vercel.
+              the <strong>CoinGecko API</strong>, <strong>Vercel</strong>, and <strong>Firebase</strong>. It features three interactive mini-games that challenge
+              users on their crypto knowledge through trivia, guessing games, and market data. Scores are stored via Firebase Firestore, with user
+              authentication handled by Firebase Authentication, and deployment managed through Vercel.
           </p>
           <a href="https://habitrack-afeb2.web.app" target="_blank" className="link">
             <strong>HabiTrack</strong>
           </a><br/>
           <p className="ml-4 mr-4">
             A habit tracker app built with <strong>React</strong>, <strong>Vite</strong>, <strong>Tailwind CSS</strong>, and <strong>Firebase</strong>. It offers
-              full CRUD functionality, enabling users to track their habit progress with data stored and synced in real time via Firestore, with user authentication 
+              full CRUD functionality, enabling users to track their habit progress with data stored and synced in real time via Firebase Firestore, with user authentication 
               handled by Firebase Authentication.
           </p>
           <a href="https://joshuakitong.github.io/portfolio" target="_blank" className="link">
