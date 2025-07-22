@@ -7,7 +7,7 @@ const WebDevProj = () => {
         <div className="my-2">
           <a href="https://cryptoguessr-amber.vercel.app" target="_blank" className="link">
             <strong>CryptoGuessr</strong>
-          </a> <i className="note">(Work in progress...)</i><br/>
+          </a><br/>
           <p className="ml-4 mr-4">
             A cryptocurrency-themed game built with <strong>Next.js</strong>, <strong>Tailwind CSS</strong>, <strong>Node.js</strong>, 
               the <strong>CoinGecko API</strong>, <strong>Vercel</strong>, and <strong>Firebase</strong>. It features three interactive mini-games that challenge
