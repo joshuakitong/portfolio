@@ -57,7 +57,7 @@ export default function HomePage() {
             >
               <span className="text-blue-500">
                 <Typewriter
-                  words={['Web Developer', 'Music Producer', 'Content Creator', 'and more...']}
+                  words={['Web Developer', 'Music Producer', 'Gaming Content Creator']}
                   loop={0}
                   cursor
                   cursorStyle="|"
@@ -74,8 +74,8 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.6 }}
             >
-              As a self-taught, modern <strong>jack of all trades</strong>, I blend <strong>technical knowledge</strong> in web development, <strong>strategic thinking</strong> from competitive gaming,
-              and <strong>creative talent</strong> in multimedia production — delivering <strong>versatile solutions</strong> across modern web platforms.
+              As a modern <strong>jack of all trades</strong>, I blend <strong>technical knowledge</strong> in web development, <strong>strategic thinking</strong> from competitive gaming,
+              and <strong>creative talent</strong> in multimedia production delivering <strong>versatile solutions</strong> across modern web platforms.
             </motion.p>
             <motion.p
               className="max-w-2xl text-gray-700 dark:text-gray-300 pb-6"

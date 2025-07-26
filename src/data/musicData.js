@@ -18,10 +18,10 @@ export const sections = [
       <>
         <h2 className="header">Background</h2>
         <p className="mb-6">
-          I started playing guitar at the age of six, with minimal formal lessons — most of what I learned was self-taught. Over time, I picked up other instruments too, 
-           including lead guitar, bass, drums, and keyboards. Throughout my school years, I stayed active in music, joining battle of the bands and talent shows.<br/><br/>
+          I started playing guitar at the age of six. Over time, I picked up other instruments too, including lead guitar, bass, drums, and keyboards. 
+           Throughout my school years, I stayed active in music, joining battle of the bands and talent shows.<br/><br/>
 
-          After graduating, however, I lost touch with music. It wasn’t until the pandemic in 2020 that I rediscovered my passion — around the time my brother and his friends 
+          After graduating, however, I lost touch with music. It wasn’t until the pandemic that I rediscovered my passion. Around that time, my brother and his friends 
            started an independent record label and collective called BOX84. I joined the team and have been deeply involved as a <strong>music producer</strong> 
            , <strong>manager</strong>, and <strong>co-owner</strong> ever since.<br/><br/>
 
@@ -29,7 +29,7 @@ export const sections = [
            , <strong>edit videos and graphics</strong> , <strong>release music on streaming platforms</strong>, <strong>manage artists and social media pages</strong>. 
            To date, I’ve produced over a hundred tracks, generating over a million total streams across various platforms.<br/><br/>
            
-          I primarily use <strong>FL Studio</strong>, <strong>Adobe Premiere Pro</strong>, and <strong>Photoshop</strong> — and you can find more about the tools I use for 
+          I primarily use <strong>FL Studio</strong>, <strong>Adobe Premiere Pro</strong>, and <strong>Photoshop</strong>. You can find more about the tools I use for 
            each part of the process in the sections below.
         </p>
         <h2 className="header">Music Production Services</h2>
@@ -93,7 +93,7 @@ export const sections = [
           I was first introduced to this field at a young age, watching my dad and cousin record vocals for jingles and song covers using Cool Edit Pro (now Adobe Audition). 
            I then got hands-on experience working as a sound technician for our family’s sound system business during summer campaign seasons.<br/><br/>
            
-          It wasn’t something I focused on deeply at the time, but I eventually revisited and developed the skill as a sound engineer for BOX84 — where I taught myself everything 
+          It wasn’t something I focused on deeply at the time, but I eventually revisited and developed the skill as a sound engineer for BOX84 where I taught myself everything 
            from <strong>recording</strong> to <strong>mixing</strong> and <strong>mastering</strong>, primarily using <strong>FL Studio</strong> and <strong>eMastered</strong>.
         </p>
         <h2 className="header">Featured Before & After Mix/Master</h2>

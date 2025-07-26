@@ -11,7 +11,6 @@ export default function Navbar() {
     { path: '/music', label: 'Music Production' },
     { path: '/gaming', label: 'Gaming & Streaming' },
     { path: '/projectsAndTech', label: 'Projects & Tech' },
-    { path: '/others', label: 'Others' },
     { path: '/contact', label: 'Contact' },
   ];
 

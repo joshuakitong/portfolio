@@ -14,21 +14,21 @@ export const sections = [
       <>
         <h2 className="header">Gaming Background</h2>
         <p className="mb-6">
-          I’ve always loved playing games growing up — from board and card games to physical sports. But it’s in video games and esports where I’ve found the most excitement and 
+          I’ve always loved playing games growing up. From board and card games to physical sports. But it’s in video games and esports where I’ve found the most excitement and 
            honed the strongest skill. It’s also where my <strong>problem-solving</strong> and <strong>critical thinking</strong> were developed the most.<br/><br/>
 
           As a kid, I played a variety of RPGs, simulation, and puzzle games. During my elementary years, I started getting into PvP games, though back then it was 
-           all just for fun. It wasn’t until early college that I realized how good I actually was — local indie esports teams started reaching out, and I began competing in 
+           all just for fun. It wasn’t until early college that I realized how good I actually was. Local indie esports teams started reaching out, and I began competing in 
            small tournaments for various MOBA and FPS/shooter games. Still, I didn’t take it too seriously at the time and mostly played for enjoyment.<br/><br/>
 
-          That changed during the 2021 altcoin season, when NFT games were booming — I decided to resign from my developer job to fully pursue my creative careers and 
+          That changed during the last altcoin season, when NFT games were booming. I decided to resign from my developer job to fully pursue my creative careers and 
            become a <strong>professional Axie Infinity player</strong>, competing in high-ranking ladders and various tournaments.
 
         </p>
         <h2 className="header">Competitive Experience</h2>
         <div>
           I’ve always had a competitive drive when it comes to gaming. Even though I wasn’t technically a pro in most of the games I played, I consistently ranked 
-           high — often reaching leaderboards on most of the games I played.<br/><br/>
+           high, often reaching leaderboards on most of the games I played.<br/><br/>
           <p>
           I began seriously considering a professional gaming career during my first weeks of playing Axie Infinity. Even with just an average team composition, I managed 
            to break into the Top 5000, which motivated me to invest in stronger assets and fully commit to the game. From that point on, I consistently placed within 
@@ -66,19 +66,19 @@ export const sections = [
         </p>
         <h2 className="header">Streaming Journey</h2>
         <p className="mb-6">
-          I knew from the start that becoming a Fortnite Twitch streamer for a Filipino audience would be a challenge — the game wasn’t as popular locally as 
+          I knew from the start that becoming a Fortnite Twitch streamer for a Filipino audience would be a challenge. The game wasn’t as popular locally as 
            titles like Valorant or League of Legends. But I pursued it anyway, driven by my love for the game’s <strong>creative gameplay</strong>. Eventually, I managed 
            to <strong>grow a healthy community</strong> and even <strong>influenced</strong> fellow gamers who hadn’t played it before to give it a try.<br/><br/>
 
-          I built everything independently — from <strong>setting up OBS Studio</strong> and <strong>customizing stream assets</strong> to <strong>implementing bots </strong>
+          I built everything independently, from <strong>setting up OBS Studio</strong> and <strong>customizing stream assets</strong> to <strong>implementing bots </strong>
            and <strong>editing my own highlight reels</strong>. Over time, I grew a following of thousands, consistently streamed to hundreds of viewers per session, and hosted 
            dozens of marathon streams, community events, and giveaways.<br/><br/>
            
-          Even after shifting from competitive gaming to content creation, I maintained top-tier performance — reaching the <strong>highest rank every season</strong> and becoming widely recognized in the Filipino 
+          Even after shifting from competitive gaming to content creation, I maintained top-tier performance, reaching the <strong>highest rank every season</strong> and becoming widely recognized in the Filipino 
            Fortnite community as the “<strong>Best Fortnite Player in the Philippines</strong>”.<br/><br/>
            
           Throughout this journey, I experienced significant personal growth and strengthened essential skills such as <strong>problem solving</strong>
-           , <strong>critical thinking</strong>, <strong>adaptability</strong>, <strong>creativity</strong>, and <strong>communication</strong> — all of which continue to serve me across different disciplines today.
+           , <strong>critical thinking</strong>, <strong>adaptability</strong>, <strong>creativity</strong>, and <strong>communication</strong>, all of which continue to serve me across different disciplines today.
         </p>
         <h2 className="header">Featured TikTok Edits</h2>
         <GamingFeatEdits />
@@ -104,7 +104,7 @@ export const sections = [
         <h2 className="header">Gaming Coach</h2>
         <p className="mb-6">
           Over the years, I’ve naturally taken on the role of <strong>In-Game Leader</strong> in competitive MOBA and FPS/shooter games while playing with friends and viewers. 
-           I’ve also had the opportunity to <strong>coach</strong> and <strong>mentor</strong> aspiring gamers — especially during my time as an Axie Infinity scholarship 
+           I’ve also had the opportunity to <strong>coach</strong> and <strong>mentor</strong> aspiring gamers, especially during my time as an Axie Infinity scholarship 
            manager, where I helped others improve their gameplay and strategy.
         </p>
         <h2 className="header">Kits2g Pages and Socials</h2>

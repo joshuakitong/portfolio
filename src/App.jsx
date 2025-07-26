@@ -5,7 +5,6 @@ import Home from './pages/Home';
 import Music from './pages/Music';
 import Gaming from './pages/Gaming';
 import WebDev from './pages/WebDev';
-import Others from './pages/Others';
 import Contact from './pages/Contact';
 import ProjectsAndTech from './pages/ProjectsAndTech';
 import DarkModeToggle from './components/DarkModeToggle'
@@ -21,7 +20,6 @@ function App() {
           <Route path="/music" element={<Music />} />
           <Route path="/gaming" element={<Gaming />} />
           <Route path="/projectsAndTech" element={<ProjectsAndTech />} />
-          <Route path="/others" element={<Others />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
