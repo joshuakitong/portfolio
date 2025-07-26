@@ -5,6 +5,14 @@ const WebDevProj = () => {
           Featured Projects:<br/>
         </p>
         <div className="my-2">
+          <a href="https://workoutgpt-2d445.web.app" target="_blank" className="link">
+            <strong>WorkoutGPT</strong>
+          </a><i className="note"> (Work in progress...)</i><br/>
+          <p className="ml-4 mr-4">
+            An AI-powered workout generator built with <strong>Nuxt.js</strong>, <strong>Tailwind CSS</strong>, <strong>Node.js</strong>, the <strong>Gemini API</strong>, 
+             and <strong>Firebase</strong>. It features a multi-step form wizard for personalized workout generation, dynamic session regeneration, CRUD functionalities, 
+             user authentication with Google, and data persistence with Firebase Firestore.
+          </p>
           <a href="https://cryptoguessr-amber.vercel.app" target="_blank" className="link">
             <strong>CryptoGuessr</strong>
           </a><br/>
