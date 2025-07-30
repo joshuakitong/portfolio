@@ -6,8 +6,8 @@ const WebDevTech = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 mt-2">
           <div className="space-y-6">
-            <strong>Languages</strong>: HTML5 / CSS3, JavaScript, TypeScript, C#, Java, VB, Python<br/>
-            <strong>Frameworks & Libraries</strong>: React, Next.js, Node.js, Vue.js, AngularJS, Angular, ASP.NET, Flask, Kendo UI, Tailwind CSS, Framer Motion<br/>
+            <strong>Languages</strong>: HTML5, CSS3, JavaScript, TypeScript, C#, Java, VB, Python<br/>
+            <strong>Frameworks & Libraries</strong>: React, Next.js, Vue.js, Nuxt.js, Node.js, AngularJS, Angular, ASP.NET, Flask, Tailwind CSS, Material UI, Kendo UI, Framer Motion, GSAP<br/>
             <strong>Tools & Platforms</strong>: Git, Bitbucket, npm, Visual Studio Code<br/>
             <strong>Project Management</strong>: Jira, Confluence, Crucible
           </div>
