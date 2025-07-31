@@ -24,7 +24,7 @@ function App() {
         </Routes>
       </AnimatePresence>
       <DarkModeToggle />
-      <footer class="fixed bottom-0 left-0 w-full text-white/30 text-sm py-3 px-4 z-50">
+      <footer class="fixed bottom-0 left-0 text-white/30 text-sm py-3 px-4 z-50">
         &copy; Joshua Kitong 2025 &middot; Last updated: July 2025
       </footer>
     </div>
