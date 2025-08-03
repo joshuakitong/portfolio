@@ -161,7 +161,9 @@ export default function ProjectsSection() {
           key={project.id}
           ref={(el) => (containerRef.current[index] = el)}
           id={project.id}
-          className="w-full px-6 py-6 mb-12 mx-auto text-white relative bg-white/5 border border-white/10 rounded-4xl max-w-6xl"
+          className={`w-full px-6 py-6 mx-auto text-white relative bg-white/5 border border-white/10 rounded-4xl max-w-6xl ${
+            index !== projects.length - 1 ? "mb-12" : ""
+          }`}
         >
           <div className="flex items-center justify-center gap-3 mb-3 project-title">
             <img
