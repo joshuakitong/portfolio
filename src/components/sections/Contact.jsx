@@ -127,7 +127,7 @@ export default function Contact({ onVisibleChange }) {
           href="https://github.com/joshuakitong"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex gap-2 items-center text-sm sm:text-base bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors transition-shadow duration-300 backdrop-blur-xs"
+          className="flex gap-2 items-center text-sm sm:text-base bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs"
         >
           <Github size="100%" className="w-4 h-4 sm:w-5 sm:h-5" />
           GitHub
@@ -138,7 +138,7 @@ export default function Contact({ onVisibleChange }) {
           href="https://www.linkedin.com/in/joshua-christopher-kitong-65805a2a9/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex gap-2 items-center text-sm sm:text-base bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors transition-shadow duration-300 backdrop-blur-xs"
+          className="flex gap-2 items-center text-sm sm:text-base bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs"
         >
           <Linkedin size="100%" className="w-4 h-4 sm:w-5 sm:h-5" />
           LinkedIn
@@ -148,7 +148,7 @@ export default function Contact({ onVisibleChange }) {
           ref={(el) => (buttonRefs.current[2] = el)}
           href={`${import.meta.env.BASE_URL}resume/Joshua_Kitong_Resume_2025.pdf`}
           download
-          className="flex gap-2 items-center text-sm sm:text-base bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors transition-shadow duration-300 backdrop-blur-xs"
+          className="flex gap-2 items-center text-sm sm:text-base bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs"
         >
           <Download size="100%" className="w-4 h-4 sm:w-5 sm:h-5" />
           Resume

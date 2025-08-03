@@ -235,7 +235,7 @@ export default function NavBar() {
           href="mailto:joshuakitong@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors transition-shadow duration-300 backdrop-blur-xs opacity-0"
+          className="bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs opacity-0"
         >
           <Mail size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />
         </a>
@@ -244,7 +244,7 @@ export default function NavBar() {
           href="https://github.com/joshuakitong"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors transition-shadow duration-300 backdrop-blur-xs opacity-0"
+          className="bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs opacity-0"
         >
           <Github size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />
         </a>
@@ -253,7 +253,7 @@ export default function NavBar() {
           href="https://www.linkedin.com/in/joshua-christopher-kitong-65805a2a9/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors transition-shadow duration-300 backdrop-blur-xs opacity-0"
+          className="bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs opacity-0"
         >
           <Linkedin size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />
         </a>
