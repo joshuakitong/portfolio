@@ -24,4 +24,4 @@ Live: [View Site](https://joshuakitong.github.io/portfolio)
      `npm run dev`
 </details>
 
-Original Repository: https://joshuakitong.github.io/portfolio-temp
+Original Repository: https://github.com/joshuakitong/portfolio-temp
