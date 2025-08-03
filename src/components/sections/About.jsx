@@ -96,7 +96,7 @@ export default function AboutTimeline() {
       >
         About
       </h2>
-      <div className="mb-6 relative">
+      <div className="relative">
         <div className="bg-white/5 border border-white/10 rounded-4xl p-6 opacity-0" ref={containerRef}>
           <p
             ref={paragraphRef}
