@@ -1,36 +1,27 @@
 # Joshua Kitong Portfolio
 
-This is a responsive, single-page portfolio built with **React**, **Tailwind CSS**, and **Framer Motion**, showcasing Joshua Kitong’s diverse background and skills across technical and creative fields.
-
-## Highlights:
-
-- Web Development
-- Music Production
-- Gaming & Streaming
-- Other Work Experiences
-
-## Features
-
- - Responsive design
- - Scroll stacking
- - Scroll Reveal Animations
- - Interactive Transitions
- - Reusable Media Carousel
- - Horizontal Image Carousel
- - AB Waveform Comparison
- - Toggle Dark Mode
+This is a responsive, single-page portfolio built with **React**, **Vite**, **Tailwind CSS**, and **GSAP**, showcasing my front-end development skills, professional experience, and personal projects.
 
 Live: [View Site](https://joshuakitong.github.io/portfolio)
+
+## Features:
+ - Responsive Design
+ - Animated SVG Art
+ - Scroll Reveal Animations
+ - Section-Based Navbar Highlighting
+ - Custom Cursor
 
 <details>
   <summary><strong>How to Run Locally</strong></summary>
 
-  1. Clone the repo  
+  1. Clone the repo
      `https://github.com/joshuakitong/portfolio`
 
-  2. Install dependencies  
+  2. Install dependencies
      `npm install`
 
-  3. Run the app  
-     `npm start`
+  3. Run the app
+     `npm run dev`
 </details>
+
+Original Repository: https://joshuakitong.github.io/portfolio-temp

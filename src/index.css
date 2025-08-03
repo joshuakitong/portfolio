@@ -1,16 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@import './assets/textures.css';
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Code&display=swap");
+@import "tailwindcss";
 
-.header {
-    @apply text-xl font-bold mb-2 tracking-wide text-gray-800 dark:text-gray-200;
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-cascadia: "Cascadia Code", "monospace"; 
 }
 
-.link {
-    @apply text-blue-500 dark:text-blue-400 hover:underline visited:text-purple-500 dark:visited:text-purple-400;
+body {
+  cursor: none;
 }
 
-.note {
-    @apply text-xs text-gray-600 dark:text-gray-400;
+html {
+  scroll-behavior: smooth;
 }
