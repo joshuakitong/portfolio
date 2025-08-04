@@ -1,22 +1,36 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Mail, Github, Linkedin, Sun, Moon, ChevronsUp } from "lucide-react";
 
 const sections = ["About", "Skills", "Projects", "Contact"];
 
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(window.scrollY > 10);
   const [isOpen, setIsOpen] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    return localStorage.getItem("theme") === "light" ? false : true;
+  });
   const [activeSection, setActiveSection] = useState(() => {
     const hash = window.location.hash.replace("#", "");
     return sections.map(s => s.toLowerCase()).includes(hash) ? hash : "home";
   });
   const [hasAnimatedSocials, setHasAnimatedSocials] = useState(false);
+
   const linkRefs = useRef([]);
   const faviconRef = useRef(null);
   const underlineRef = useRef(null);
   const navRef = useRef(null);
   const socialsRefs = useRef([]);
+
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [isDark]);
 
   useEffect(() => {
     const tl = gsap.timeline({ delay: 2 });
@@ -139,6 +153,7 @@ export default function NavBar() {
 
   return (
     <>
+      {/* Navbar */}
       <nav
         ref={navRef}
         className={`w-full fixed top-0 z-50 transition-bg duration-300 opacity-0 ${
@@ -237,6 +252,7 @@ export default function NavBar() {
           </div>
         </div>
       </nav>
+
       {/* Socials */}
       <div className="fixed bottom-3 left-3 lg:bottom-5 lg:left-5 z-40 flex flex-col gap-2 sm:gap-3">
         <a
@@ -266,6 +282,32 @@ export default function NavBar() {
         >
           <Linkedin size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />
         </a>
+      </div>
+
+      {/* Toggle Dark Theme + Scroll to Top */}
+      <div className="fixed bottom-3 right-3 lg:bottom-5 lg:right-5 z-40 flex flex-col items-end gap-2 sm:gap-3">
+        {activeSection !== "home" && (
+          <button
+            onClick={() => {
+              const home = document.getElementById("home");
+              if (home) home.scrollIntoView({ behavior: "smooth" });
+              history.pushState(null, null, "#home");
+            }}
+            className="bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs"
+          >
+            <ChevronsUp size="100%" className="w-4 h-4 sm:w-5 sm:h-5" />
+          </button>
+        )}
+        <button
+          onClick={() => setIsDark(!isDark)}
+          className="bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs"
+        >
+          {isDark ? (
+            <Moon size="100%" className="w-4 h-4 sm:w-5 sm:h-5" />
+          ) : (
+            <Sun size="100%" className="w-4 h-4 sm:w-5 sm:h-5" />
+          )}
+        </button>
       </div>
     </>
   );
