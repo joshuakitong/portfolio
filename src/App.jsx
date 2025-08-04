@@ -1,6 +1,5 @@
 import NavBar from "./components/NavBar";
 import VignetteOverlay from "./components/VignetteOverlay";
-import StaticBackground from "./components/StaticBackground";
 import CustomCursor from "./components/CustomCursor";
 import ScrollToHash from "./components/ScrollToHash";
 import Home from "./components/sections/Home";
@@ -14,7 +13,6 @@ function App() {
     <div className="relative min-h-screen bg-black/5 dark:bg-black/90 text-black dark:text-white font-cascadia transition-all duration-300">
       <NavBar />
       <VignetteOverlay />
-      <StaticBackground />
       <CustomCursor />
       <ScrollToHash />
 
