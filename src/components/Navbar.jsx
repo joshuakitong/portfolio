@@ -7,7 +7,11 @@ const sections = ["About", "Skills", "Projects", "Contact"];
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(window.scrollY > 10);
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState(() => {
+    const hash = window.location.hash.replace("#", "");
+    return sections.map(s => s.toLowerCase()).includes(hash) ? hash : "home";
+  });
+  const [hasAnimatedSocials, setHasAnimatedSocials] = useState(false);
   const linkRefs = useRef([]);
   const faviconRef = useRef(null);
   const underlineRef = useRef(null);
@@ -38,18 +42,21 @@ export default function NavBar() {
       "-=0.5"
     );
 
-    gsap.fromTo(
-      socialsRefs.current,
-      { y: 50, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        stagger: 0.2,
-        duration: 0.7,
-        ease: "power2.out",
-        delay: 2.75,
-      }
-    );
+    if (activeSection !== "contact") {
+      gsap.fromTo(
+        socialsRefs.current,
+        { y: 100, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          stagger: 0.2,
+          duration: 0.7,
+          ease: "power2.out",
+          delay: 2.75,
+          onComplete: () => setHasAnimatedSocials(true),
+        }
+      );
+    }
   }, []);
 
   useEffect(() => {
@@ -105,12 +112,14 @@ export default function NavBar() {
       });
     }
 
+    if (!hasAnimatedSocials) return;
+
     if (activeSection === "contact") {
       const reversed = [...socialsRefs.current].reverse();
 
       gsap.to(reversed, {
         opacity: 0,
-        y: 50,
+        y: 100,
         stagger: 0.2,
         duration: 0.7,
         ease: "power2.out",
@@ -126,7 +135,7 @@ export default function NavBar() {
         pointerEvents: "auto",
       });
     }
-  }, [activeSection]);
+  }, [activeSection, hasAnimatedSocials]);
 
   return (
     <>
