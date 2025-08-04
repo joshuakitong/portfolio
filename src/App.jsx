@@ -11,7 +11,7 @@ import Contact from "./components/sections/Contact";
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-black text-white font-cascadia">
+    <div className="relative min-h-screen bg-black/5 dark:bg-black/90 text-black dark:text-white font-cascadia transition-all duration-300">
       <NavBar />
       <VignetteOverlay />
       <StaticBackground />
@@ -33,7 +33,7 @@ function App() {
       <div id="contact" className="relative z-10 items-center justify-between min-h-screen/2 max-w-md mx-auto scroll-mt-12 pt-12 px-6" >
         <Contact />
       </div>
-      <footer className="text-sm text-white/50 text-center pt-12 pb-6">&copy; Joshua Kitong 2025. All Rights Reserved</footer>
+      <footer className="text-sm text-black/50 dark:text-white/50 text-center pt-12 pb-6">&copy; Joshua Kitong 2025. All Rights Reserved</footer>
     </div>
   );
 }

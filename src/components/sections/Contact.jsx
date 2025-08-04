@@ -101,12 +101,12 @@ export default function Contact({ onVisibleChange }) {
     >
       <h2
         ref={titleRef}
-        className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center"
+        className="text-3xl sm:text-4xl font-bold mb-8 text-center"
       >
         Contact
       </h2>
 
-      <div className="text-gray-200 text-md sm:text-lg space-y-4 text-center mb-8">
+      <div className="text-gray-800 dark:text-gray-200 text-md sm:text-lg space-y-4 text-center mb-8">
         <p
           ref={paragraphRef}
           className="text-center mb-6"
@@ -127,7 +127,7 @@ export default function Contact({ onVisibleChange }) {
           href="https://github.com/joshuakitong"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex gap-2 items-center text-sm sm:text-base bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs"
+          className="flex gap-2 items-center text-sm sm:text-base bg-white/5 border border-black/30 dark:border-white/10 hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-sm"
         >
           <Github size="100%" className="w-4 h-4 sm:w-5 sm:h-5" />
           GitHub
@@ -138,7 +138,7 @@ export default function Contact({ onVisibleChange }) {
           href="https://www.linkedin.com/in/joshua-christopher-kitong-65805a2a9/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex gap-2 items-center text-sm sm:text-base bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs"
+          className="flex gap-2 items-center text-sm sm:text-base bg-white/5 border border-black/30 dark:border-white/10 hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-sm"
         >
           <Linkedin size="100%" className="w-4 h-4 sm:w-5 sm:h-5" />
           LinkedIn
@@ -148,7 +148,7 @@ export default function Contact({ onVisibleChange }) {
           ref={(el) => (buttonRefs.current[2] = el)}
           href={`${import.meta.env.BASE_URL}resume/Joshua_Kitong_Resume_2025.pdf`}
           download
-          className="flex gap-2 items-center text-sm sm:text-base bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs"
+          className="flex gap-2 items-center text-sm sm:text-base bg-white/5 border border-black/30 dark:border-white/10 hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-sm"
         >
           <Download size="100%" className="w-4 h-4 sm:w-5 sm:h-5" />
           Resume

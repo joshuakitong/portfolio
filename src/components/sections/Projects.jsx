@@ -151,7 +151,7 @@ export default function ProjectsSection() {
     <div>
       <h2
         ref={titleRef}
-        className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center"
+        className="text-3xl sm:text-4xl font-bold mb-8 text-center"
       >
         Projects
       </h2>
@@ -161,7 +161,7 @@ export default function ProjectsSection() {
           key={project.id}
           ref={(el) => (containerRef.current[index] = el)}
           id={project.id}
-          className={`w-full px-6 py-6 mx-auto text-white relative bg-white/5 border border-white/10 rounded-4xl max-w-6xl ${
+          className={`w-full px-6 py-6 mx-auto relative bg-white/5 border border-black/30 dark:border-white/10 rounded-4xl max-w-6xl ${
             index !== projects.length - 1 ? "mb-12" : ""
           }`}
         >
@@ -176,7 +176,7 @@ export default function ProjectsSection() {
             </h3>
           </div>
 
-          <p className="project-description text-gray-200 text-sm sm:text-lg mb-4 text-center">
+          <p className="project-description text-gray-800 dark:text-gray-200 text-sm sm:text-lg mb-4 text-center">
             {project.description}
           </p>
 
@@ -184,7 +184,7 @@ export default function ProjectsSection() {
             {project.tech.map((tech, i) => (
               <span
                 key={i}
-                className="project-tech text-xs sm:text-md border border-white/10 text-gray-200 rounded-full px-3 py-1"
+                className="project-tech text-xs sm:text-md border border-black/30 dark:border-white/10 text-gray-800 dark:text-gray-200 rounded-full px-3 py-1"
               >
                 {tech}
               </span>
@@ -194,7 +194,7 @@ export default function ProjectsSection() {
           <img
             src={`projects/${project.id}.gif`}
             alt={`${project.title} demo`}
-            className="rounded-xl w-full mx-auto mb-6 border border-white/10"
+            className="rounded-xl w-full mx-auto mb-6 border border-black/30 dark:border-white/10"
           />
 
           <div className="flex justify-end">
@@ -202,7 +202,7 @@ export default function ProjectsSection() {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-blue-500 border border-blue-500 rounded-full px-4 py-2 text-sm hover:bg-blue-500 hover:text-white transition-colors hover-target backdrop-blur-xs"
+              className="inline-flex items-center gap-2 text-blue-500 border border-blue-500 rounded-full px-4 py-2 text-sm hover:bg-blue-500 hover:text-white transition-colors hover-target"
             >
               <ExternalLink size={16} />
               Visit Site

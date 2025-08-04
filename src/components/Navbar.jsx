@@ -39,21 +39,21 @@ export default function NavBar() {
 
     tl.fromTo(
       navRef.current,
-      { y: -50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.7, ease: "power3.out" }
+      { opacity: 0 },
+      { opacity: 1, duration: 0.7, ease: "power2.out" }
     );
 
     const isSmallScreen = window.innerWidth < 768;
 
     tl.fromTo(
       linkRefs.current,
-      { y: -20, opacity: 0 },
+      { y: -50, opacity: 0 },
       {
         y: 0,
         opacity: 1,
         duration: 0.7,
         ease: "power2.out",
-        stagger: isSmallScreen ? 0 : 0.1,
+        stagger: isSmallScreen ? 0 : 0.15,
       },
       "-=0.5"
     );
@@ -198,7 +198,7 @@ export default function NavBar() {
       <nav
         ref={navRef}
         className={`w-full fixed top-0 z-50 transition-bg duration-300 opacity-0 ${
-          scrolled || isOpen ? "bg-black/70 backdrop-blur-md" : ""
+          scrolled || isOpen ? "bg-white dark:bg-black" : ""
         }`}
       >
         <div className="max-w-[1600px] mx-auto px-6 py-4 flex items-center justify-between">
@@ -206,13 +206,11 @@ export default function NavBar() {
           <button
             ref={faviconRef}
             onClick={() => {
-              const home = document.getElementById("home");
-              if (home) {
-                home.scrollIntoView({ behavior: "smooth" });
-
-                setTimeout(() => {
-                  history.pushState(null, null, "#home");
-                }, 400);
+              setIsOpen(false);
+              const section = document.getElementById("home");
+              if (section) {
+                section.scrollIntoView();
+                history.pushState(null, null, "#home");
               }
             }}
             aria-label="Go to home section"
@@ -221,11 +219,21 @@ export default function NavBar() {
             onMouseDown={(e) => gsap.to(e.currentTarget, { scale: 0.95, duration: 0.1 })}
             onMouseUp={(e) => gsap.to(e.currentTarget, { scale: 1.05, duration: 0.1 })}
           >
-            <img src="favicon.ico" alt="Logo" className="w-8 h-8" />
+            <img
+              src="favicon.ico"
+              alt="Logo"
+              className="w-8 h-8 hidden dark:block"
+            />
+
+            <img
+              src="faviconblack.ico"
+              alt="Logo"
+              className="w-8 h-8 block dark:hidden"
+            />
           </button>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex gap-6 text-white relative">
+          <div className="hidden md:flex gap-6 relative">
             {sections.map((section, i) => (
               <a
                 key={section}
@@ -243,7 +251,7 @@ export default function NavBar() {
             {/* Animated Underline */}
             <div
               ref={underlineRef}
-              className={`absolute -bottom-5 h-[4px] bg-white transition-all duration-300 w-0 translate-x-0 ${
+              className={`absolute -bottom-5 h-[4px] bg-black dark:bg-white transition-all duration-300 w-0 translate-x-0 ${
                 activeSection === "home" ? "opacity-0" : ""
               }`}
             />
@@ -257,17 +265,17 @@ export default function NavBar() {
               aria-label="Toggle menu"
             >
               <span
-                className={`absolute w-8 h-0.5 bg-white left-0 top-1 transition-all duration-300 ${
+                className={`absolute w-8 h-0.5 bg-black dark:bg-white left-0 top-1 transition-all duration-300 ${
                   isOpen ? "rotate-45 top-5" : ""
                 }`}
               />
               <span
-                className={`absolute w-8 h-0.5 bg-white left-0 top-3 transition-all duration-300 ${
+                className={`absolute w-8 h-0.5 bg-black dark:bg-white left-0 top-3 transition-all duration-300 ${
                   isOpen ? "opacity-0" : ""
                 }`}
               />
               <span
-                className={`absolute w-8 h-0.5 bg-white left-0 top-5 transition-all duration-300 ${
+                className={`absolute w-8 h-0.5 bg-black dark:bg-white left-0 top-5 transition-all duration-300 ${
                   isOpen ? "-rotate-45 top-5" : ""
                 }`}
               />
@@ -277,7 +285,7 @@ export default function NavBar() {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden bg-black text-white overflow-hidden transition-all duration-300 ${
+          className={`md:hidden z-50 bg-white dark:bg-black backdrop-blur-md overflow-hidden transition-all duration-300 ${
             isOpen ? "max-h-96 py-4 px-6 top-12" : "max-h-0"
           }`}
         >
@@ -303,7 +311,7 @@ export default function NavBar() {
           href="mailto:joshuakitong@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs opacity-0"
+          className="bg-white/80 dark:bg-white/5 border border-black/30 dark:border-white/10 hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-sm opacity-0"
         >
           <Mail size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />
         </a>
@@ -312,7 +320,7 @@ export default function NavBar() {
           href="https://github.com/joshuakitong"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs opacity-0"
+          className="bg-white/80 dark:bg-white/5 border border-black/30 dark:border-white/10 hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-sm opacity-0"
         >
           <Github size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />
         </a>
@@ -321,7 +329,7 @@ export default function NavBar() {
           href="https://www.linkedin.com/in/joshua-christopher-kitong-65805a2a9/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs opacity-0"
+          className="bg-white/80 dark:bg-white/5 border border-black/30 dark:border-white/10 hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-sm opacity-0"
         >
           <Linkedin size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />
         </a>
@@ -336,14 +344,14 @@ export default function NavBar() {
             if (home) home.scrollIntoView({ behavior: "smooth" });
             history.pushState(null, null, "#home");
           }}
-          className="bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs opacity-0"
+          className="bg-white/80 dark:bg-white/5 border border-black/30 dark:border-white/10 hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-sm opacity-0"
         >
           <ChevronsUp size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />
         </button>
         <button
           ref={(el) => (controlButtonsRefs.current[0] = el)}
           onClick={() => setIsDark(!isDark)}
-          className="bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs opacity-0"
+          className="bg-white/80 dark:bg-white/5 border border-black/30 dark:border-white/10 hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-sm opacity-0"
         >
           {isDark ? (
             <Moon size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />
