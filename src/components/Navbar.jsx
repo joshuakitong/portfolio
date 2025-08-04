@@ -198,7 +198,7 @@ export default function NavBar() {
       <nav
         ref={navRef}
         className={`w-full fixed top-0 z-50 transition-bg duration-300 opacity-0 ${
-          scrolled || isOpen ? "bg-black" : ""
+          scrolled || isOpen ? "bg-black/70 backdrop-blur-md" : ""
         }`}
       >
         <div className="max-w-[1600px] mx-auto px-6 py-4 flex items-center justify-between">
