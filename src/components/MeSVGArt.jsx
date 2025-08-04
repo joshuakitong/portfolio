@@ -96,7 +96,7 @@ export default function MeSVGArt() {
       });
     };
 
-    const delayAfterLoad = 3250;
+    const delayAfterLoad = 3500;
     const hoverDuration = 4000;
 
     setTimeout(() => {
