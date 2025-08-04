@@ -161,7 +161,7 @@ export default function ProjectsSection() {
           key={project.id}
           ref={(el) => (containerRef.current[index] = el)}
           id={project.id}
-          className={`w-full px-6 py-6 mx-auto relative bg-white/5 border border-black/30 dark:border-white/10 rounded-4xl max-w-6xl ${
+          className={`w-full px-6 py-6 mx-auto relative bg-white/5 border border-black/15 dark:border-white/10 rounded-4xl max-w-6xl ${
             index !== projects.length - 1 ? "mb-12" : ""
           }`}
         >
@@ -184,7 +184,7 @@ export default function ProjectsSection() {
             {project.tech.map((tech, i) => (
               <span
                 key={i}
-                className="project-tech text-xs sm:text-md border border-black/30 dark:border-white/10 text-gray-800 dark:text-gray-200 rounded-full px-3 py-1"
+                className="project-tech text-xs sm:text-md border border-black/15 dark:border-white/10 text-gray-800 dark:text-gray-200 rounded-full px-3 py-1"
               >
                 {tech}
               </span>
@@ -194,7 +194,7 @@ export default function ProjectsSection() {
           <img
             src={`projects/${project.id}.gif`}
             alt={`${project.title} demo`}
-            className="rounded-xl w-full mx-auto mb-6 border border-black/30 dark:border-white/10"
+            className="rounded-xl w-full mx-auto mb-6 border border-black/15 dark:border-white/10"
           />
 
           <div className="flex justify-end">
