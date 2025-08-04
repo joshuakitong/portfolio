@@ -15,12 +15,14 @@ export default function NavBar() {
     return sections.map(s => s.toLowerCase()).includes(hash) ? hash : "home";
   });
   const [hasAnimatedSocials, setHasAnimatedSocials] = useState(false);
+  const [hasAnimatedControls, setHasAnimatedControls] = useState(false);
 
   const linkRefs = useRef([]);
   const faviconRef = useRef(null);
   const underlineRef = useRef(null);
   const navRef = useRef(null);
   const socialsRefs = useRef([]);
+  const controlButtonsRefs = useRef([]);
 
   useEffect(() => {
     if (isDark) {
@@ -71,6 +73,21 @@ export default function NavBar() {
         }
       );
     }
+
+    const controlButtonsToShow = activeSection === "home" ? controlButtonsRefs.current[0] : controlButtonsRefs.current;
+    gsap.fromTo(
+      controlButtonsToShow,
+      { y: 100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        stagger: 0.2,
+        duration: 0.7,
+        ease: "power2.out",
+        delay: 3.25,
+        onComplete: () => setHasAnimatedControls(true),
+      }
+    );
   }, []);
 
   useEffect(() => {
@@ -125,7 +142,9 @@ export default function NavBar() {
         duration: 0,
       });
     }
+  }, [activeSection]);
 
+  useEffect(() => {
     if (!hasAnimatedSocials) return;
 
     if (activeSection === "contact") {
@@ -151,6 +170,28 @@ export default function NavBar() {
     }
   }, [activeSection, hasAnimatedSocials]);
 
+  useEffect(() => {
+    if (!hasAnimatedControls) return;
+    console.log(hasAnimatedControls + " " + activeSection);
+    if (activeSection === "home") {
+      gsap.to(controlButtonsRefs.current[1], {
+        opacity: 0,
+        y: 75,
+        duration: 0.7,
+        ease: "power2.out",
+        pointerEvents: "auto",
+      });
+    } else {
+      gsap.to(controlButtonsRefs.current[1], {
+        opacity: 1,
+        y: 0,
+        duration: 0.7,
+        ease: "power2.out",
+        pointerEvents: "auto",
+      });
+    }
+  }, [activeSection, hasAnimatedControls]);
+
   return (
     <>
       {/* Navbar */}
@@ -165,11 +206,13 @@ export default function NavBar() {
           <button
             ref={faviconRef}
             onClick={() => {
-              setIsOpen(false);
-              const section = document.getElementById("home");
-              if (section) {
-                section.scrollIntoView();
-                history.pushState(null, null, "#home");
+              const home = document.getElementById("home");
+              if (home) {
+                home.scrollIntoView({ behavior: "smooth" });
+
+                setTimeout(() => {
+                  history.pushState(null, null, "#home");
+                }, 400);
               }
             }}
             aria-label="Go to home section"
@@ -286,26 +329,26 @@ export default function NavBar() {
 
       {/* Toggle Dark Theme + Scroll to Top */}
       <div className="fixed bottom-3 right-3 lg:bottom-5 lg:right-5 z-40 flex flex-col items-end gap-2 sm:gap-3">
-        {activeSection !== "home" && (
-          <button
-            onClick={() => {
-              const home = document.getElementById("home");
-              if (home) home.scrollIntoView({ behavior: "smooth" });
-              history.pushState(null, null, "#home");
-            }}
-            className="bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs"
-          >
-            <ChevronsUp size="100%" className="w-4 h-4 sm:w-5 sm:h-5" />
-          </button>
-        )}
         <button
+          ref={(el) => (controlButtonsRefs.current[1] = el)}
+          onClick={() => {
+            const home = document.getElementById("home");
+            if (home) home.scrollIntoView({ behavior: "smooth" });
+            history.pushState(null, null, "#home");
+          }}
+          className="bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs opacity-0"
+        >
+          <ChevronsUp size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />
+        </button>
+        <button
+          ref={(el) => (controlButtonsRefs.current[0] = el)}
           onClick={() => setIsDark(!isDark)}
-          className="bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs"
+          className="bg-white/5 border border-white/10 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-xs opacity-0"
         >
           {isDark ? (
-            <Moon size="100%" className="w-4 h-4 sm:w-5 sm:h-5" />
+            <Moon size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />
           ) : (
-            <Sun size="100%" className="w-4 h-4 sm:w-5 sm:h-5" />
+            <Sun size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />
           )}
         </button>
       </div>
