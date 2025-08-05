@@ -172,7 +172,6 @@ export default function NavBar() {
 
   useEffect(() => {
     if (!hasAnimatedControls) return;
-    console.log(hasAnimatedControls + " " + activeSection);
     if (activeSection === "home") {
       gsap.to(controlButtonsRefs.current[1], {
         opacity: 0,
