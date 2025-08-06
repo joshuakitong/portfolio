@@ -128,12 +128,12 @@ export default function SkillsSection() {
             </h3>
             <div className="flex flex-wrap gap-3">
               {section.items.map((skill, i) => (
-                <div
+                <p
                   key={i}
                   className="skill-item opacity-0 text-gray-800 dark:text-gray-200 text-sm sm:text-md container-style rounded-full px-4 py-2 transition-shadow duration-300 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)]"
                 >
                   {skill}
-                </div>
+                </p>
               ))}
             </div>
           </div>

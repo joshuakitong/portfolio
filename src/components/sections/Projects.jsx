@@ -180,7 +180,7 @@ export default function ProjectsSection() {
             {project.description}
           </p>
 
-          <div className="flex flex-wrap justify-center gap-2 mb-4">
+          <p className="flex flex-wrap justify-center gap-2 mb-4">
             {project.tech.map((tech, i) => (
               <span
                 key={i}
@@ -189,7 +189,7 @@ export default function ProjectsSection() {
                 {tech}
               </span>
             ))}
-          </div>
+          </p>
 
           <img
             src={`projects/${project.id}.gif`}
