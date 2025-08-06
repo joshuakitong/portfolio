@@ -1,12 +1,67 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import { Mail, Github, Linkedin, Sun, Moon, ChevronsUp } from "lucide-react";
+import { Mail, Github, Linkedin, Sun, Moon, Highlighter, ChevronsUp } from "lucide-react";
 
 const sections = ["About", "Skills", "Projects", "Contact"];
+
+function highlightKeywords() {
+  const elements = document.querySelectorAll("p, li");
+  const keywords = [
+    "JavaScript", "React", "Next.js", "Vue.js", "Nuxt.js", "AngularJS", "Angular", "ASP.NET", "Node.js", "Firebase", "HTML5", "CSS3", "Tailwind CSS"
+  ];
+
+  elements.forEach((el) => {
+    const style = window.getComputedStyle(el);
+    const isVisible =
+      style.opacity !== "0" &&
+      style.visibility !== "hidden" &&
+      style.display !== "none" &&
+      !el.closest("[style*='opacity: 0']");
+
+    if (!isVisible) return;
+
+    let originalHTML = el.innerHTML;
+    let modified = false;
+
+    keywords.forEach((keyword) => {
+      const regex = new RegExp(`\\b(${keyword})\\b`, "gi");
+      if (regex.test(el.innerHTML)) modified = true;
+      el.innerHTML = el.innerHTML.replace(
+        regex,
+        `<span class="keyword-highlight py-1 -my-1 px-2 -mx-2 rounded">$1</span>`
+      );
+    });
+
+    if (modified) {
+      const spans = el.querySelectorAll(".keyword-highlight");
+
+      gsap.fromTo(
+        spans,
+        { backgroundColor: "#00000000" },
+        {
+          backgroundColor: "rgba(234,179,8,0.5)",
+          duration: 0.5,
+          stagger: 0.05,
+        }
+      );
+
+      setTimeout(() => {
+        gsap.to(spans, {
+          backgroundColor: "#00000000",
+          duration: 0.5,
+          onComplete: () => {
+            el.innerHTML = originalHTML;
+          },
+        });
+      }, 4000);
+    }
+  });
+}
 
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(window.scrollY > 10);
   const [isOpen, setIsOpen] = useState(false);
+  const [isHighlighting, setIsHighlighting] = useState(false);
   const [isDark, setIsDark] = useState(() => {
     return localStorage.getItem("theme") === "light" ? false : true;
   });
@@ -16,6 +71,19 @@ export default function NavBar() {
   });
   const [hasAnimatedSocials, setHasAnimatedSocials] = useState(false);
   const [hasAnimatedControls, setHasAnimatedControls] = useState(false);
+
+  const toggleHighlights = () => {
+    console.log(isHighlighting);
+    if (isHighlighting) return;
+
+    setIsHighlighting(true);
+
+    highlightKeywords();
+
+    setTimeout(() => {
+      setIsHighlighting(false);
+    }, 4000);
+  };
 
   const linkRefs = useRef([]);
   const faviconRef = useRef(null);
@@ -74,7 +142,7 @@ export default function NavBar() {
       );
     }
 
-    const controlButtonsToShow = activeSection === "home" ? controlButtonsRefs.current[0] : controlButtonsRefs.current;
+    const controlButtonsToShow = activeSection === "home" ? controlButtonsRefs.current.slice(0, -1) : controlButtonsRefs.current;
     gsap.fromTo(
       controlButtonsToShow,
       { y: 100, opacity: 0 },
@@ -173,15 +241,15 @@ export default function NavBar() {
   useEffect(() => {
     if (!hasAnimatedControls) return;
     if (activeSection === "home") {
-      gsap.to(controlButtonsRefs.current[1], {
+      gsap.to(controlButtonsRefs.current[controlButtonsRefs.current.length - 1], {
         opacity: 0,
-        y: 75,
+        y: 60,
         duration: 0.7,
         ease: "power2.out",
         pointerEvents: "auto",
       });
     } else {
-      gsap.to(controlButtonsRefs.current[1], {
+      gsap.to(controlButtonsRefs.current[controlButtonsRefs.current.length - 1], {
         opacity: 1,
         y: 0,
         duration: 0.7,
@@ -334,10 +402,11 @@ export default function NavBar() {
         </a>
       </div>
 
-      {/* Toggle Dark Theme + Scroll to Top */}
+      {/* Toggle Dark Theme + Highlight + Scroll to Top */}
       <div className="fixed bottom-3 right-3 lg:bottom-5 lg:right-5 z-40 flex flex-col items-end gap-2 sm:gap-3">
+        {/* Scroll to Top = Last Index */}
         <button
-          ref={(el) => (controlButtonsRefs.current[1] = el)}
+          ref={(el) => (controlButtonsRefs.current[2] = el)}
           onClick={() => {
             const home = document.getElementById("home");
             if (home) home.scrollIntoView({ behavior: "smooth" });
@@ -346,6 +415,14 @@ export default function NavBar() {
           className="floating-buttons"
         >
           <ChevronsUp size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />
+        </button>
+        <button
+          ref={(el) => (controlButtonsRefs.current[1] = el)}
+          onClick={toggleHighlights}
+          disabled={isHighlighting}
+          className="floating-buttons disabled:!bg-yellow-500"
+        >
+          <Highlighter size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />
         </button>
         <button
           ref={(el) => (controlButtonsRefs.current[0] = el)}
