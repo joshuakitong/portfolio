@@ -151,7 +151,7 @@ export default function ProjectsSection() {
     <div>
       <h2
         ref={titleRef}
-        className="text-3xl sm:text-4xl font-bold mb-8 text-center"
+        className="section-title"
       >
         Projects
       </h2>
@@ -161,7 +161,7 @@ export default function ProjectsSection() {
           key={project.id}
           ref={(el) => (containerRef.current[index] = el)}
           id={project.id}
-          className={`w-full px-6 py-6 mx-auto relative bg-white/5 border border-black/15 dark:border-white/10 rounded-4xl max-w-6xl ${
+          className={`w-full px-6 py-6 mx-auto relative container-style rounded-4xl max-w-6xl ${
             index !== projects.length - 1 ? "mb-12" : ""
           }`}
         >

@@ -101,7 +101,7 @@ export default function Contact({ onVisibleChange }) {
     >
       <h2
         ref={titleRef}
-        className="text-3xl sm:text-4xl font-bold mb-8 text-center"
+        className="section-title"
       >
         Contact
       </h2>

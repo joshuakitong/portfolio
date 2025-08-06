@@ -92,12 +92,12 @@ export default function AboutTimeline() {
     <>
       <h2
         ref={titleRef}
-        className="text-3xl sm:text-4xl mb-8 text-center font-bold"
+        className="section-title"
       >
         About
       </h2>
       <div className="relative">
-        <div className="bg-white/5 border border-black/15 dark:border-white/10 rounded-4xl p-6 opacity-0" ref={containerRef}>
+        <div className="container-style rounded-4xl p-6 opacity-0" ref={containerRef}>
           <p
             ref={paragraphRef}
             className="text-sm sm:text-lg text-gray-800 dark:text-gray-200 whitespace-pre-wrap opacity-0"

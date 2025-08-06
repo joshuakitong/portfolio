@@ -310,7 +310,7 @@ export default function NavBar() {
           href="mailto:joshuakitong@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white/80 dark:bg-white/5 border border-black/15 dark:border-white/10 hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-sm opacity-0"
+          className="floating-buttons"
         >
           <Mail size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />
         </a>
@@ -319,7 +319,7 @@ export default function NavBar() {
           href="https://github.com/joshuakitong"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white/80 dark:bg-white/5 border border-black/15 dark:border-white/10 hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-sm opacity-0"
+          className="floating-buttons"
         >
           <Github size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />
         </a>
@@ -328,7 +328,7 @@ export default function NavBar() {
           href="https://www.linkedin.com/in/joshua-christopher-kitong-65805a2a9/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white/80 dark:bg-white/5 border border-black/15 dark:border-white/10 hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-sm opacity-0"
+          className="floating-buttons"
         >
           <Linkedin size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />
         </a>
@@ -343,14 +343,14 @@ export default function NavBar() {
             if (home) home.scrollIntoView({ behavior: "smooth" });
             history.pushState(null, null, "#home");
           }}
-          className="bg-white/80 dark:bg-white/5 border border-black/15 dark:border-white/10 hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-sm opacity-0"
+          className="floating-buttons"
         >
           <ChevronsUp size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />
         </button>
         <button
           ref={(el) => (controlButtonsRefs.current[0] = el)}
           onClick={() => setIsDark(!isDark)}
-          className="bg-white/80 dark:bg-white/5 border border-black/15 dark:border-white/10 hover:bg-blue-500 hover:shadow-[0_0_8px_0_rgba(59,130,246,0.15)] rounded-full p-3 transition-colors duration-300 backdrop-blur-sm opacity-0"
+          className="floating-buttons"
         >
           {isDark ? (
             <Moon size="100%" className="w-3 h-3 sm:w-5 sm:h-5" />

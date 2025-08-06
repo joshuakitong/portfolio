@@ -19,16 +19,16 @@ function App() {
       <div id="home" className="relative z-10 flex flex-col md:flex-row items-center justify-between min-h-screen max-w-[1600px] mx-auto pt-20 md:pt-0 px-6">
         <Home />
       </div>
-      <div id="about" className="relative z-10 items-center justify-between min-h-screen/2 max-w-4xl mx-auto scroll-mt-12 pt-12 px-6" >
+      <div id="about" className="min-h-screen/2 max-w-4xl sections" >
         <About />
       </div>
-      <div id="skills" className="relative z-10 items-center justify-between min-h-screen/2 max-w-[1600px] mx-auto scroll-mt-12 pt-12 px-6" >
+      <div id="skills" className="min-h-screen/2 max-w-[1600px] sections" >
         <Skills />
       </div>
-      <div id="projects" className="relative z-10 items-center justify-between min-h-screen max-w-4xl mx-auto scroll-mt-12 pt-12 px-6">
+      <div id="projects" className="min-h-screen max-w-4xl sections">
         <Projects />
       </div>
-      <div id="contact" className="relative z-10 items-center justify-between min-h-screen/2 max-w-md mx-auto scroll-mt-12 pt-12 px-6" >
+      <div id="contact" className="min-h-screen/2 max-w-md sections" >
         <Contact />
       </div>
       <footer className="text-sm text-black/50 dark:text-white/50 text-center pt-12 pb-6">&copy; Joshua Kitong 2025. All Rights Reserved</footer>
