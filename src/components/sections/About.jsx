@@ -5,9 +5,9 @@ import SplitType from "split-type";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const paragraph = `I'm a front-end web developer with a degree in Information Technology, majoring in Software Development, and over three years of professional experience building web-based systems for U.S. utility cooperatives where my primary tech stack included ASP.NET (C#), AngularJS, HTML, CSS, and Kendo UI, along with additional exposure to Angular and PL/SQL. I also trained new hires, led code reviews for the Philippines team, and gained experience in facilitating daily stand-ups and presenting during sprint reviews.\n
+const paragraph = `I'm a front-end web developer with a degree in Information Technology, majoring in Software Development, and over three years of professional experience building web-based systems for U.S. utility cooperatives where my primary tech stack included ASP.NET (C#), AngularJS, HTML5, CSS3, and Kendo UI, along with additional experience with Angular and PL/SQL. I also trained new hires, led code reviews for the Philippines team, and gained experience in facilitating daily stand-ups and presenting during sprint reviews.\n
 
-I took a few years to pursue creative careers in music production, competitive gaming and content creation. Now, I'm back in tech, building modern web applications primarily using React, Next.js, Vue.js, Nuxt.js, Node.js, Firebase, and more, combining technical expertise with creative insight.`;
+I took a few years to pursue creative careers in music production, competitive gaming and content creation. Now, I'm back in tech, building modern web applications primarily using React, Next.js, Vue.js, Nuxt.js, Tailwind CSS, Node.js, Firebase, and more, combining technical expertise with creative insight.`;
 
 export default function AboutTimeline() {
   const titleRef = useRef(null);
