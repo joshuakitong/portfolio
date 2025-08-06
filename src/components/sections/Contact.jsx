@@ -107,12 +107,12 @@ export default function Contact({ onVisibleChange }) {
       </h2>
 
       <div className="text-gray-800 dark:text-gray-200 text-md sm:text-lg space-y-4 text-center mb-8">
-        <p
+        <div
           ref={paragraphRef}
           className="text-center mb-6"
         >
           I'm currently open to full-time roles or freelance opportunities where I can bring value with my front-end web development skills. If you’re hiring, have a project in mind, or simply want to connect, feel free to reach out. You can also check out my links below for more info.
-        </p>
+        </div>
 
         <p ref={(el) => (textRefs.current[0] = el)}>
           Email: <a href="mailto:joshuakitong@gmail.com" className="text-blue-500 hover:underline">joshuakitong@gmail.com</a>
