@@ -7,8 +7,13 @@ const sections = ["About", "Skills", "Projects", "Contact"];
 function highlightKeywords() {
   const elements = document.querySelectorAll("p, li");
   const keywords = [
-    "JavaScript", "React", "Next.js", "Vue.js", "Nuxt.js", "AngularJS", "Angular", "ASP.NET", "Node.js", "Firebase", "HTML5", "CSS3", "Tailwind CSS"
+    "JavaScript", "React", "Next.js", "Vue.js", "Nuxt.js",
+    "AngularJS", "Angular", "ASP.NET", "Node.js",
+    "Firebase", "HTML5", "CSS3", "Tailwind CSS", "Tailwind", "CSS"
   ];
+
+  const isDark = document.documentElement.classList.contains("dark");
+  const revertColor = isDark ? "#e5e7eb" : "#1f2937"; // gray-200 : gray-800
 
   elements.forEach((el) => {
     const style = window.getComputedStyle(el);
@@ -20,7 +25,7 @@ function highlightKeywords() {
 
     if (!isVisible) return;
 
-    let originalHTML = el.innerHTML;
+    const originalHTML = el.innerHTML;
     let modified = false;
 
     keywords.forEach((keyword) => {
@@ -28,18 +33,18 @@ function highlightKeywords() {
       if (regex.test(el.innerHTML)) modified = true;
       el.innerHTML = el.innerHTML.replace(
         regex,
-        `<span class="keyword-highlight py-1 -my-1 px-2 -mx-2 rounded">$1</span>`
+        `<span class="text-highlight">$1</span>`
       );
     });
 
     if (modified) {
-      const spans = el.querySelectorAll(".keyword-highlight");
+      const spans = el.querySelectorAll(".text-highlight");
 
       gsap.fromTo(
         spans,
-        { backgroundColor: "#00000000" },
+        { color: revertColor },
         {
-          backgroundColor: "rgba(234,179,8,0.5)",
+          color: "#eab308", //yellow-500
           duration: 0.5,
           stagger: 0.05,
         }
@@ -47,7 +52,7 @@ function highlightKeywords() {
 
       setTimeout(() => {
         gsap.to(spans, {
-          backgroundColor: "#00000000",
+          color: revertColor,
           duration: 0.5,
           onComplete: () => {
             el.innerHTML = originalHTML;
