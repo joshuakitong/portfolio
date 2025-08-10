@@ -12,15 +12,13 @@ const skills = [
   {
     category: "Frameworks & Libraries",
     items: [
-      "React", "Next.js", "Vue.js", "Nuxt.js",
-      "AngularJS", "Angular", "Flask",
-      "Tailwind CSS", "Kendo UI", "Material UI",
-      "Bootstrap", "Framer Motion", "GSAP"
+      "React", "Next.js", "Vue.js", "Nuxt.js", "AngularJS", "Angular",
+      "Tailwind CSS", "Kendo UI", "Material UI", "Bootstrap", "Framer Motion", "GSAP"
     ],
   },
   {
     category: "Backend & Databases",
-    items: ["Node.js", "Firebase Firestore", "REST APIs", "ASP.NET", "LINQ", "PL/SQL"],
+    items: ["Node.js", "ASP.NET", "Flask", "REST APIs", "Firebase Firestore", "LINQ", "PL/SQL", "MySQL", "NoSQL"],
   },
   {
     category: "Tools & Platforms",
