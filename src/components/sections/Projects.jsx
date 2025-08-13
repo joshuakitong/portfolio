@@ -24,6 +24,22 @@ const projects = [
     link: "https://cryptoguessr-amber.vercel.app/",
   },
   {
+    id: "boxstudio",
+    title: "Portfolio (Diverse)",
+    description:
+      "A responsive, single-page landing page that showcases Box Studio's services.",
+    tech: ["React", "Tailwind CSS", "Vite", "GSAP", "Vercel"],
+    link: "https://box-studio.vercel.app/",
+  },
+  {
+    id: "crochetedbycarisse",
+    title: "Portfolio (Diverse)",
+    description:
+      "A responsive, single-page landing page that showcases Crocheted by Carisse's hand-made fine cotton yarn mixes and crocheted items.",
+    tech: ["React", "Tailwind CSS", "Vite", "GSAP", "Vercel"],
+    link: "https://crocheted-by-carisse.vercel.app/",
+  },
+  {
     id: "habitrack",
     title: "HabiTrack",
     description:
