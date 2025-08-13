@@ -25,7 +25,7 @@ const projects = [
   },
   {
     id: "boxstudio",
-    title: "Portfolio (Diverse)",
+    title: "Box Studio",
     description:
       "A responsive, single-page landing page that showcases Box Studio's services.",
     tech: ["React", "Tailwind CSS", "Vite", "GSAP", "Vercel"],
@@ -33,7 +33,7 @@ const projects = [
   },
   {
     id: "crochetedbycarisse",
-    title: "Portfolio (Diverse)",
+    title: "Crocheted by Carisse",
     description:
       "A responsive, single-page landing page that showcases Crocheted by Carisse's hand-made fine cotton yarn mixes and crocheted items.",
     tech: ["React", "Tailwind CSS", "Vite", "GSAP", "Vercel"],
