@@ -48,10 +48,10 @@ const projects = [
     link: "https://habitrack-afeb2.web.app/",
   },
   {
-    id: "portfoliov1",
-    title: "Portfolio (Diverse)",
+    id: "portfolioblog",
+    title: "Portfolio (Blog)",
     description:
-      "A responsive, single-page portfolio that showcases my diverse background and skills across technical and creative fields.",
+      "A responsive, single-page portfolio (blog) that showcases my diverse background and skills across technical and creative fields.",
     tech: ["React", "Tailwind CSS", "CRA", "Framer Motion", "Github Pages"],
     link: "https://joshuakitong.github.io/portfolio-webdev-music-gaming/",
   },
