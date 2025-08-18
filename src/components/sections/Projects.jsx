@@ -11,7 +11,7 @@ const projects = [
     id: "workoutgpt",
     title: "WorkoutGPT",
     description:
-      "An AI-powered workout generator that features a multi-step form wizard for personalized workout generation, dynamic session regeneration, CRUD functionalities, user authentication, and data persistence.",
+      "An AI-powered workout generator that features a multi-step form wizard for personalized workout generation, and dynamic session regeneration, with CRUD functionalities, user authentication, and data persistence.",
     tech: ["Nuxt.js", "Tailwind CSS", "GSAP", "Pinia", "Node.js", "Gemini API", "Firebase"],
     link: "https://workoutgpt-2d445.web.app/",
   },
