@@ -111,7 +111,7 @@ export default function Contact({ onVisibleChange }) {
           ref={paragraphRef}
           className="text-center mb-6"
         >
-          I'm currently open to full-time roles or freelance opportunities where I can bring value with my front-end web development skills. If you’re hiring, have a project in mind, or simply want to connect, feel free to reach out. You can also check out my links below for more info.
+          I'm currently open to part-time roles or freelance opportunities where I can bring value with my front-end web development skills. If you’re hiring, have a project in mind, or simply want to connect, feel free to reach out. You can also check out my links below for more info.
         </div>
 
         <p ref={(el) => (textRefs.current[0] = el)}>
