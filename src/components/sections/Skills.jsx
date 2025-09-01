@@ -27,7 +27,7 @@ const skills = [
   {
     category: "Tools & Platforms",
     items: [
-      "Git", "Bitbucket", "npm", "Vite",
+      "Git", "Bitbucket", "npm", "Yarn", "Vite",
       "Visual Studio Code", "Agile/Scrum", "Kanban",
       "GitHub Pages", "Render", "Firebase Hosting", "Vercel", "Insomnia"
     ],
