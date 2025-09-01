@@ -7,7 +7,9 @@ gsap.registerPlugin(ScrollTrigger);
 const skills = [
   {
     category: "Languages",
-    items: ["JavaScript", "TypeScript", "HTML5", "XML", "CSS3", "C#", "Java", "Python", "SQL"],
+    items: [
+      "JavaScript", "TypeScript", "HTML5", "XML", "CSS3", "C#", "Java", "Python", "SQL", "PHP"
+    ],
   },
   {
     category: "Frameworks & Libraries",
@@ -18,14 +20,16 @@ const skills = [
   },
   {
     category: "Backend & Databases",
-    items: ["Node.js", "ASP.NET", "Flask", "REST APIs", "Firebase Firestore", "LINQ", "PL/SQL", "MySQL", "NoSQL"],
+    items: [
+      "Node.js", "Express.js", "ASP.NET", "Flask", "REST APIs", "Firebase Firestore", "LINQ", "PL/SQL", "MySQL", "NoSQL", "Kysely"
+    ],
   },
   {
     category: "Tools & Platforms",
     items: [
       "Git", "Bitbucket", "npm", "Vite",
-      "Visual Studio Code", "Agile/Scrum",
-      "GitHub Pages", "Render", "Firebase Hosting", "Vercel"
+      "Visual Studio Code", "Agile/Scrum", "Kanban",
+      "GitHub Pages", "Render", "Firebase Hosting", "Vercel", "Insomnia"
     ],
   },
   {
